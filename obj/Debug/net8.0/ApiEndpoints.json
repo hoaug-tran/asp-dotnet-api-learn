@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "LearnLinQWeb.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rq",
+        "Type": "LearnLinQWeb.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LearnLinQWeb.Controllers.BooksController",
     "Method": "GetAll",
     "RelativePath": "api/v1/Books",
@@ -76,6 +92,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LearnLinQWeb.Controllers.UsersController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

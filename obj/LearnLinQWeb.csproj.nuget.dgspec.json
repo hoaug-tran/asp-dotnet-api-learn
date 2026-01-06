@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLinQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj": {}
+    "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLINQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLinQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj": {
+    "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLINQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLinQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj",
+        "projectUniqueName": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLINQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj",
         "projectName": "LearnLinQWeb",
-        "projectPath": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLinQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj",
+        "projectPath": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLINQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj",
         "packagesPath": "C:\\Users\\hoaug\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLinQWeb\\LearnLinQWeb\\obj\\",
         "projectStyle": "PackageReference",
@@ -51,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"

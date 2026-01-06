@@ -11,6 +11,8 @@ builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<BookService>();
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<UserService>();
 
 // Add services to the container.
 
