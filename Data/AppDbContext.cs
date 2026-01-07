@@ -3,14 +3,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LearnLinQWeb.Data
 {
-    public class MyDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public MyDbContext(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
         }
 
         public DbSet<Book> Books { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+
     }
 }

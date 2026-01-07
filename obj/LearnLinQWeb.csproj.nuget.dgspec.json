@@ -11,7 +11,7 @@
         "projectName": "LearnLinQWeb",
         "projectPath": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLINQWeb\\LearnLinQWeb\\LearnLinQWeb.csproj",
         "packagesPath": "C:\\Users\\hoaug\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLinQWeb\\LearnLinQWeb\\obj\\",
+        "outputPath": "C:\\Users\\hoaug\\Desktop\\LearnUntilDie\\CSharp\\LearnLINQWeb\\LearnLinQWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EFCore.NamingConventions": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.11, )"

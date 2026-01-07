@@ -1,26 +1,27 @@
 ﻿using LearnLinQWeb.Data;
 using LearnLinQWeb.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LearnLinQWeb.Services
 {
     public class BookService
     {
-        private readonly MyDbContext _db;
+        private readonly AppDbContext _db;
 
-        public BookService(MyDbContext db)
+        public BookService(AppDbContext db)
         {
             _db = db;
         }
 
         public List<Book> GetAllBooks()
         {
-            return _db.Books.ToList();
+            return _db.Books.AsNoTracking().ToList();
         }
 
         public Book? GetBookById(int id)
         {
-            return _db.Books.FirstOrDefault(b => b.Id == id);
+            return _db.Books.AsNoTracking().FirstOrDefault(b => b.Id == id);
         }
 
         public bool AddBook(Book book)

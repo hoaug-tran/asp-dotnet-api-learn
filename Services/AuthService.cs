@@ -6,9 +6,9 @@ namespace LearnLinQWeb.Services
     public class AuthService
     {
 
-        private readonly MyDbContext _db;
+        private readonly AppDbContext _db;
 
-        public AuthService(MyDbContext db)
+        public AuthService(AppDbContext db)
         {
             _db = db;
         }

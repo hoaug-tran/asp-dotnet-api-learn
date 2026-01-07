@@ -1,13 +1,14 @@
 ﻿using LearnLinQWeb.Data;
 using LearnLinQWeb.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LearnLinQWeb.Services
 {
     public class UserService
     {
-        private readonly MyDbContext _db;
+        private readonly AppDbContext _db;
 
-        public UserService(MyDbContext db)
+        public UserService(AppDbContext db)
         {
             _db = db;
         }
@@ -19,12 +20,12 @@ namespace LearnLinQWeb.Services
 
         public User? GetUserById(int id)
         {
-            return _db.Users.FirstOrDefault(u => u.Id == id);
+            return _db.Users.AsNoTracking().FirstOrDefault(u => u.Id == id);
         }
 
         public User? GetUserByUsername(string username)
         {
-            return _db.Users.FirstOrDefault(u => u.Username.Equals(username));
+            return _db.Users.AsNoTracking().FirstOrDefault(u => u.Username == username);
         }
 
         public bool AddUser()

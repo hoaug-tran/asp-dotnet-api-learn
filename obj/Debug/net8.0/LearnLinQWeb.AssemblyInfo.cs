@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearnLinQWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffeafcc8981824fd2a49a18a2b846ebca00143f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3aeecef03fc6ba0c3dd74297eee0d6fc0c2ea7d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearnLinQWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearnLinQWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
