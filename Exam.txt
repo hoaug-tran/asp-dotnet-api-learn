@@ -1,0 +1,17 @@
+	ĐỀ BÀI: STUDENT MANAGEMENT SYSTEM
+	1. Yêu cầu chung:
+	Ngôn ngữ: C#
+	Framework: .NET 8
+	Loại project: Console Application
+	Áp dụng OOP, async / await, LINQ
+	Lưu dữ liệu bằng file JSON
+	2. Yêu cầu cụ thể:
+	1. Thêm, sửa, xóa sinh viên ( có hai dạng dữ liệu dạng thêm file và dữ liệu tự thêm đơn lẻ)
+	2. Hiển thị danh sách sinh viên
+	3. Tìm sinh viên theo Id
+	4. Danh sách sinh viên GPA >= 8
+	5. Top 5 sinh viên GPA cao nhất
+	0. Thoát
+	Lưu ý: Đọc kỹ yêu cầu trước khi làm, hiểu sao thì làm như vậy
+	- Dữ liệu tự tạo yêu cầu 500 đến 1000 bản ghi, có dữ liệu ảnh liên quan đến người đó, kiểm tra dữ liệu trước khi thêm vào, check trùng dữ liệu
+	- Xong push code lên git hoặc GitLab (nhớ public), gửi link kết quả bài làm cho anh!

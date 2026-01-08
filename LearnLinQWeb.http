@@ -1,6 +1,0 @@
-@LearnLinQWeb_HostAddress = http://localhost:5107
-
-GET {{LearnLinQWeb_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

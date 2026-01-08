@@ -1,76 +1,142 @@
-﻿using System;
-using LearnLinQWeb.Controllers;
-using LearnLinQWeb.Data;
-using LearnLinQWeb.Middlewares;
-using LearnLinQWeb.Models;
-using LearnLinQWeb.Services;
-using Microsoft.EntityFrameworkCore;
+﻿using StudentManagementSystem.Models;
+using StudentManagementSystem.Services;
+using StudentManagementSystem.Utils;
 
-var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString)
-        .UseSnakeCaseNamingConvention());
-
-builder.Services.AddScoped<BookService>();
-builder.Services.AddScoped<AuthService>();
-builder.Services.AddScoped<UserService>();
-
-
-
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddCors(options =>
+class Program
 {
-    options.AddPolicy("Web", policy =>
+    private static StudentServices _studentServices = null!;
+    
+    public static string GetProjectRoot()
     {
-        policy.WithOrigins("http://localhost:5173").AllowAnyMethod().AllowAnyHeader();
-    });
-});
+        return Directory
+            .GetParent(AppContext.BaseDirectory)!
+            .Parent!
+            .Parent!
+            .Parent!
+            .FullName;
+    }
 
-var app = builder.Build();
+    static async Task Main(string[] args)
+    {
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
+        var projectRoot = GetProjectRoot();
+        Console.WriteLine(projectRoot);
+        var jsonPath = Path.Combine(
+            projectRoot,
+            "Data",
+            "test_import.json"
+        );
 
-// Migration tự động khi build
-//using (var scope = app.Services.CreateScope())
-//{
-//    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-//    db.Database.Migrate();
-//}
+        //if (!File.Exists(jsonPath))
+        //{
+        //    var generator = new DataGenerator(
+        //        new List<Student>(),
+        //        new JsonServices(jsonPath)
+        //    );
 
-app.UseMiddleware<ExceptionsMiddleware>();
+        //    await generator.GenerateStudent(1000);
+        //}
 
-app.UseMiddleware<ResponsesMiddleware>();
+        var jsonServices = new JsonServices(jsonPath);
+        _studentServices = new StudentServices(jsonServices);
 
-// Middleware hệ thống phải đặt trước Controller
-// Middleware request response thì phải đặt sau middlware mà wrap toàn bộ pipline
-// Midleware wrap như kiểu exception thì phải đặt ngoài cùng.
+        await RunAsync();
+    }
 
-app.UseHttpsRedirection();
+    private static async Task RunAsync()
+    {
+        while (true)
+        {
+            Console.WriteLine();
+            Console.WriteLine("===== HỆ THỐNG QUẢN LÝ SINH VIÊN =====");
+            Console.WriteLine("1. Thêm sinh viên");
+            Console.WriteLine("2. Sửa sinh viên theo Id");
+            Console.WriteLine("3. Xóa sinh viên theo Id");
+            Console.WriteLine("4. Hiển thị danh sách sinh viên");
+            Console.WriteLine("5. Tìm sinh viên theo Id");
+            Console.WriteLine("6. Danh sách sinh viên GPA >= 8");
+            Console.WriteLine("7. Top 5 sinh viên GPA cao nhất");
+            Console.WriteLine("0. Thoát");
+            Console.Write("Lựa chọn: ");
 
+            if (!int.TryParse(Console.ReadLine(), out int choice))
+            {
+                continue;
+            }
 
-// Cors phải đứng trước Auth
-app.UseCors("Web");
+            switch (choice)
+            {
+                case 1:
+                    await AddMenuAsync();
+                    break;
 
-app.UseAuthorization();
+                case 2:
+                    await _studentServices.UpdateByIdAsync();
+                    break;
 
+                case 3:
+                    await _studentServices.DeleteByIdAsync();
+                    break;
 
-// Controller
-app.MapControllers();
+                case 4:
+                    await _studentServices.ShowAllAsync();
+                    break;
 
-// Endpoint phải đặt cuối cùng
-app.MapGet("/api/v1/ping", () => Results.Ok("Pong"));
+                case 5:
+                    await _studentServices.FindByIdAsync();
+                    break;
 
-app.Run();
+                case 6:
+                    await _studentServices.ListGpaAbove8Async();
+                    break;
+
+                case 7:
+                    await _studentServices.TopGpaAsync();
+                    break;
+
+                case 0:
+                    Console.WriteLine("Tạm biệt");
+                    return;
+
+                default:
+                    Console.WriteLine("Lựa chọn không hợp lệ");
+                    break;
+            }
+        }
+    }
+
+    private static async Task AddMenuAsync()
+    {
+        bool back = false;
+        while (!back)
+        {
+            Console.WriteLine("===== CÁCH THÊM =====");
+            Console.WriteLine("1. Thêm thủ công");
+            Console.WriteLine("2. Thêm từ file JSON");
+            Console.WriteLine("0. Quay trở lại");
+            Console.Write("Lựa chọn: ");
+
+            if (!int.TryParse(Console.ReadLine(), out int c))
+                continue;
+
+            switch (c)
+            {
+                case 1:
+                    await _studentServices.AddManualAsync();
+                    break;
+
+                case 2:
+                    await _studentServices.ImportFromJsonAsync();
+                    break;
+
+                case 0:
+                    back = true;
+                    break;
+
+                default:
+                    Console.WriteLine("Nhập sai lựa chọn. Vui lòng chọn lại");
+                    break;
+            }
+        }
+    }
+}

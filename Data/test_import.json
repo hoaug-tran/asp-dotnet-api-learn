@@ -1,0 +1,5996 @@
+[
+  {
+    "Id": 1,
+    "FullName": "V\u0169 Xu\u00E2n Huy",
+    "GPA": 1.82,
+    "ImagePath": "Data\\images\\student_1.png"
+  },
+  {
+    "Id": 2,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Long",
+    "GPA": 2.81,
+    "ImagePath": "Data\\images\\student_2.png"
+  },
+  {
+    "Id": 3,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Qu\u00E2n",
+    "GPA": 9.71,
+    "ImagePath": "Data\\images\\student_3.png"
+  },
+  {
+    "Id": 4,
+    "FullName": "L\u00EA Minh Khang",
+    "GPA": 8.31,
+    "ImagePath": "Data\\images\\student_4.png"
+  },
+  {
+    "Id": 5,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Qu\u00E2n",
+    "GPA": 5.64,
+    "ImagePath": "Data\\images\\student_5.png"
+  },
+  {
+    "Id": 6,
+    "FullName": "L\u00EA Duy B\u1EA3o",
+    "GPA": 7.86,
+    "ImagePath": "Data\\images\\student_6.png"
+  },
+  {
+    "Id": 7,
+    "FullName": "Nguy\u1EC5n Minh Khoa",
+    "GPA": 8.79,
+    "ImagePath": "Data\\images\\student_7.png"
+  },
+  {
+    "Id": 8,
+    "FullName": "V\u0169 Duy D\u0169ng",
+    "GPA": 1.93,
+    "ImagePath": "Data\\images\\student_8.png"
+  },
+  {
+    "Id": 9,
+    "FullName": "V\u0169 Xu\u00E2n Long",
+    "GPA": 7.47,
+    "ImagePath": "Data\\images\\student_9.png"
+  },
+  {
+    "Id": 10,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc B\u00ECnh",
+    "GPA": 1.43,
+    "ImagePath": "Data\\images\\student_10.png"
+  },
+  {
+    "Id": 11,
+    "FullName": "Tr\u1EA7n H\u00F9ng Huy",
+    "GPA": 5,
+    "ImagePath": "Data\\images\\student_11.png"
+  },
+  {
+    "Id": 12,
+    "FullName": "Ho\u00E0ng H\u00F9ng Tu\u1EA5n",
+    "GPA": 5.46,
+    "ImagePath": "Data\\images\\student_12.png"
+  },
+  {
+    "Id": 13,
+    "FullName": "Ph\u1EA1m Minh Huy",
+    "GPA": 1.04,
+    "ImagePath": "Data\\images\\student_13.png"
+  },
+  {
+    "Id": 14,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Ho\u00E0ng",
+    "GPA": 3.16,
+    "ImagePath": "Data\\images\\student_14.png"
+  },
+  {
+    "Id": 15,
+    "FullName": "V\u0169 Ng\u1ECDc Huy",
+    "GPA": 1.36,
+    "ImagePath": "Data\\images\\student_15.png"
+  },
+  {
+    "Id": 16,
+    "FullName": "V\u0169 Duy Khoa",
+    "GPA": 9.8,
+    "ImagePath": "Data\\images\\student_16.png"
+  },
+  {
+    "Id": 17,
+    "FullName": "Nguy\u1EC5n Duy T\u00E0i",
+    "GPA": 9.16,
+    "ImagePath": "Data\\images\\student_17.png"
+  },
+  {
+    "Id": 18,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Long",
+    "GPA": 9.19,
+    "ImagePath": "Data\\images\\student_18.png"
+  },
+  {
+    "Id": 19,
+    "FullName": "Tr\u1EA7n Minh Hi\u1EC7p",
+    "GPA": 5.12,
+    "ImagePath": "Data\\images\\student_19.png"
+  },
+  {
+    "Id": 20,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Huy",
+    "GPA": 2.02,
+    "ImagePath": "Data\\images\\student_20.png"
+  },
+  {
+    "Id": 21,
+    "FullName": "V\u00F5 V\u0103n Khoa",
+    "GPA": 7.69,
+    "ImagePath": "Data\\images\\student_21.png"
+  },
+  {
+    "Id": 22,
+    "FullName": "Nguy\u1EC5n Minh Khoa",
+    "GPA": 6.5,
+    "ImagePath": "Data\\images\\student_22.png"
+  },
+  {
+    "Id": 23,
+    "FullName": "V\u0169 Minh Huy",
+    "GPA": 2.63,
+    "ImagePath": "Data\\images\\student_23.png"
+  },
+  {
+    "Id": 24,
+    "FullName": "Hu\u1EF3nh Minh Khoa",
+    "GPA": 2.43,
+    "ImagePath": "Data\\images\\student_24.png"
+  },
+  {
+    "Id": 25,
+    "FullName": "Tr\u1EA7n Xu\u00E2n B\u1EA3o",
+    "GPA": 2.28,
+    "ImagePath": "Data\\images\\student_25.png"
+  },
+  {
+    "Id": 26,
+    "FullName": "V\u00F5 Qu\u00E2n B\u1EA3o",
+    "GPA": 4.62,
+    "ImagePath": "Data\\images\\student_26.png"
+  },
+  {
+    "Id": 27,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Ho\u00E0ng",
+    "GPA": 1.43,
+    "ImagePath": "Data\\images\\student_27.png"
+  },
+  {
+    "Id": 28,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Tu\u1EA5n",
+    "GPA": 2.9,
+    "ImagePath": "Data\\images\\student_28.png"
+  },
+  {
+    "Id": 29,
+    "FullName": "Ho\u00E0ng H\u00F9ng T\u00E0i",
+    "GPA": 2.21,
+    "ImagePath": "Data\\images\\student_29.png"
+  },
+  {
+    "Id": 30,
+    "FullName": "Tr\u1EA7n V\u0103n D\u0169ng",
+    "GPA": 3.7,
+    "ImagePath": "Data\\images\\student_30.png"
+  },
+  {
+    "Id": 31,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Tu\u1EA5n",
+    "GPA": 8.38,
+    "ImagePath": "Data\\images\\student_31.png"
+  },
+  {
+    "Id": 32,
+    "FullName": "L\u00EA Xu\u00E2n B\u00ECnh",
+    "GPA": 6.68,
+    "ImagePath": "Data\\images\\student_32.png"
+  },
+  {
+    "Id": 33,
+    "FullName": "L\u00EA Qu\u00E2n Long",
+    "GPA": 4.81,
+    "ImagePath": "Data\\images\\student_33.png"
+  },
+  {
+    "Id": 34,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Ho\u00E0ng",
+    "GPA": 2.28,
+    "ImagePath": "Data\\images\\student_34.png"
+  },
+  {
+    "Id": 35,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Hi\u1EC7p",
+    "GPA": 3.11,
+    "ImagePath": "Data\\images\\student_35.png"
+  },
+  {
+    "Id": 36,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Long",
+    "GPA": 2.97,
+    "ImagePath": "Data\\images\\student_36.png"
+  },
+  {
+    "Id": 37,
+    "FullName": "V\u00F5 Ng\u1ECDc Khoa",
+    "GPA": 5.67,
+    "ImagePath": "Data\\images\\student_37.png"
+  },
+  {
+    "Id": 38,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Ho\u00E0ng",
+    "GPA": 3.47,
+    "ImagePath": "Data\\images\\student_38.png"
+  },
+  {
+    "Id": 39,
+    "FullName": "Nguy\u1EC5n Duy Khoa",
+    "GPA": 2.78,
+    "ImagePath": "Data\\images\\student_39.png"
+  },
+  {
+    "Id": 40,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc D\u0169ng",
+    "GPA": 3.18,
+    "ImagePath": "Data\\images\\student_40.png"
+  },
+  {
+    "Id": 41,
+    "FullName": "Nguy\u1EC5n Minh Khang",
+    "GPA": 5.61,
+    "ImagePath": "Data\\images\\student_41.png"
+  },
+  {
+    "Id": 42,
+    "FullName": "L\u00EA Ng\u1ECDc Qu\u00E2n",
+    "GPA": 2.34,
+    "ImagePath": "Data\\images\\student_42.png"
+  },
+  {
+    "Id": 43,
+    "FullName": "Ho\u00E0ng V\u0103n T\u00E0i",
+    "GPA": 3.79,
+    "ImagePath": "Data\\images\\student_43.png"
+  },
+  {
+    "Id": 44,
+    "FullName": "Nguy\u1EC5n Duy Khoa",
+    "GPA": 5.4,
+    "ImagePath": "Data\\images\\student_44.png"
+  },
+  {
+    "Id": 45,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Huy",
+    "GPA": 8.42,
+    "ImagePath": "Data\\images\\student_45.png"
+  },
+  {
+    "Id": 46,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Qu\u00E2n",
+    "GPA": 8.53,
+    "ImagePath": "Data\\images\\student_46.png"
+  },
+  {
+    "Id": 47,
+    "FullName": "V\u00F5 Xu\u00E2n T\u00E0i",
+    "GPA": 2.61,
+    "ImagePath": "Data\\images\\student_47.png"
+  },
+  {
+    "Id": 48,
+    "FullName": "V\u0169 V\u0103n B\u00ECnh",
+    "GPA": 8.04,
+    "ImagePath": "Data\\images\\student_48.png"
+  },
+  {
+    "Id": 49,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Long",
+    "GPA": 4.76,
+    "ImagePath": "Data\\images\\student_49.png"
+  },
+  {
+    "Id": 50,
+    "FullName": "V\u00F5 Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 5.69,
+    "ImagePath": "Data\\images\\student_50.png"
+  },
+  {
+    "Id": 51,
+    "FullName": "Ho\u00E0ng Minh T\u00E0i",
+    "GPA": 7.73,
+    "ImagePath": "Data\\images\\student_51.png"
+  },
+  {
+    "Id": 52,
+    "FullName": "Nguy\u1EC5n V\u0103n Hi\u1EC7p",
+    "GPA": 8.1,
+    "ImagePath": "Data\\images\\student_52.png"
+  },
+  {
+    "Id": 53,
+    "FullName": "Ho\u00E0ng V\u0103n Khang",
+    "GPA": 4.64,
+    "ImagePath": "Data\\images\\student_53.png"
+  },
+  {
+    "Id": 54,
+    "FullName": "L\u00EA Xu\u00E2n Long",
+    "GPA": 9.39,
+    "ImagePath": "Data\\images\\student_54.png"
+  },
+  {
+    "Id": 55,
+    "FullName": "Hu\u1EF3nh Minh B\u1EA3o",
+    "GPA": 9.08,
+    "ImagePath": "Data\\images\\student_55.png"
+  },
+  {
+    "Id": 56,
+    "FullName": "V\u0169 Ng\u1ECDc T\u00E0i",
+    "GPA": 2.93,
+    "ImagePath": "Data\\images\\student_56.png"
+  },
+  {
+    "Id": 57,
+    "FullName": "Phan Xu\u00E2n Tu\u1EA5n",
+    "GPA": 6.26,
+    "ImagePath": "Data\\images\\student_57.png"
+  },
+  {
+    "Id": 58,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Long",
+    "GPA": 8.69,
+    "ImagePath": "Data\\images\\student_58.png"
+  },
+  {
+    "Id": 59,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 7.46,
+    "ImagePath": "Data\\images\\student_59.png"
+  },
+  {
+    "Id": 60,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Qu\u00E2n",
+    "GPA": 5.81,
+    "ImagePath": "Data\\images\\student_60.png"
+  },
+  {
+    "Id": 61,
+    "FullName": "Hu\u1EF3nh Duy D\u0169ng",
+    "GPA": 6.28,
+    "ImagePath": "Data\\images\\student_61.png"
+  },
+  {
+    "Id": 62,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Huy",
+    "GPA": 8.61,
+    "ImagePath": "Data\\images\\student_62.png"
+  },
+  {
+    "Id": 63,
+    "FullName": "Phan V\u0103n Ho\u00E0ng",
+    "GPA": 2.08,
+    "ImagePath": "Data\\images\\student_63.png"
+  },
+  {
+    "Id": 64,
+    "FullName": "L\u00EA Ng\u1ECDc Qu\u00E2n",
+    "GPA": 8.32,
+    "ImagePath": "Data\\images\\student_64.png"
+  },
+  {
+    "Id": 65,
+    "FullName": "Ho\u00E0ng Duy Huy",
+    "GPA": 6.43,
+    "ImagePath": "Data\\images\\student_65.png"
+  },
+  {
+    "Id": 66,
+    "FullName": "L\u00EA Qu\u00E2n Khang",
+    "GPA": 4.22,
+    "ImagePath": "Data\\images\\student_66.png"
+  },
+  {
+    "Id": 67,
+    "FullName": "L\u00EA Qu\u00E2n Hi\u1EC7p",
+    "GPA": 2.03,
+    "ImagePath": "Data\\images\\student_67.png"
+  },
+  {
+    "Id": 68,
+    "FullName": "Phan Duy Hi\u1EC7p",
+    "GPA": 1.08,
+    "ImagePath": "Data\\images\\student_68.png"
+  },
+  {
+    "Id": 69,
+    "FullName": "L\u00EA Ng\u1ECDc Tu\u1EA5n",
+    "GPA": 4.18,
+    "ImagePath": "Data\\images\\student_69.png"
+  },
+  {
+    "Id": 70,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Tu\u1EA5n",
+    "GPA": 2.98,
+    "ImagePath": "Data\\images\\student_70.png"
+  },
+  {
+    "Id": 71,
+    "FullName": "Ho\u00E0ng Duy Khoa",
+    "GPA": 1.29,
+    "ImagePath": "Data\\images\\student_71.png"
+  },
+  {
+    "Id": 72,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Khoa",
+    "GPA": 9.81,
+    "ImagePath": "Data\\images\\student_72.png"
+  },
+  {
+    "Id": 73,
+    "FullName": "V\u00F5 H\u00F9ng Hi\u1EC7p",
+    "GPA": 1.73,
+    "ImagePath": "Data\\images\\student_73.png"
+  },
+  {
+    "Id": 74,
+    "FullName": "V\u00F5 Minh Ho\u00E0ng",
+    "GPA": 3.28,
+    "ImagePath": "Data\\images\\student_74.png"
+  },
+  {
+    "Id": 75,
+    "FullName": "Ho\u00E0ng Minh Long",
+    "GPA": 4.71,
+    "ImagePath": "Data\\images\\student_75.png"
+  },
+  {
+    "Id": 76,
+    "FullName": "Nguy\u1EC5n Minh Qu\u00E2n",
+    "GPA": 3.18,
+    "ImagePath": "Data\\images\\student_76.png"
+  },
+  {
+    "Id": 77,
+    "FullName": "Ph\u1EA1m Minh Khoa",
+    "GPA": 7.99,
+    "ImagePath": "Data\\images\\student_77.png"
+  },
+  {
+    "Id": 78,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Qu\u00E2n",
+    "GPA": 9.37,
+    "ImagePath": "Data\\images\\student_78.png"
+  },
+  {
+    "Id": 79,
+    "FullName": "Phan V\u0103n D\u0169ng",
+    "GPA": 1.12,
+    "ImagePath": "Data\\images\\student_79.png"
+  },
+  {
+    "Id": 80,
+    "FullName": "L\u00EA V\u0103n Ho\u00E0ng",
+    "GPA": 8.52,
+    "ImagePath": "Data\\images\\student_80.png"
+  },
+  {
+    "Id": 81,
+    "FullName": "Tr\u1EA7n Duy Huy",
+    "GPA": 9.2,
+    "ImagePath": "Data\\images\\student_81.png"
+  },
+  {
+    "Id": 82,
+    "FullName": "Ph\u1EA1m Duy Khoa",
+    "GPA": 7.36,
+    "ImagePath": "Data\\images\\student_82.png"
+  },
+  {
+    "Id": 83,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Qu\u00E2n",
+    "GPA": 4.54,
+    "ImagePath": "Data\\images\\student_83.png"
+  },
+  {
+    "Id": 84,
+    "FullName": "Phan Xu\u00E2n D\u0169ng",
+    "GPA": 3.87,
+    "ImagePath": "Data\\images\\student_84.png"
+  },
+  {
+    "Id": 85,
+    "FullName": "V\u00F5 Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 9.48,
+    "ImagePath": "Data\\images\\student_85.png"
+  },
+  {
+    "Id": 86,
+    "FullName": "Phan Qu\u00E2n Qu\u00E2n",
+    "GPA": 4.06,
+    "ImagePath": "Data\\images\\student_86.png"
+  },
+  {
+    "Id": 87,
+    "FullName": "L\u00EA Minh T\u00E0i",
+    "GPA": 8.48,
+    "ImagePath": "Data\\images\\student_87.png"
+  },
+  {
+    "Id": 88,
+    "FullName": "Ho\u00E0ng V\u0103n Long",
+    "GPA": 8.34,
+    "ImagePath": "Data\\images\\student_88.png"
+  },
+  {
+    "Id": 89,
+    "FullName": "V\u0169 V\u0103n Khang",
+    "GPA": 4.46,
+    "ImagePath": "Data\\images\\student_89.png"
+  },
+  {
+    "Id": 90,
+    "FullName": "Ho\u00E0ng Xu\u00E2n T\u00E0i",
+    "GPA": 6.73,
+    "ImagePath": "Data\\images\\student_90.png"
+  },
+  {
+    "Id": 91,
+    "FullName": "V\u0169 H\u00F9ng Hi\u1EC7p",
+    "GPA": 9.21,
+    "ImagePath": "Data\\images\\student_91.png"
+  },
+  {
+    "Id": 92,
+    "FullName": "Tr\u1EA7n H\u00F9ng T\u00E0i",
+    "GPA": 7.77,
+    "ImagePath": "Data\\images\\student_92.png"
+  },
+  {
+    "Id": 93,
+    "FullName": "Nguy\u1EC5n Duy Khoa",
+    "GPA": 9.01,
+    "ImagePath": "Data\\images\\student_93.png"
+  },
+  {
+    "Id": 94,
+    "FullName": "Hu\u1EF3nh H\u00F9ng T\u00E0i",
+    "GPA": 4.25,
+    "ImagePath": "Data\\images\\student_94.png"
+  },
+  {
+    "Id": 95,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc B\u00ECnh",
+    "GPA": 3.31,
+    "ImagePath": "Data\\images\\student_95.png"
+  },
+  {
+    "Id": 96,
+    "FullName": "Ph\u1EA1m V\u0103n Huy",
+    "GPA": 1.5,
+    "ImagePath": "Data\\images\\student_96.png"
+  },
+  {
+    "Id": 97,
+    "FullName": "Hu\u1EF3nh V\u0103n T\u00E0i",
+    "GPA": 5.49,
+    "ImagePath": "Data\\images\\student_97.png"
+  },
+  {
+    "Id": 98,
+    "FullName": "Phan Qu\u00E2n Khang",
+    "GPA": 8.55,
+    "ImagePath": "Data\\images\\student_98.png"
+  },
+  {
+    "Id": 99,
+    "FullName": "Phan Duy Ho\u00E0ng",
+    "GPA": 2.01,
+    "ImagePath": "Data\\images\\student_99.png"
+  },
+  {
+    "Id": 100,
+    "FullName": "Ho\u00E0ng Duy Huy",
+    "GPA": 7.1,
+    "ImagePath": "Data\\images\\student_100.png"
+  },
+  {
+    "Id": 101,
+    "FullName": "L\u00EA V\u0103n Ho\u00E0ng",
+    "GPA": 4.08,
+    "ImagePath": "Data\\images\\student_101.png"
+  },
+  {
+    "Id": 102,
+    "FullName": "V\u00F5 Xu\u00E2n Qu\u00E2n",
+    "GPA": 8.87,
+    "ImagePath": "Data\\images\\student_102.png"
+  },
+  {
+    "Id": 103,
+    "FullName": "Nguy\u1EC5n Duy Khoa",
+    "GPA": 3.79,
+    "ImagePath": "Data\\images\\student_103.png"
+  },
+  {
+    "Id": 104,
+    "FullName": "Tr\u1EA7n V\u0103n Ho\u00E0ng",
+    "GPA": 5.11,
+    "ImagePath": "Data\\images\\student_104.png"
+  },
+  {
+    "Id": 105,
+    "FullName": "Ho\u00E0ng H\u00F9ng Khang",
+    "GPA": 7.75,
+    "ImagePath": "Data\\images\\student_105.png"
+  },
+  {
+    "Id": 106,
+    "FullName": "Hu\u1EF3nh V\u0103n Qu\u00E2n",
+    "GPA": 5.4,
+    "ImagePath": "Data\\images\\student_106.png"
+  },
+  {
+    "Id": 107,
+    "FullName": "Ho\u00E0ng Duy Huy",
+    "GPA": 3.51,
+    "ImagePath": "Data\\images\\student_107.png"
+  },
+  {
+    "Id": 108,
+    "FullName": "Tr\u1EA7n Duy Qu\u00E2n",
+    "GPA": 9.43,
+    "ImagePath": "Data\\images\\student_108.png"
+  },
+  {
+    "Id": 109,
+    "FullName": "V\u00F5 Minh T\u00E0i",
+    "GPA": 3.35,
+    "ImagePath": "Data\\images\\student_109.png"
+  },
+  {
+    "Id": 110,
+    "FullName": "V\u0169 H\u00F9ng B\u00ECnh",
+    "GPA": 9.61,
+    "ImagePath": "Data\\images\\student_110.png"
+  },
+  {
+    "Id": 111,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Qu\u00E2n",
+    "GPA": 4.72,
+    "ImagePath": "Data\\images\\student_111.png"
+  },
+  {
+    "Id": 112,
+    "FullName": "Ho\u00E0ng V\u0103n Long",
+    "GPA": 5.79,
+    "ImagePath": "Data\\images\\student_112.png"
+  },
+  {
+    "Id": 113,
+    "FullName": "Phan Qu\u00E2n Ho\u00E0ng",
+    "GPA": 2.58,
+    "ImagePath": "Data\\images\\student_113.png"
+  },
+  {
+    "Id": 114,
+    "FullName": "Nguy\u1EC5n Minh Tu\u1EA5n",
+    "GPA": 5.98,
+    "ImagePath": "Data\\images\\student_114.png"
+  },
+  {
+    "Id": 115,
+    "FullName": "V\u0169 Minh Huy",
+    "GPA": 3.08,
+    "ImagePath": "Data\\images\\student_115.png"
+  },
+  {
+    "Id": 116,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc B\u00ECnh",
+    "GPA": 1.54,
+    "ImagePath": "Data\\images\\student_116.png"
+  },
+  {
+    "Id": 117,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n D\u0169ng",
+    "GPA": 6.83,
+    "ImagePath": "Data\\images\\student_117.png"
+  },
+  {
+    "Id": 118,
+    "FullName": "L\u00EA V\u0103n Tu\u1EA5n",
+    "GPA": 1.58,
+    "ImagePath": "Data\\images\\student_118.png"
+  },
+  {
+    "Id": 119,
+    "FullName": "Nguy\u1EC5n V\u0103n Huy",
+    "GPA": 5.86,
+    "ImagePath": "Data\\images\\student_119.png"
+  },
+  {
+    "Id": 120,
+    "FullName": "V\u0169 Xu\u00E2n B\u00ECnh",
+    "GPA": 3.57,
+    "ImagePath": "Data\\images\\student_120.png"
+  },
+  {
+    "Id": 121,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Qu\u00E2n",
+    "GPA": 9.65,
+    "ImagePath": "Data\\images\\student_121.png"
+  },
+  {
+    "Id": 122,
+    "FullName": "Ph\u1EA1m Duy Tu\u1EA5n",
+    "GPA": 8.63,
+    "ImagePath": "Data\\images\\student_122.png"
+  },
+  {
+    "Id": 123,
+    "FullName": "Phan V\u0103n Hi\u1EC7p",
+    "GPA": 4.18,
+    "ImagePath": "Data\\images\\student_123.png"
+  },
+  {
+    "Id": 124,
+    "FullName": "V\u0169 Ng\u1ECDc Long",
+    "GPA": 8.68,
+    "ImagePath": "Data\\images\\student_124.png"
+  },
+  {
+    "Id": 125,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Khang",
+    "GPA": 3.56,
+    "ImagePath": "Data\\images\\student_125.png"
+  },
+  {
+    "Id": 126,
+    "FullName": "L\u00EA Minh T\u00E0i",
+    "GPA": 6.83,
+    "ImagePath": "Data\\images\\student_126.png"
+  },
+  {
+    "Id": 127,
+    "FullName": "Ph\u1EA1m Qu\u00E2n D\u0169ng",
+    "GPA": 3.31,
+    "ImagePath": "Data\\images\\student_127.png"
+  },
+  {
+    "Id": 128,
+    "FullName": "Nguy\u1EC5n V\u0103n Khang",
+    "GPA": 9,
+    "ImagePath": "Data\\images\\student_128.png"
+  },
+  {
+    "Id": 129,
+    "FullName": "V\u0169 Ng\u1ECDc B\u1EA3o",
+    "GPA": 9.17,
+    "ImagePath": "Data\\images\\student_129.png"
+  },
+  {
+    "Id": 130,
+    "FullName": "Ph\u1EA1m Minh Hi\u1EC7p",
+    "GPA": 8.13,
+    "ImagePath": "Data\\images\\student_130.png"
+  },
+  {
+    "Id": 131,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc B\u00ECnh",
+    "GPA": 9.42,
+    "ImagePath": "Data\\images\\student_131.png"
+  },
+  {
+    "Id": 132,
+    "FullName": "Hu\u1EF3nh Duy Long",
+    "GPA": 5.8,
+    "ImagePath": "Data\\images\\student_132.png"
+  },
+  {
+    "Id": 133,
+    "FullName": "Ho\u00E0ng H\u00F9ng Khoa",
+    "GPA": 8.06,
+    "ImagePath": "Data\\images\\student_133.png"
+  },
+  {
+    "Id": 134,
+    "FullName": "Ph\u1EA1m H\u00F9ng Long",
+    "GPA": 1.74,
+    "ImagePath": "Data\\images\\student_134.png"
+  },
+  {
+    "Id": 135,
+    "FullName": "V\u00F5 Xu\u00E2n T\u00E0i",
+    "GPA": 5.72,
+    "ImagePath": "Data\\images\\student_135.png"
+  },
+  {
+    "Id": 136,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Huy",
+    "GPA": 3.67,
+    "ImagePath": "Data\\images\\student_136.png"
+  },
+  {
+    "Id": 137,
+    "FullName": "V\u00F5 Minh Khoa",
+    "GPA": 6.58,
+    "ImagePath": "Data\\images\\student_137.png"
+  },
+  {
+    "Id": 138,
+    "FullName": "Ho\u00E0ng Minh Hi\u1EC7p",
+    "GPA": 4.48,
+    "ImagePath": "Data\\images\\student_138.png"
+  },
+  {
+    "Id": 139,
+    "FullName": "L\u00EA Minh Khang",
+    "GPA": 2.89,
+    "ImagePath": "Data\\images\\student_139.png"
+  },
+  {
+    "Id": 140,
+    "FullName": "Tr\u1EA7n Duy Khang",
+    "GPA": 5.51,
+    "ImagePath": "Data\\images\\student_140.png"
+  },
+  {
+    "Id": 141,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Long",
+    "GPA": 3.1,
+    "ImagePath": "Data\\images\\student_141.png"
+  },
+  {
+    "Id": 142,
+    "FullName": "Tr\u1EA7n Minh Hi\u1EC7p",
+    "GPA": 2.57,
+    "ImagePath": "Data\\images\\student_142.png"
+  },
+  {
+    "Id": 143,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Khang",
+    "GPA": 7.84,
+    "ImagePath": "Data\\images\\student_143.png"
+  },
+  {
+    "Id": 144,
+    "FullName": "Nguy\u1EC5n Minh B\u1EA3o",
+    "GPA": 5.63,
+    "ImagePath": "Data\\images\\student_144.png"
+  },
+  {
+    "Id": 145,
+    "FullName": "Ho\u00E0ng Xu\u00E2n T\u00E0i",
+    "GPA": 7.87,
+    "ImagePath": "Data\\images\\student_145.png"
+  },
+  {
+    "Id": 146,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n B\u00ECnh",
+    "GPA": 7.57,
+    "ImagePath": "Data\\images\\student_146.png"
+  },
+  {
+    "Id": 147,
+    "FullName": "V\u00F5 Ng\u1ECDc D\u0169ng",
+    "GPA": 3.72,
+    "ImagePath": "Data\\images\\student_147.png"
+  },
+  {
+    "Id": 148,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Huy",
+    "GPA": 9.84,
+    "ImagePath": "Data\\images\\student_148.png"
+  },
+  {
+    "Id": 149,
+    "FullName": "V\u00F5 Minh Khoa",
+    "GPA": 3.55,
+    "ImagePath": "Data\\images\\student_149.png"
+  },
+  {
+    "Id": 150,
+    "FullName": "L\u00EA Qu\u00E2n Ho\u00E0ng",
+    "GPA": 3.7,
+    "ImagePath": "Data\\images\\student_150.png"
+  },
+  {
+    "Id": 151,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc D\u0169ng",
+    "GPA": 9.74,
+    "ImagePath": "Data\\images\\student_151.png"
+  },
+  {
+    "Id": 152,
+    "FullName": "V\u00F5 Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 6.14,
+    "ImagePath": "Data\\images\\student_152.png"
+  },
+  {
+    "Id": 153,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Ho\u00E0ng",
+    "GPA": 1,
+    "ImagePath": "Data\\images\\student_153.png"
+  },
+  {
+    "Id": 154,
+    "FullName": "V\u00F5 V\u0103n Hi\u1EC7p",
+    "GPA": 3.72,
+    "ImagePath": "Data\\images\\student_154.png"
+  },
+  {
+    "Id": 155,
+    "FullName": "V\u00F5 V\u0103n Long",
+    "GPA": 3.26,
+    "ImagePath": "Data\\images\\student_155.png"
+  },
+  {
+    "Id": 156,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 6.66,
+    "ImagePath": "Data\\images\\student_156.png"
+  },
+  {
+    "Id": 157,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Long",
+    "GPA": 3.58,
+    "ImagePath": "Data\\images\\student_157.png"
+  },
+  {
+    "Id": 158,
+    "FullName": "Tr\u1EA7n Duy T\u00E0i",
+    "GPA": 1.95,
+    "ImagePath": "Data\\images\\student_158.png"
+  },
+  {
+    "Id": 159,
+    "FullName": "L\u00EA Minh Khang",
+    "GPA": 7.94,
+    "ImagePath": "Data\\images\\student_159.png"
+  },
+  {
+    "Id": 160,
+    "FullName": "Nguy\u1EC5n Duy Long",
+    "GPA": 7.11,
+    "ImagePath": "Data\\images\\student_160.png"
+  },
+  {
+    "Id": 161,
+    "FullName": "L\u00EA Duy Ho\u00E0ng",
+    "GPA": 9.46,
+    "ImagePath": "Data\\images\\student_161.png"
+  },
+  {
+    "Id": 162,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Khang",
+    "GPA": 1.28,
+    "ImagePath": "Data\\images\\student_162.png"
+  },
+  {
+    "Id": 163,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Hi\u1EC7p",
+    "GPA": 8.13,
+    "ImagePath": "Data\\images\\student_163.png"
+  },
+  {
+    "Id": 164,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 7.3,
+    "ImagePath": "Data\\images\\student_164.png"
+  },
+  {
+    "Id": 165,
+    "FullName": "Ho\u00E0ng Minh Huy",
+    "GPA": 2.01,
+    "ImagePath": "Data\\images\\student_165.png"
+  },
+  {
+    "Id": 166,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n T\u00E0i",
+    "GPA": 1.58,
+    "ImagePath": "Data\\images\\student_166.png"
+  },
+  {
+    "Id": 167,
+    "FullName": "V\u0169 Minh T\u00E0i",
+    "GPA": 1.39,
+    "ImagePath": "Data\\images\\student_167.png"
+  },
+  {
+    "Id": 168,
+    "FullName": "Hu\u1EF3nh Duy Tu\u1EA5n",
+    "GPA": 1.51,
+    "ImagePath": "Data\\images\\student_168.png"
+  },
+  {
+    "Id": 169,
+    "FullName": "Phan V\u0103n Tu\u1EA5n",
+    "GPA": 3.42,
+    "ImagePath": "Data\\images\\student_169.png"
+  },
+  {
+    "Id": 170,
+    "FullName": "V\u00F5 Minh Qu\u00E2n",
+    "GPA": 9.51,
+    "ImagePath": "Data\\images\\student_170.png"
+  },
+  {
+    "Id": 171,
+    "FullName": "Ph\u1EA1m V\u0103n Khoa",
+    "GPA": 1.59,
+    "ImagePath": "Data\\images\\student_171.png"
+  },
+  {
+    "Id": 172,
+    "FullName": "L\u00EA Qu\u00E2n Qu\u00E2n",
+    "GPA": 2.66,
+    "ImagePath": "Data\\images\\student_172.png"
+  },
+  {
+    "Id": 173,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Khoa",
+    "GPA": 4.43,
+    "ImagePath": "Data\\images\\student_173.png"
+  },
+  {
+    "Id": 174,
+    "FullName": "Ph\u1EA1m Duy Qu\u00E2n",
+    "GPA": 4.55,
+    "ImagePath": "Data\\images\\student_174.png"
+  },
+  {
+    "Id": 175,
+    "FullName": "V\u0169 Ng\u1ECDc B\u1EA3o",
+    "GPA": 9.39,
+    "ImagePath": "Data\\images\\student_175.png"
+  },
+  {
+    "Id": 176,
+    "FullName": "V\u0169 Duy Hi\u1EC7p",
+    "GPA": 9.57,
+    "ImagePath": "Data\\images\\student_176.png"
+  },
+  {
+    "Id": 177,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Long",
+    "GPA": 8.84,
+    "ImagePath": "Data\\images\\student_177.png"
+  },
+  {
+    "Id": 178,
+    "FullName": "Hu\u1EF3nh Duy Khoa",
+    "GPA": 5.64,
+    "ImagePath": "Data\\images\\student_178.png"
+  },
+  {
+    "Id": 179,
+    "FullName": "Phan Minh Huy",
+    "GPA": 1.24,
+    "ImagePath": "Data\\images\\student_179.png"
+  },
+  {
+    "Id": 180,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Huy",
+    "GPA": 1.89,
+    "ImagePath": "Data\\images\\student_180.png"
+  },
+  {
+    "Id": 181,
+    "FullName": "V\u0169 Minh Hi\u1EC7p",
+    "GPA": 1.41,
+    "ImagePath": "Data\\images\\student_181.png"
+  },
+  {
+    "Id": 182,
+    "FullName": "V\u0169 Duy T\u00E0i",
+    "GPA": 8.85,
+    "ImagePath": "Data\\images\\student_182.png"
+  },
+  {
+    "Id": 183,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Khang",
+    "GPA": 9.79,
+    "ImagePath": "Data\\images\\student_183.png"
+  },
+  {
+    "Id": 184,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc Khoa",
+    "GPA": 8.65,
+    "ImagePath": "Data\\images\\student_184.png"
+  },
+  {
+    "Id": 185,
+    "FullName": "V\u00F5 H\u00F9ng Ho\u00E0ng",
+    "GPA": 5.59,
+    "ImagePath": "Data\\images\\student_185.png"
+  },
+  {
+    "Id": 186,
+    "FullName": "Nguy\u1EC5n V\u0103n T\u00E0i",
+    "GPA": 4.25,
+    "ImagePath": "Data\\images\\student_186.png"
+  },
+  {
+    "Id": 187,
+    "FullName": "Ph\u1EA1m H\u00F9ng Khoa",
+    "GPA": 3.73,
+    "ImagePath": "Data\\images\\student_187.png"
+  },
+  {
+    "Id": 188,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Huy",
+    "GPA": 7.26,
+    "ImagePath": "Data\\images\\student_188.png"
+  },
+  {
+    "Id": 189,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc D\u0169ng",
+    "GPA": 1.11,
+    "ImagePath": "Data\\images\\student_189.png"
+  },
+  {
+    "Id": 190,
+    "FullName": "Phan Qu\u00E2n D\u0169ng",
+    "GPA": 5.32,
+    "ImagePath": "Data\\images\\student_190.png"
+  },
+  {
+    "Id": 191,
+    "FullName": "Ph\u1EA1m Minh Qu\u00E2n",
+    "GPA": 1.25,
+    "ImagePath": "Data\\images\\student_191.png"
+  },
+  {
+    "Id": 192,
+    "FullName": "L\u00EA Xu\u00E2n Hi\u1EC7p",
+    "GPA": 1.3,
+    "ImagePath": "Data\\images\\student_192.png"
+  },
+  {
+    "Id": 193,
+    "FullName": "Phan V\u0103n T\u00E0i",
+    "GPA": 7.75,
+    "ImagePath": "Data\\images\\student_193.png"
+  },
+  {
+    "Id": 194,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Qu\u00E2n",
+    "GPA": 1.81,
+    "ImagePath": "Data\\images\\student_194.png"
+  },
+  {
+    "Id": 195,
+    "FullName": "Phan Ng\u1ECDc Khoa",
+    "GPA": 2.81,
+    "ImagePath": "Data\\images\\student_195.png"
+  },
+  {
+    "Id": 196,
+    "FullName": "L\u00EA Xu\u00E2n Khang",
+    "GPA": 2.73,
+    "ImagePath": "Data\\images\\student_196.png"
+  },
+  {
+    "Id": 197,
+    "FullName": "Nguy\u1EC5n Duy Ho\u00E0ng",
+    "GPA": 2.63,
+    "ImagePath": "Data\\images\\student_197.png"
+  },
+  {
+    "Id": 198,
+    "FullName": "V\u00F5 Xu\u00E2n B\u1EA3o",
+    "GPA": 5.86,
+    "ImagePath": "Data\\images\\student_198.png"
+  },
+  {
+    "Id": 199,
+    "FullName": "V\u0169 H\u00F9ng B\u00ECnh",
+    "GPA": 6.62,
+    "ImagePath": "Data\\images\\student_199.png"
+  },
+  {
+    "Id": 200,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Hi\u1EC7p",
+    "GPA": 8.14,
+    "ImagePath": "Data\\images\\student_200.png"
+  },
+  {
+    "Id": 201,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Hi\u1EC7p",
+    "GPA": 7.11,
+    "ImagePath": "Data\\images\\student_201.png"
+  },
+  {
+    "Id": 202,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n D\u0169ng",
+    "GPA": 2.06,
+    "ImagePath": "Data\\images\\student_202.png"
+  },
+  {
+    "Id": 203,
+    "FullName": "Ph\u1EA1m Minh D\u0169ng",
+    "GPA": 7.72,
+    "ImagePath": "Data\\images\\student_203.png"
+  },
+  {
+    "Id": 204,
+    "FullName": "L\u00EA Qu\u00E2n Khoa",
+    "GPA": 6.22,
+    "ImagePath": "Data\\images\\student_204.png"
+  },
+  {
+    "Id": 205,
+    "FullName": "V\u00F5 Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 1.61,
+    "ImagePath": "Data\\images\\student_205.png"
+  },
+  {
+    "Id": 206,
+    "FullName": "V\u0169 Qu\u00E2n D\u0169ng",
+    "GPA": 5.57,
+    "ImagePath": "Data\\images\\student_206.png"
+  },
+  {
+    "Id": 207,
+    "FullName": "V\u0169 Duy B\u1EA3o",
+    "GPA": 4.81,
+    "ImagePath": "Data\\images\\student_207.png"
+  },
+  {
+    "Id": 208,
+    "FullName": "Phan V\u0103n Huy",
+    "GPA": 9.35,
+    "ImagePath": "Data\\images\\student_208.png"
+  },
+  {
+    "Id": 209,
+    "FullName": "L\u00EA V\u0103n B\u00ECnh",
+    "GPA": 3.65,
+    "ImagePath": "Data\\images\\student_209.png"
+  },
+  {
+    "Id": 210,
+    "FullName": "Nguy\u1EC5n H\u00F9ng D\u0169ng",
+    "GPA": 5.63,
+    "ImagePath": "Data\\images\\student_210.png"
+  },
+  {
+    "Id": 211,
+    "FullName": "Ho\u00E0ng V\u0103n Tu\u1EA5n",
+    "GPA": 4.15,
+    "ImagePath": "Data\\images\\student_211.png"
+  },
+  {
+    "Id": 212,
+    "FullName": "V\u0169 Qu\u00E2n Ho\u00E0ng",
+    "GPA": 7.71,
+    "ImagePath": "Data\\images\\student_212.png"
+  },
+  {
+    "Id": 213,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Huy",
+    "GPA": 7.63,
+    "ImagePath": "Data\\images\\student_213.png"
+  },
+  {
+    "Id": 214,
+    "FullName": "Nguy\u1EC5n V\u0103n Hi\u1EC7p",
+    "GPA": 2.19,
+    "ImagePath": "Data\\images\\student_214.png"
+  },
+  {
+    "Id": 215,
+    "FullName": "L\u00EA H\u00F9ng Tu\u1EA5n",
+    "GPA": 9.66,
+    "ImagePath": "Data\\images\\student_215.png"
+  },
+  {
+    "Id": 216,
+    "FullName": "Ho\u00E0ng Duy Qu\u00E2n",
+    "GPA": 3.4,
+    "ImagePath": "Data\\images\\student_216.png"
+  },
+  {
+    "Id": 217,
+    "FullName": "L\u00EA Minh Huy",
+    "GPA": 7.65,
+    "ImagePath": "Data\\images\\student_217.png"
+  },
+  {
+    "Id": 218,
+    "FullName": "Ho\u00E0ng Duy Huy",
+    "GPA": 9.46,
+    "ImagePath": "Data\\images\\student_218.png"
+  },
+  {
+    "Id": 219,
+    "FullName": "L\u00EA Duy Hi\u1EC7p",
+    "GPA": 7.41,
+    "ImagePath": "Data\\images\\student_219.png"
+  },
+  {
+    "Id": 220,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Khoa",
+    "GPA": 6.14,
+    "ImagePath": "Data\\images\\student_220.png"
+  },
+  {
+    "Id": 221,
+    "FullName": "V\u00F5 V\u0103n B\u1EA3o",
+    "GPA": 3.5,
+    "ImagePath": "Data\\images\\student_221.png"
+  },
+  {
+    "Id": 222,
+    "FullName": "L\u00EA Minh Khoa",
+    "GPA": 5.58,
+    "ImagePath": "Data\\images\\student_222.png"
+  },
+  {
+    "Id": 223,
+    "FullName": "Hu\u1EF3nh Duy T\u00E0i",
+    "GPA": 8.03,
+    "ImagePath": "Data\\images\\student_223.png"
+  },
+  {
+    "Id": 224,
+    "FullName": "Nguy\u1EC5n Minh Hi\u1EC7p",
+    "GPA": 3.4,
+    "ImagePath": "Data\\images\\student_224.png"
+  },
+  {
+    "Id": 225,
+    "FullName": "Ho\u00E0ng Xu\u00E2n T\u00E0i",
+    "GPA": 2.77,
+    "ImagePath": "Data\\images\\student_225.png"
+  },
+  {
+    "Id": 226,
+    "FullName": "Nguy\u1EC5n Minh Long",
+    "GPA": 8.72,
+    "ImagePath": "Data\\images\\student_226.png"
+  },
+  {
+    "Id": 227,
+    "FullName": "Tr\u1EA7n H\u00F9ng Huy",
+    "GPA": 4.79,
+    "ImagePath": "Data\\images\\student_227.png"
+  },
+  {
+    "Id": 228,
+    "FullName": "Ph\u1EA1m Duy Khang",
+    "GPA": 9.9,
+    "ImagePath": "Data\\images\\student_228.png"
+  },
+  {
+    "Id": 229,
+    "FullName": "L\u00EA Minh Hi\u1EC7p",
+    "GPA": 7.94,
+    "ImagePath": "Data\\images\\student_229.png"
+  },
+  {
+    "Id": 230,
+    "FullName": "Hu\u1EF3nh Minh Long",
+    "GPA": 6.62,
+    "ImagePath": "Data\\images\\student_230.png"
+  },
+  {
+    "Id": 231,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Ho\u00E0ng",
+    "GPA": 4.25,
+    "ImagePath": "Data\\images\\student_231.png"
+  },
+  {
+    "Id": 232,
+    "FullName": "V\u0169 Ng\u1ECDc Khoa",
+    "GPA": 3.14,
+    "ImagePath": "Data\\images\\student_232.png"
+  },
+  {
+    "Id": 233,
+    "FullName": "Hu\u1EF3nh Minh Long",
+    "GPA": 2.73,
+    "ImagePath": "Data\\images\\student_233.png"
+  },
+  {
+    "Id": 234,
+    "FullName": "Ph\u1EA1m Duy Long",
+    "GPA": 1.34,
+    "ImagePath": "Data\\images\\student_234.png"
+  },
+  {
+    "Id": 235,
+    "FullName": "Hu\u1EF3nh Duy Ho\u00E0ng",
+    "GPA": 8.01,
+    "ImagePath": "Data\\images\\student_235.png"
+  },
+  {
+    "Id": 236,
+    "FullName": "Phan Qu\u00E2n Ho\u00E0ng",
+    "GPA": 1.56,
+    "ImagePath": "Data\\images\\student_236.png"
+  },
+  {
+    "Id": 237,
+    "FullName": "V\u0169 H\u00F9ng B\u00ECnh",
+    "GPA": 3.18,
+    "ImagePath": "Data\\images\\student_237.png"
+  },
+  {
+    "Id": 238,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Ho\u00E0ng",
+    "GPA": 2.53,
+    "ImagePath": "Data\\images\\student_238.png"
+  },
+  {
+    "Id": 239,
+    "FullName": "V\u00F5 Minh Khoa",
+    "GPA": 3.8,
+    "ImagePath": "Data\\images\\student_239.png"
+  },
+  {
+    "Id": 240,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n D\u0169ng",
+    "GPA": 6.21,
+    "ImagePath": "Data\\images\\student_240.png"
+  },
+  {
+    "Id": 241,
+    "FullName": "Tr\u1EA7n Minh Tu\u1EA5n",
+    "GPA": 5.13,
+    "ImagePath": "Data\\images\\student_241.png"
+  },
+  {
+    "Id": 242,
+    "FullName": "V\u0169 Minh Ho\u00E0ng",
+    "GPA": 2.26,
+    "ImagePath": "Data\\images\\student_242.png"
+  },
+  {
+    "Id": 243,
+    "FullName": "Phan H\u00F9ng Khang",
+    "GPA": 1.04,
+    "ImagePath": "Data\\images\\student_243.png"
+  },
+  {
+    "Id": 244,
+    "FullName": "Phan Duy D\u0169ng",
+    "GPA": 8.04,
+    "ImagePath": "Data\\images\\student_244.png"
+  },
+  {
+    "Id": 245,
+    "FullName": "Phan Ng\u1ECDc Qu\u00E2n",
+    "GPA": 5.5,
+    "ImagePath": "Data\\images\\student_245.png"
+  },
+  {
+    "Id": 246,
+    "FullName": "Ph\u1EA1m H\u00F9ng Khang",
+    "GPA": 7.36,
+    "ImagePath": "Data\\images\\student_246.png"
+  },
+  {
+    "Id": 247,
+    "FullName": "V\u00F5 V\u0103n B\u1EA3o",
+    "GPA": 4.1,
+    "ImagePath": "Data\\images\\student_247.png"
+  },
+  {
+    "Id": 248,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc T\u00E0i",
+    "GPA": 3.99,
+    "ImagePath": "Data\\images\\student_248.png"
+  },
+  {
+    "Id": 249,
+    "FullName": "L\u00EA Duy Qu\u00E2n",
+    "GPA": 9.73,
+    "ImagePath": "Data\\images\\student_249.png"
+  },
+  {
+    "Id": 250,
+    "FullName": "Hu\u1EF3nh Minh Hi\u1EC7p",
+    "GPA": 8.58,
+    "ImagePath": "Data\\images\\student_250.png"
+  },
+  {
+    "Id": 251,
+    "FullName": "L\u00EA Minh B\u1EA3o",
+    "GPA": 7.28,
+    "ImagePath": "Data\\images\\student_251.png"
+  },
+  {
+    "Id": 252,
+    "FullName": "Tr\u1EA7n Duy B\u00ECnh",
+    "GPA": 3.2,
+    "ImagePath": "Data\\images\\student_252.png"
+  },
+  {
+    "Id": 253,
+    "FullName": "Ho\u00E0ng Minh Long",
+    "GPA": 4.67,
+    "ImagePath": "Data\\images\\student_253.png"
+  },
+  {
+    "Id": 254,
+    "FullName": "V\u00F5 V\u0103n Khang",
+    "GPA": 3.36,
+    "ImagePath": "Data\\images\\student_254.png"
+  },
+  {
+    "Id": 255,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc Long",
+    "GPA": 8.17,
+    "ImagePath": "Data\\images\\student_255.png"
+  },
+  {
+    "Id": 256,
+    "FullName": "Tr\u1EA7n Minh B\u1EA3o",
+    "GPA": 1.69,
+    "ImagePath": "Data\\images\\student_256.png"
+  },
+  {
+    "Id": 257,
+    "FullName": "Phan H\u00F9ng Qu\u00E2n",
+    "GPA": 2.08,
+    "ImagePath": "Data\\images\\student_257.png"
+  },
+  {
+    "Id": 258,
+    "FullName": "Nguy\u1EC5n Minh D\u0169ng",
+    "GPA": 3.77,
+    "ImagePath": "Data\\images\\student_258.png"
+  },
+  {
+    "Id": 259,
+    "FullName": "L\u00EA Duy Qu\u00E2n",
+    "GPA": 4.68,
+    "ImagePath": "Data\\images\\student_259.png"
+  },
+  {
+    "Id": 260,
+    "FullName": "Ho\u00E0ng V\u0103n B\u00ECnh",
+    "GPA": 8.86,
+    "ImagePath": "Data\\images\\student_260.png"
+  },
+  {
+    "Id": 261,
+    "FullName": "Phan H\u00F9ng Tu\u1EA5n",
+    "GPA": 5.04,
+    "ImagePath": "Data\\images\\student_261.png"
+  },
+  {
+    "Id": 262,
+    "FullName": "V\u00F5 Minh Tu\u1EA5n",
+    "GPA": 2.5,
+    "ImagePath": "Data\\images\\student_262.png"
+  },
+  {
+    "Id": 263,
+    "FullName": "V\u00F5 Minh Huy",
+    "GPA": 9.04,
+    "ImagePath": "Data\\images\\student_263.png"
+  },
+  {
+    "Id": 264,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Hi\u1EC7p",
+    "GPA": 5.98,
+    "ImagePath": "Data\\images\\student_264.png"
+  },
+  {
+    "Id": 265,
+    "FullName": "Nguy\u1EC5n Duy Ho\u00E0ng",
+    "GPA": 6.16,
+    "ImagePath": "Data\\images\\student_265.png"
+  },
+  {
+    "Id": 266,
+    "FullName": "V\u00F5 V\u0103n Tu\u1EA5n",
+    "GPA": 4.65,
+    "ImagePath": "Data\\images\\student_266.png"
+  },
+  {
+    "Id": 267,
+    "FullName": "L\u00EA V\u0103n Huy",
+    "GPA": 4.96,
+    "ImagePath": "Data\\images\\student_267.png"
+  },
+  {
+    "Id": 268,
+    "FullName": "Nguy\u1EC5n V\u0103n D\u0169ng",
+    "GPA": 4.85,
+    "ImagePath": "Data\\images\\student_268.png"
+  },
+  {
+    "Id": 269,
+    "FullName": "Hu\u1EF3nh V\u0103n B\u00ECnh",
+    "GPA": 7.82,
+    "ImagePath": "Data\\images\\student_269.png"
+  },
+  {
+    "Id": 270,
+    "FullName": "Ho\u00E0ng H\u00F9ng Khang",
+    "GPA": 8.12,
+    "ImagePath": "Data\\images\\student_270.png"
+  },
+  {
+    "Id": 271,
+    "FullName": "V\u00F5 Xu\u00E2n Huy",
+    "GPA": 7.55,
+    "ImagePath": "Data\\images\\student_271.png"
+  },
+  {
+    "Id": 272,
+    "FullName": "Ph\u1EA1m H\u00F9ng Ho\u00E0ng",
+    "GPA": 5.59,
+    "ImagePath": "Data\\images\\student_272.png"
+  },
+  {
+    "Id": 273,
+    "FullName": "Tr\u1EA7n V\u0103n Qu\u00E2n",
+    "GPA": 3.1,
+    "ImagePath": "Data\\images\\student_273.png"
+  },
+  {
+    "Id": 274,
+    "FullName": "Phan H\u00F9ng Qu\u00E2n",
+    "GPA": 7.8,
+    "ImagePath": "Data\\images\\student_274.png"
+  },
+  {
+    "Id": 275,
+    "FullName": "V\u0169 V\u0103n Ho\u00E0ng",
+    "GPA": 4.71,
+    "ImagePath": "Data\\images\\student_275.png"
+  },
+  {
+    "Id": 276,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc B\u1EA3o",
+    "GPA": 3.08,
+    "ImagePath": "Data\\images\\student_276.png"
+  },
+  {
+    "Id": 277,
+    "FullName": "V\u00F5 Minh Hi\u1EC7p",
+    "GPA": 2.56,
+    "ImagePath": "Data\\images\\student_277.png"
+  },
+  {
+    "Id": 278,
+    "FullName": "V\u0169 Qu\u00E2n T\u00E0i",
+    "GPA": 3.88,
+    "ImagePath": "Data\\images\\student_278.png"
+  },
+  {
+    "Id": 279,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc B\u1EA3o",
+    "GPA": 9.21,
+    "ImagePath": "Data\\images\\student_279.png"
+  },
+  {
+    "Id": 280,
+    "FullName": "V\u0169 Duy Khoa",
+    "GPA": 3.2,
+    "ImagePath": "Data\\images\\student_280.png"
+  },
+  {
+    "Id": 281,
+    "FullName": "V\u00F5 Minh Khang",
+    "GPA": 6.21,
+    "ImagePath": "Data\\images\\student_281.png"
+  },
+  {
+    "Id": 282,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Khang",
+    "GPA": 3.13,
+    "ImagePath": "Data\\images\\student_282.png"
+  },
+  {
+    "Id": 283,
+    "FullName": "V\u0169 H\u00F9ng T\u00E0i",
+    "GPA": 7.8,
+    "ImagePath": "Data\\images\\student_283.png"
+  },
+  {
+    "Id": 284,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Tu\u1EA5n",
+    "GPA": 3.91,
+    "ImagePath": "Data\\images\\student_284.png"
+  },
+  {
+    "Id": 285,
+    "FullName": "Hu\u1EF3nh V\u0103n Huy",
+    "GPA": 9.07,
+    "ImagePath": "Data\\images\\student_285.png"
+  },
+  {
+    "Id": 286,
+    "FullName": "Ho\u00E0ng Qu\u00E2n B\u00ECnh",
+    "GPA": 1.78,
+    "ImagePath": "Data\\images\\student_286.png"
+  },
+  {
+    "Id": 287,
+    "FullName": "Ph\u1EA1m Minh Khang",
+    "GPA": 2.8,
+    "ImagePath": "Data\\images\\student_287.png"
+  },
+  {
+    "Id": 288,
+    "FullName": "Nguy\u1EC5n Minh Huy",
+    "GPA": 3.14,
+    "ImagePath": "Data\\images\\student_288.png"
+  },
+  {
+    "Id": 289,
+    "FullName": "V\u0169 H\u00F9ng D\u0169ng",
+    "GPA": 3.49,
+    "ImagePath": "Data\\images\\student_289.png"
+  },
+  {
+    "Id": 290,
+    "FullName": "L\u00EA Minh T\u00E0i",
+    "GPA": 6.56,
+    "ImagePath": "Data\\images\\student_290.png"
+  },
+  {
+    "Id": 291,
+    "FullName": "L\u00EA Xu\u00E2n D\u0169ng",
+    "GPA": 6.67,
+    "ImagePath": "Data\\images\\student_291.png"
+  },
+  {
+    "Id": 292,
+    "FullName": "Ho\u00E0ng Minh Qu\u00E2n",
+    "GPA": 2.92,
+    "ImagePath": "Data\\images\\student_292.png"
+  },
+  {
+    "Id": 293,
+    "FullName": "Hu\u1EF3nh Duy T\u00E0i",
+    "GPA": 8.97,
+    "ImagePath": "Data\\images\\student_293.png"
+  },
+  {
+    "Id": 294,
+    "FullName": "Ho\u00E0ng H\u00F9ng Khoa",
+    "GPA": 4.06,
+    "ImagePath": "Data\\images\\student_294.png"
+  },
+  {
+    "Id": 295,
+    "FullName": "Ph\u1EA1m Minh Ho\u00E0ng",
+    "GPA": 6.85,
+    "ImagePath": "Data\\images\\student_295.png"
+  },
+  {
+    "Id": 296,
+    "FullName": "V\u00F5 Minh Long",
+    "GPA": 9.47,
+    "ImagePath": "Data\\images\\student_296.png"
+  },
+  {
+    "Id": 297,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Long",
+    "GPA": 6.56,
+    "ImagePath": "Data\\images\\student_297.png"
+  },
+  {
+    "Id": 298,
+    "FullName": "Ho\u00E0ng Minh Long",
+    "GPA": 9.89,
+    "ImagePath": "Data\\images\\student_298.png"
+  },
+  {
+    "Id": 299,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Khang",
+    "GPA": 4.21,
+    "ImagePath": "Data\\images\\student_299.png"
+  },
+  {
+    "Id": 300,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Khoa",
+    "GPA": 5.55,
+    "ImagePath": "Data\\images\\student_300.png"
+  },
+  {
+    "Id": 301,
+    "FullName": "Ho\u00E0ng Duy B\u1EA3o",
+    "GPA": 8.45,
+    "ImagePath": "Data\\images\\student_301.png"
+  },
+  {
+    "Id": 302,
+    "FullName": "Ph\u1EA1m Duy T\u00E0i",
+    "GPA": 2.91,
+    "ImagePath": "Data\\images\\student_302.png"
+  },
+  {
+    "Id": 303,
+    "FullName": "V\u00F5 Duy Long",
+    "GPA": 4.69,
+    "ImagePath": "Data\\images\\student_303.png"
+  },
+  {
+    "Id": 304,
+    "FullName": "V\u00F5 Ng\u1ECDc D\u0169ng",
+    "GPA": 9.54,
+    "ImagePath": "Data\\images\\student_304.png"
+  },
+  {
+    "Id": 305,
+    "FullName": "V\u0169 Duy Huy",
+    "GPA": 6.57,
+    "ImagePath": "Data\\images\\student_305.png"
+  },
+  {
+    "Id": 306,
+    "FullName": "Phan Duy T\u00E0i",
+    "GPA": 9.94,
+    "ImagePath": "Data\\images\\student_306.png"
+  },
+  {
+    "Id": 307,
+    "FullName": "Ph\u1EA1m Minh Huy",
+    "GPA": 9,
+    "ImagePath": "Data\\images\\student_307.png"
+  },
+  {
+    "Id": 308,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Khang",
+    "GPA": 9.46,
+    "ImagePath": "Data\\images\\student_308.png"
+  },
+  {
+    "Id": 309,
+    "FullName": "V\u00F5 H\u00F9ng B\u00ECnh",
+    "GPA": 9.7,
+    "ImagePath": "Data\\images\\student_309.png"
+  },
+  {
+    "Id": 310,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Huy",
+    "GPA": 3.42,
+    "ImagePath": "Data\\images\\student_310.png"
+  },
+  {
+    "Id": 311,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Long",
+    "GPA": 4.98,
+    "ImagePath": "Data\\images\\student_311.png"
+  },
+  {
+    "Id": 312,
+    "FullName": "Tr\u1EA7n Xu\u00E2n D\u0169ng",
+    "GPA": 3.24,
+    "ImagePath": "Data\\images\\student_312.png"
+  },
+  {
+    "Id": 313,
+    "FullName": "V\u0169 H\u00F9ng Hi\u1EC7p",
+    "GPA": 2.47,
+    "ImagePath": "Data\\images\\student_313.png"
+  },
+  {
+    "Id": 314,
+    "FullName": "V\u00F5 H\u00F9ng Khoa",
+    "GPA": 8.62,
+    "ImagePath": "Data\\images\\student_314.png"
+  },
+  {
+    "Id": 315,
+    "FullName": "L\u00EA H\u00F9ng Huy",
+    "GPA": 6.68,
+    "ImagePath": "Data\\images\\student_315.png"
+  },
+  {
+    "Id": 316,
+    "FullName": "Phan Duy T\u00E0i",
+    "GPA": 6.83,
+    "ImagePath": "Data\\images\\student_316.png"
+  },
+  {
+    "Id": 317,
+    "FullName": "V\u00F5 Duy Tu\u1EA5n",
+    "GPA": 2.79,
+    "ImagePath": "Data\\images\\student_317.png"
+  },
+  {
+    "Id": 318,
+    "FullName": "V\u0169 Ng\u1ECDc Long",
+    "GPA": 5.61,
+    "ImagePath": "Data\\images\\student_318.png"
+  },
+  {
+    "Id": 319,
+    "FullName": "Hu\u1EF3nh Minh D\u0169ng",
+    "GPA": 6.26,
+    "ImagePath": "Data\\images\\student_319.png"
+  },
+  {
+    "Id": 320,
+    "FullName": "V\u0169 Minh B\u1EA3o",
+    "GPA": 4.86,
+    "ImagePath": "Data\\images\\student_320.png"
+  },
+  {
+    "Id": 321,
+    "FullName": "Ho\u00E0ng V\u0103n T\u00E0i",
+    "GPA": 6.12,
+    "ImagePath": "Data\\images\\student_321.png"
+  },
+  {
+    "Id": 322,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Huy",
+    "GPA": 4.24,
+    "ImagePath": "Data\\images\\student_322.png"
+  },
+  {
+    "Id": 323,
+    "FullName": "Phan Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 7.3,
+    "ImagePath": "Data\\images\\student_323.png"
+  },
+  {
+    "Id": 324,
+    "FullName": "Tr\u1EA7n Xu\u00E2n D\u0169ng",
+    "GPA": 3.75,
+    "ImagePath": "Data\\images\\student_324.png"
+  },
+  {
+    "Id": 325,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n B\u00ECnh",
+    "GPA": 4.56,
+    "ImagePath": "Data\\images\\student_325.png"
+  },
+  {
+    "Id": 326,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Tu\u1EA5n",
+    "GPA": 6.41,
+    "ImagePath": "Data\\images\\student_326.png"
+  },
+  {
+    "Id": 327,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Hi\u1EC7p",
+    "GPA": 9.42,
+    "ImagePath": "Data\\images\\student_327.png"
+  },
+  {
+    "Id": 328,
+    "FullName": "V\u00F5 Ng\u1ECDc Long",
+    "GPA": 2.39,
+    "ImagePath": "Data\\images\\student_328.png"
+  },
+  {
+    "Id": 329,
+    "FullName": "V\u0169 Qu\u00E2n Huy",
+    "GPA": 9.93,
+    "ImagePath": "Data\\images\\student_329.png"
+  },
+  {
+    "Id": 330,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Khoa",
+    "GPA": 6.95,
+    "ImagePath": "Data\\images\\student_330.png"
+  },
+  {
+    "Id": 331,
+    "FullName": "Nguy\u1EC5n Duy B\u1EA3o",
+    "GPA": 6.15,
+    "ImagePath": "Data\\images\\student_331.png"
+  },
+  {
+    "Id": 332,
+    "FullName": "V\u00F5 Xu\u00E2n B\u00ECnh",
+    "GPA": 6.71,
+    "ImagePath": "Data\\images\\student_332.png"
+  },
+  {
+    "Id": 333,
+    "FullName": "V\u0169 Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 1.72,
+    "ImagePath": "Data\\images\\student_333.png"
+  },
+  {
+    "Id": 334,
+    "FullName": "Hu\u1EF3nh Duy Ho\u00E0ng",
+    "GPA": 6.73,
+    "ImagePath": "Data\\images\\student_334.png"
+  },
+  {
+    "Id": 335,
+    "FullName": "V\u0169 Duy Long",
+    "GPA": 4.19,
+    "ImagePath": "Data\\images\\student_335.png"
+  },
+  {
+    "Id": 336,
+    "FullName": "Hu\u1EF3nh Duy T\u00E0i",
+    "GPA": 9.25,
+    "ImagePath": "Data\\images\\student_336.png"
+  },
+  {
+    "Id": 337,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Huy",
+    "GPA": 1.71,
+    "ImagePath": "Data\\images\\student_337.png"
+  },
+  {
+    "Id": 338,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Huy",
+    "GPA": 4.04,
+    "ImagePath": "Data\\images\\student_338.png"
+  },
+  {
+    "Id": 339,
+    "FullName": "L\u00EA Ng\u1ECDc Khoa",
+    "GPA": 6.01,
+    "ImagePath": "Data\\images\\student_339.png"
+  },
+  {
+    "Id": 340,
+    "FullName": "Ph\u1EA1m Minh D\u0169ng",
+    "GPA": 4.1,
+    "ImagePath": "Data\\images\\student_340.png"
+  },
+  {
+    "Id": 341,
+    "FullName": "L\u00EA H\u00F9ng Hi\u1EC7p",
+    "GPA": 1.41,
+    "ImagePath": "Data\\images\\student_341.png"
+  },
+  {
+    "Id": 342,
+    "FullName": "L\u00EA Qu\u00E2n Qu\u00E2n",
+    "GPA": 1.04,
+    "ImagePath": "Data\\images\\student_342.png"
+  },
+  {
+    "Id": 343,
+    "FullName": "Phan Qu\u00E2n Huy",
+    "GPA": 2,
+    "ImagePath": "Data\\images\\student_343.png"
+  },
+  {
+    "Id": 344,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Long",
+    "GPA": 4.84,
+    "ImagePath": "Data\\images\\student_344.png"
+  },
+  {
+    "Id": 345,
+    "FullName": "Nguy\u1EC5n Minh Qu\u00E2n",
+    "GPA": 4.13,
+    "ImagePath": "Data\\images\\student_345.png"
+  },
+  {
+    "Id": 346,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Huy",
+    "GPA": 8.1,
+    "ImagePath": "Data\\images\\student_346.png"
+  },
+  {
+    "Id": 347,
+    "FullName": "Nguy\u1EC5n Minh Qu\u00E2n",
+    "GPA": 2.29,
+    "ImagePath": "Data\\images\\student_347.png"
+  },
+  {
+    "Id": 348,
+    "FullName": "V\u0169 Minh B\u1EA3o",
+    "GPA": 8.45,
+    "ImagePath": "Data\\images\\student_348.png"
+  },
+  {
+    "Id": 349,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Tu\u1EA5n",
+    "GPA": 1.41,
+    "ImagePath": "Data\\images\\student_349.png"
+  },
+  {
+    "Id": 350,
+    "FullName": "L\u00EA Ng\u1ECDc Khoa",
+    "GPA": 8.4,
+    "ImagePath": "Data\\images\\student_350.png"
+  },
+  {
+    "Id": 351,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Hi\u1EC7p",
+    "GPA": 8.87,
+    "ImagePath": "Data\\images\\student_351.png"
+  },
+  {
+    "Id": 352,
+    "FullName": "Phan Xu\u00E2n Hi\u1EC7p",
+    "GPA": 4.27,
+    "ImagePath": "Data\\images\\student_352.png"
+  },
+  {
+    "Id": 353,
+    "FullName": "Ho\u00E0ng Qu\u00E2n D\u0169ng",
+    "GPA": 1.62,
+    "ImagePath": "Data\\images\\student_353.png"
+  },
+  {
+    "Id": 354,
+    "FullName": "V\u0169 Qu\u00E2n B\u00ECnh",
+    "GPA": 4.38,
+    "ImagePath": "Data\\images\\student_354.png"
+  },
+  {
+    "Id": 355,
+    "FullName": "Nguy\u1EC5n H\u00F9ng T\u00E0i",
+    "GPA": 2.55,
+    "ImagePath": "Data\\images\\student_355.png"
+  },
+  {
+    "Id": 356,
+    "FullName": "Phan Duy Long",
+    "GPA": 1.22,
+    "ImagePath": "Data\\images\\student_356.png"
+  },
+  {
+    "Id": 357,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Long",
+    "GPA": 8.48,
+    "ImagePath": "Data\\images\\student_357.png"
+  },
+  {
+    "Id": 358,
+    "FullName": "V\u00F5 Xu\u00E2n Huy",
+    "GPA": 9.39,
+    "ImagePath": "Data\\images\\student_358.png"
+  },
+  {
+    "Id": 359,
+    "FullName": "Ph\u1EA1m Duy T\u00E0i",
+    "GPA": 2.63,
+    "ImagePath": "Data\\images\\student_359.png"
+  },
+  {
+    "Id": 360,
+    "FullName": "Hu\u1EF3nh Duy Ho\u00E0ng",
+    "GPA": 5.25,
+    "ImagePath": "Data\\images\\student_360.png"
+  },
+  {
+    "Id": 361,
+    "FullName": "Tr\u1EA7n V\u0103n Hi\u1EC7p",
+    "GPA": 2.32,
+    "ImagePath": "Data\\images\\student_361.png"
+  },
+  {
+    "Id": 362,
+    "FullName": "V\u00F5 Xu\u00E2n Huy",
+    "GPA": 5.81,
+    "ImagePath": "Data\\images\\student_362.png"
+  },
+  {
+    "Id": 363,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n T\u00E0i",
+    "GPA": 6.8,
+    "ImagePath": "Data\\images\\student_363.png"
+  },
+  {
+    "Id": 364,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Ho\u00E0ng",
+    "GPA": 2.22,
+    "ImagePath": "Data\\images\\student_364.png"
+  },
+  {
+    "Id": 365,
+    "FullName": "Tr\u1EA7n Qu\u00E2n B\u1EA3o",
+    "GPA": 7.62,
+    "ImagePath": "Data\\images\\student_365.png"
+  },
+  {
+    "Id": 366,
+    "FullName": "Ho\u00E0ng Xu\u00E2n B\u00ECnh",
+    "GPA": 8.7,
+    "ImagePath": "Data\\images\\student_366.png"
+  },
+  {
+    "Id": 367,
+    "FullName": "V\u0169 Qu\u00E2n Hi\u1EC7p",
+    "GPA": 5.11,
+    "ImagePath": "Data\\images\\student_367.png"
+  },
+  {
+    "Id": 368,
+    "FullName": "Phan Xu\u00E2n Tu\u1EA5n",
+    "GPA": 9.27,
+    "ImagePath": "Data\\images\\student_368.png"
+  },
+  {
+    "Id": 369,
+    "FullName": "V\u0169 Duy Long",
+    "GPA": 4.33,
+    "ImagePath": "Data\\images\\student_369.png"
+  },
+  {
+    "Id": 370,
+    "FullName": "Nguy\u1EC5n V\u0103n D\u0169ng",
+    "GPA": 8.26,
+    "ImagePath": "Data\\images\\student_370.png"
+  },
+  {
+    "Id": 371,
+    "FullName": "Phan Qu\u00E2n B\u00ECnh",
+    "GPA": 4.07,
+    "ImagePath": "Data\\images\\student_371.png"
+  },
+  {
+    "Id": 372,
+    "FullName": "Phan Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 5.32,
+    "ImagePath": "Data\\images\\student_372.png"
+  },
+  {
+    "Id": 373,
+    "FullName": "Ph\u1EA1m Minh Long",
+    "GPA": 6.29,
+    "ImagePath": "Data\\images\\student_373.png"
+  },
+  {
+    "Id": 374,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Ho\u00E0ng",
+    "GPA": 7.81,
+    "ImagePath": "Data\\images\\student_374.png"
+  },
+  {
+    "Id": 375,
+    "FullName": "V\u0169 Qu\u00E2n B\u00ECnh",
+    "GPA": 2.29,
+    "ImagePath": "Data\\images\\student_375.png"
+  },
+  {
+    "Id": 376,
+    "FullName": "Phan H\u00F9ng Qu\u00E2n",
+    "GPA": 8.22,
+    "ImagePath": "Data\\images\\student_376.png"
+  },
+  {
+    "Id": 377,
+    "FullName": "V\u0169 Minh Khang",
+    "GPA": 4.49,
+    "ImagePath": "Data\\images\\student_377.png"
+  },
+  {
+    "Id": 378,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc Huy",
+    "GPA": 8.39,
+    "ImagePath": "Data\\images\\student_378.png"
+  },
+  {
+    "Id": 379,
+    "FullName": "V\u00F5 V\u0103n D\u0169ng",
+    "GPA": 9.77,
+    "ImagePath": "Data\\images\\student_379.png"
+  },
+  {
+    "Id": 380,
+    "FullName": "L\u00EA Duy Tu\u1EA5n",
+    "GPA": 6.4,
+    "ImagePath": "Data\\images\\student_380.png"
+  },
+  {
+    "Id": 381,
+    "FullName": "Ph\u1EA1m V\u0103n B\u00ECnh",
+    "GPA": 6.83,
+    "ImagePath": "Data\\images\\student_381.png"
+  },
+  {
+    "Id": 382,
+    "FullName": "L\u00EA V\u0103n Long",
+    "GPA": 8.7,
+    "ImagePath": "Data\\images\\student_382.png"
+  },
+  {
+    "Id": 383,
+    "FullName": "V\u00F5 Xu\u00E2n Khoa",
+    "GPA": 3.78,
+    "ImagePath": "Data\\images\\student_383.png"
+  },
+  {
+    "Id": 384,
+    "FullName": "Hu\u1EF3nh V\u0103n Khoa",
+    "GPA": 4.22,
+    "ImagePath": "Data\\images\\student_384.png"
+  },
+  {
+    "Id": 385,
+    "FullName": "Nguy\u1EC5n Duy Qu\u00E2n",
+    "GPA": 5.75,
+    "ImagePath": "Data\\images\\student_385.png"
+  },
+  {
+    "Id": 386,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Tu\u1EA5n",
+    "GPA": 4.9,
+    "ImagePath": "Data\\images\\student_386.png"
+  },
+  {
+    "Id": 387,
+    "FullName": "Ph\u1EA1m V\u0103n Qu\u00E2n",
+    "GPA": 8.33,
+    "ImagePath": "Data\\images\\student_387.png"
+  },
+  {
+    "Id": 388,
+    "FullName": "V\u0169 H\u00F9ng Huy",
+    "GPA": 4.89,
+    "ImagePath": "Data\\images\\student_388.png"
+  },
+  {
+    "Id": 389,
+    "FullName": "L\u00EA Duy D\u0169ng",
+    "GPA": 4.72,
+    "ImagePath": "Data\\images\\student_389.png"
+  },
+  {
+    "Id": 390,
+    "FullName": "V\u0169 Duy Ho\u00E0ng",
+    "GPA": 6.21,
+    "ImagePath": "Data\\images\\student_390.png"
+  },
+  {
+    "Id": 391,
+    "FullName": "Tr\u1EA7n Minh Ho\u00E0ng",
+    "GPA": 5.93,
+    "ImagePath": "Data\\images\\student_391.png"
+  },
+  {
+    "Id": 392,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Long",
+    "GPA": 9.51,
+    "ImagePath": "Data\\images\\student_392.png"
+  },
+  {
+    "Id": 393,
+    "FullName": "Ho\u00E0ng Minh Khoa",
+    "GPA": 9.7,
+    "ImagePath": "Data\\images\\student_393.png"
+  },
+  {
+    "Id": 394,
+    "FullName": "L\u00EA Qu\u00E2n Ho\u00E0ng",
+    "GPA": 8.34,
+    "ImagePath": "Data\\images\\student_394.png"
+  },
+  {
+    "Id": 395,
+    "FullName": "Phan Duy Tu\u1EA5n",
+    "GPA": 7.25,
+    "ImagePath": "Data\\images\\student_395.png"
+  },
+  {
+    "Id": 396,
+    "FullName": "Tr\u1EA7n H\u00F9ng Ho\u00E0ng",
+    "GPA": 1.83,
+    "ImagePath": "Data\\images\\student_396.png"
+  },
+  {
+    "Id": 397,
+    "FullName": "V\u00F5 Ng\u1ECDc T\u00E0i",
+    "GPA": 2.49,
+    "ImagePath": "Data\\images\\student_397.png"
+  },
+  {
+    "Id": 398,
+    "FullName": "Tr\u1EA7n H\u00F9ng Ho\u00E0ng",
+    "GPA": 5.02,
+    "ImagePath": "Data\\images\\student_398.png"
+  },
+  {
+    "Id": 399,
+    "FullName": "V\u0169 V\u0103n Khang",
+    "GPA": 5.24,
+    "ImagePath": "Data\\images\\student_399.png"
+  },
+  {
+    "Id": 400,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Ho\u00E0ng",
+    "GPA": 6.64,
+    "ImagePath": "Data\\images\\student_400.png"
+  },
+  {
+    "Id": 401,
+    "FullName": "Tr\u1EA7n V\u0103n Huy",
+    "GPA": 6.42,
+    "ImagePath": "Data\\images\\student_401.png"
+  },
+  {
+    "Id": 402,
+    "FullName": "Nguy\u1EC5n Minh T\u00E0i",
+    "GPA": 6.08,
+    "ImagePath": "Data\\images\\student_402.png"
+  },
+  {
+    "Id": 403,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Huy",
+    "GPA": 8.55,
+    "ImagePath": "Data\\images\\student_403.png"
+  },
+  {
+    "Id": 404,
+    "FullName": "Phan Minh Huy",
+    "GPA": 3.95,
+    "ImagePath": "Data\\images\\student_404.png"
+  },
+  {
+    "Id": 405,
+    "FullName": "Tr\u1EA7n Qu\u00E2n B\u1EA3o",
+    "GPA": 2.81,
+    "ImagePath": "Data\\images\\student_405.png"
+  },
+  {
+    "Id": 406,
+    "FullName": "Ho\u00E0ng H\u00F9ng Hi\u1EC7p",
+    "GPA": 8.45,
+    "ImagePath": "Data\\images\\student_406.png"
+  },
+  {
+    "Id": 407,
+    "FullName": "Nguy\u1EC5n Minh B\u00ECnh",
+    "GPA": 1.76,
+    "ImagePath": "Data\\images\\student_407.png"
+  },
+  {
+    "Id": 408,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Long",
+    "GPA": 9.14,
+    "ImagePath": "Data\\images\\student_408.png"
+  },
+  {
+    "Id": 409,
+    "FullName": "Nguy\u1EC5n Duy Huy",
+    "GPA": 6.62,
+    "ImagePath": "Data\\images\\student_409.png"
+  },
+  {
+    "Id": 410,
+    "FullName": "Hu\u1EF3nh Minh Tu\u1EA5n",
+    "GPA": 8.02,
+    "ImagePath": "Data\\images\\student_410.png"
+  },
+  {
+    "Id": 411,
+    "FullName": "Phan Minh Long",
+    "GPA": 7.34,
+    "ImagePath": "Data\\images\\student_411.png"
+  },
+  {
+    "Id": 412,
+    "FullName": "L\u00EA Duy Hi\u1EC7p",
+    "GPA": 1.22,
+    "ImagePath": "Data\\images\\student_412.png"
+  },
+  {
+    "Id": 413,
+    "FullName": "Tr\u1EA7n V\u0103n Tu\u1EA5n",
+    "GPA": 4.86,
+    "ImagePath": "Data\\images\\student_413.png"
+  },
+  {
+    "Id": 414,
+    "FullName": "L\u00EA Xu\u00E2n Khoa",
+    "GPA": 1.51,
+    "ImagePath": "Data\\images\\student_414.png"
+  },
+  {
+    "Id": 415,
+    "FullName": "Tr\u1EA7n Minh Qu\u00E2n",
+    "GPA": 6.48,
+    "ImagePath": "Data\\images\\student_415.png"
+  },
+  {
+    "Id": 416,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Tu\u1EA5n",
+    "GPA": 2.13,
+    "ImagePath": "Data\\images\\student_416.png"
+  },
+  {
+    "Id": 417,
+    "FullName": "Ho\u00E0ng Minh Long",
+    "GPA": 8.18,
+    "ImagePath": "Data\\images\\student_417.png"
+  },
+  {
+    "Id": 418,
+    "FullName": "Ph\u1EA1m H\u00F9ng Long",
+    "GPA": 5.6,
+    "ImagePath": "Data\\images\\student_418.png"
+  },
+  {
+    "Id": 419,
+    "FullName": "Phan Minh B\u1EA3o",
+    "GPA": 4.96,
+    "ImagePath": "Data\\images\\student_419.png"
+  },
+  {
+    "Id": 420,
+    "FullName": "Ho\u00E0ng H\u00F9ng Huy",
+    "GPA": 9.16,
+    "ImagePath": "Data\\images\\student_420.png"
+  },
+  {
+    "Id": 421,
+    "FullName": "V\u00F5 Duy Qu\u00E2n",
+    "GPA": 4.3,
+    "ImagePath": "Data\\images\\student_421.png"
+  },
+  {
+    "Id": 422,
+    "FullName": "Phan V\u0103n Khoa",
+    "GPA": 3.87,
+    "ImagePath": "Data\\images\\student_422.png"
+  },
+  {
+    "Id": 423,
+    "FullName": "V\u00F5 V\u0103n Ho\u00E0ng",
+    "GPA": 5.92,
+    "ImagePath": "Data\\images\\student_423.png"
+  },
+  {
+    "Id": 424,
+    "FullName": "L\u00EA Xu\u00E2n T\u00E0i",
+    "GPA": 9.7,
+    "ImagePath": "Data\\images\\student_424.png"
+  },
+  {
+    "Id": 425,
+    "FullName": "V\u0169 V\u0103n Ho\u00E0ng",
+    "GPA": 9.3,
+    "ImagePath": "Data\\images\\student_425.png"
+  },
+  {
+    "Id": 426,
+    "FullName": "Nguy\u1EC5n Duy Long",
+    "GPA": 4.06,
+    "ImagePath": "Data\\images\\student_426.png"
+  },
+  {
+    "Id": 427,
+    "FullName": "Hu\u1EF3nh Duy Khang",
+    "GPA": 8.01,
+    "ImagePath": "Data\\images\\student_427.png"
+  },
+  {
+    "Id": 428,
+    "FullName": "Phan Ng\u1ECDc B\u1EA3o",
+    "GPA": 7.28,
+    "ImagePath": "Data\\images\\student_428.png"
+  },
+  {
+    "Id": 429,
+    "FullName": "V\u0169 V\u0103n Huy",
+    "GPA": 5.61,
+    "ImagePath": "Data\\images\\student_429.png"
+  },
+  {
+    "Id": 430,
+    "FullName": "Ph\u1EA1m Xu\u00E2n B\u1EA3o",
+    "GPA": 8.44,
+    "ImagePath": "Data\\images\\student_430.png"
+  },
+  {
+    "Id": 431,
+    "FullName": "L\u00EA V\u0103n Khang",
+    "GPA": 6.83,
+    "ImagePath": "Data\\images\\student_431.png"
+  },
+  {
+    "Id": 432,
+    "FullName": "Ho\u00E0ng H\u00F9ng Khang",
+    "GPA": 2.45,
+    "ImagePath": "Data\\images\\student_432.png"
+  },
+  {
+    "Id": 433,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n D\u0169ng",
+    "GPA": 4.02,
+    "ImagePath": "Data\\images\\student_433.png"
+  },
+  {
+    "Id": 434,
+    "FullName": "Ph\u1EA1m Minh Tu\u1EA5n",
+    "GPA": 1.65,
+    "ImagePath": "Data\\images\\student_434.png"
+  },
+  {
+    "Id": 435,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n B\u00ECnh",
+    "GPA": 6.93,
+    "ImagePath": "Data\\images\\student_435.png"
+  },
+  {
+    "Id": 436,
+    "FullName": "L\u00EA Xu\u00E2n Ho\u00E0ng",
+    "GPA": 4.82,
+    "ImagePath": "Data\\images\\student_436.png"
+  },
+  {
+    "Id": 437,
+    "FullName": "Ph\u1EA1m Minh Ho\u00E0ng",
+    "GPA": 2.93,
+    "ImagePath": "Data\\images\\student_437.png"
+  },
+  {
+    "Id": 438,
+    "FullName": "V\u0169 Xu\u00E2n Khang",
+    "GPA": 3.41,
+    "ImagePath": "Data\\images\\student_438.png"
+  },
+  {
+    "Id": 439,
+    "FullName": "Phan Qu\u00E2n Tu\u1EA5n",
+    "GPA": 4.01,
+    "ImagePath": "Data\\images\\student_439.png"
+  },
+  {
+    "Id": 440,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Qu\u00E2n",
+    "GPA": 8.21,
+    "ImagePath": "Data\\images\\student_440.png"
+  },
+  {
+    "Id": 441,
+    "FullName": "V\u00F5 H\u00F9ng Ho\u00E0ng",
+    "GPA": 8.68,
+    "ImagePath": "Data\\images\\student_441.png"
+  },
+  {
+    "Id": 442,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 9.79,
+    "ImagePath": "Data\\images\\student_442.png"
+  },
+  {
+    "Id": 443,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc B\u1EA3o",
+    "GPA": 7.31,
+    "ImagePath": "Data\\images\\student_443.png"
+  },
+  {
+    "Id": 444,
+    "FullName": "V\u0169 Minh T\u00E0i",
+    "GPA": 3.14,
+    "ImagePath": "Data\\images\\student_444.png"
+  },
+  {
+    "Id": 445,
+    "FullName": "L\u00EA V\u0103n Khoa",
+    "GPA": 9.14,
+    "ImagePath": "Data\\images\\student_445.png"
+  },
+  {
+    "Id": 446,
+    "FullName": "Phan Ng\u1ECDc B\u1EA3o",
+    "GPA": 9.24,
+    "ImagePath": "Data\\images\\student_446.png"
+  },
+  {
+    "Id": 447,
+    "FullName": "Hu\u1EF3nh H\u00F9ng T\u00E0i",
+    "GPA": 8.4,
+    "ImagePath": "Data\\images\\student_447.png"
+  },
+  {
+    "Id": 448,
+    "FullName": "V\u0169 Duy Huy",
+    "GPA": 1.9,
+    "ImagePath": "Data\\images\\student_448.png"
+  },
+  {
+    "Id": 449,
+    "FullName": "Phan Minh Hi\u1EC7p",
+    "GPA": 4.51,
+    "ImagePath": "Data\\images\\student_449.png"
+  },
+  {
+    "Id": 450,
+    "FullName": "Ph\u1EA1m H\u00F9ng Long",
+    "GPA": 7.38,
+    "ImagePath": "Data\\images\\student_450.png"
+  },
+  {
+    "Id": 451,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Khoa",
+    "GPA": 2.04,
+    "ImagePath": "Data\\images\\student_451.png"
+  },
+  {
+    "Id": 452,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Khang",
+    "GPA": 3.03,
+    "ImagePath": "Data\\images\\student_452.png"
+  },
+  {
+    "Id": 453,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Huy",
+    "GPA": 1.61,
+    "ImagePath": "Data\\images\\student_453.png"
+  },
+  {
+    "Id": 454,
+    "FullName": "V\u00F5 Xu\u00E2n T\u00E0i",
+    "GPA": 2.89,
+    "ImagePath": "Data\\images\\student_454.png"
+  },
+  {
+    "Id": 455,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Khoa",
+    "GPA": 5.79,
+    "ImagePath": "Data\\images\\student_455.png"
+  },
+  {
+    "Id": 456,
+    "FullName": "Hu\u1EF3nh Duy Tu\u1EA5n",
+    "GPA": 7.36,
+    "ImagePath": "Data\\images\\student_456.png"
+  },
+  {
+    "Id": 457,
+    "FullName": "Hu\u1EF3nh V\u0103n Tu\u1EA5n",
+    "GPA": 2.52,
+    "ImagePath": "Data\\images\\student_457.png"
+  },
+  {
+    "Id": 458,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Huy",
+    "GPA": 8.4,
+    "ImagePath": "Data\\images\\student_458.png"
+  },
+  {
+    "Id": 459,
+    "FullName": "Nguy\u1EC5n H\u00F9ng B\u1EA3o",
+    "GPA": 1.73,
+    "ImagePath": "Data\\images\\student_459.png"
+  },
+  {
+    "Id": 460,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Tu\u1EA5n",
+    "GPA": 7.49,
+    "ImagePath": "Data\\images\\student_460.png"
+  },
+  {
+    "Id": 461,
+    "FullName": "Ho\u00E0ng V\u0103n Ho\u00E0ng",
+    "GPA": 4.06,
+    "ImagePath": "Data\\images\\student_461.png"
+  },
+  {
+    "Id": 462,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Huy",
+    "GPA": 2.56,
+    "ImagePath": "Data\\images\\student_462.png"
+  },
+  {
+    "Id": 463,
+    "FullName": "L\u00EA H\u00F9ng Qu\u00E2n",
+    "GPA": 5.92,
+    "ImagePath": "Data\\images\\student_463.png"
+  },
+  {
+    "Id": 464,
+    "FullName": "Tr\u1EA7n H\u00F9ng Long",
+    "GPA": 5.98,
+    "ImagePath": "Data\\images\\student_464.png"
+  },
+  {
+    "Id": 465,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Long",
+    "GPA": 8.18,
+    "ImagePath": "Data\\images\\student_465.png"
+  },
+  {
+    "Id": 466,
+    "FullName": "Phan Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 7.26,
+    "ImagePath": "Data\\images\\student_466.png"
+  },
+  {
+    "Id": 467,
+    "FullName": "Nguy\u1EC5n V\u0103n D\u0169ng",
+    "GPA": 3.34,
+    "ImagePath": "Data\\images\\student_467.png"
+  },
+  {
+    "Id": 468,
+    "FullName": "Ho\u00E0ng V\u0103n Ho\u00E0ng",
+    "GPA": 7.65,
+    "ImagePath": "Data\\images\\student_468.png"
+  },
+  {
+    "Id": 469,
+    "FullName": "V\u0169 Minh B\u00ECnh",
+    "GPA": 6.85,
+    "ImagePath": "Data\\images\\student_469.png"
+  },
+  {
+    "Id": 470,
+    "FullName": "V\u00F5 Xu\u00E2n Khoa",
+    "GPA": 7.59,
+    "ImagePath": "Data\\images\\student_470.png"
+  },
+  {
+    "Id": 471,
+    "FullName": "Phan Duy B\u1EA3o",
+    "GPA": 2.58,
+    "ImagePath": "Data\\images\\student_471.png"
+  },
+  {
+    "Id": 472,
+    "FullName": "V\u00F5 Ng\u1ECDc T\u00E0i",
+    "GPA": 1.78,
+    "ImagePath": "Data\\images\\student_472.png"
+  },
+  {
+    "Id": 473,
+    "FullName": "L\u00EA Duy Qu\u00E2n",
+    "GPA": 9.4,
+    "ImagePath": "Data\\images\\student_473.png"
+  },
+  {
+    "Id": 474,
+    "FullName": "Ph\u1EA1m V\u0103n B\u1EA3o",
+    "GPA": 6.52,
+    "ImagePath": "Data\\images\\student_474.png"
+  },
+  {
+    "Id": 475,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Long",
+    "GPA": 9.75,
+    "ImagePath": "Data\\images\\student_475.png"
+  },
+  {
+    "Id": 476,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Tu\u1EA5n",
+    "GPA": 3.73,
+    "ImagePath": "Data\\images\\student_476.png"
+  },
+  {
+    "Id": 477,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Khoa",
+    "GPA": 4.46,
+    "ImagePath": "Data\\images\\student_477.png"
+  },
+  {
+    "Id": 478,
+    "FullName": "Tr\u1EA7n Qu\u00E2n D\u0169ng",
+    "GPA": 9.33,
+    "ImagePath": "Data\\images\\student_478.png"
+  },
+  {
+    "Id": 479,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Khoa",
+    "GPA": 4.5,
+    "ImagePath": "Data\\images\\student_479.png"
+  },
+  {
+    "Id": 480,
+    "FullName": "Phan Minh Ho\u00E0ng",
+    "GPA": 9.15,
+    "ImagePath": "Data\\images\\student_480.png"
+  },
+  {
+    "Id": 481,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Long",
+    "GPA": 9.35,
+    "ImagePath": "Data\\images\\student_481.png"
+  },
+  {
+    "Id": 482,
+    "FullName": "Phan Duy Long",
+    "GPA": 7.27,
+    "ImagePath": "Data\\images\\student_482.png"
+  },
+  {
+    "Id": 483,
+    "FullName": "V\u00F5 Qu\u00E2n T\u00E0i",
+    "GPA": 7.14,
+    "ImagePath": "Data\\images\\student_483.png"
+  },
+  {
+    "Id": 484,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Khang",
+    "GPA": 9.9,
+    "ImagePath": "Data\\images\\student_484.png"
+  },
+  {
+    "Id": 485,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc B\u00ECnh",
+    "GPA": 9.04,
+    "ImagePath": "Data\\images\\student_485.png"
+  },
+  {
+    "Id": 486,
+    "FullName": "V\u00F5 H\u00F9ng Huy",
+    "GPA": 7.55,
+    "ImagePath": "Data\\images\\student_486.png"
+  },
+  {
+    "Id": 487,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n T\u00E0i",
+    "GPA": 9.92,
+    "ImagePath": "Data\\images\\student_487.png"
+  },
+  {
+    "Id": 488,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Khoa",
+    "GPA": 5.35,
+    "ImagePath": "Data\\images\\student_488.png"
+  },
+  {
+    "Id": 489,
+    "FullName": "V\u0169 Qu\u00E2n Ho\u00E0ng",
+    "GPA": 7.67,
+    "ImagePath": "Data\\images\\student_489.png"
+  },
+  {
+    "Id": 490,
+    "FullName": "Nguy\u1EC5n Duy T\u00E0i",
+    "GPA": 7.1,
+    "ImagePath": "Data\\images\\student_490.png"
+  },
+  {
+    "Id": 491,
+    "FullName": "L\u00EA Duy Hi\u1EC7p",
+    "GPA": 9.53,
+    "ImagePath": "Data\\images\\student_491.png"
+  },
+  {
+    "Id": 492,
+    "FullName": "Nguy\u1EC5n Duy Qu\u00E2n",
+    "GPA": 9.16,
+    "ImagePath": "Data\\images\\student_492.png"
+  },
+  {
+    "Id": 493,
+    "FullName": "Phan Qu\u00E2n B\u1EA3o",
+    "GPA": 4.92,
+    "ImagePath": "Data\\images\\student_493.png"
+  },
+  {
+    "Id": 494,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Khang",
+    "GPA": 7.23,
+    "ImagePath": "Data\\images\\student_494.png"
+  },
+  {
+    "Id": 495,
+    "FullName": "Ho\u00E0ng Duy Khang",
+    "GPA": 9.06,
+    "ImagePath": "Data\\images\\student_495.png"
+  },
+  {
+    "Id": 496,
+    "FullName": "L\u00EA Ng\u1ECDc Khoa",
+    "GPA": 6.24,
+    "ImagePath": "Data\\images\\student_496.png"
+  },
+  {
+    "Id": 497,
+    "FullName": "V\u00F5 Duy T\u00E0i",
+    "GPA": 9.23,
+    "ImagePath": "Data\\images\\student_497.png"
+  },
+  {
+    "Id": 498,
+    "FullName": "Phan Minh B\u1EA3o",
+    "GPA": 2.19,
+    "ImagePath": "Data\\images\\student_498.png"
+  },
+  {
+    "Id": 499,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Tu\u1EA5n",
+    "GPA": 1.46,
+    "ImagePath": "Data\\images\\student_499.png"
+  },
+  {
+    "Id": 500,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc D\u0169ng",
+    "GPA": 1.3,
+    "ImagePath": "Data\\images\\student_500.png"
+  },
+  {
+    "Id": 501,
+    "FullName": "Ph\u1EA1m H\u00F9ng D\u0169ng",
+    "GPA": 7.47,
+    "ImagePath": "Data\\images\\student_501.png"
+  },
+  {
+    "Id": 502,
+    "FullName": "L\u00EA H\u00F9ng T\u00E0i",
+    "GPA": 9.77,
+    "ImagePath": "Data\\images\\student_502.png"
+  },
+  {
+    "Id": 503,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Huy",
+    "GPA": 5.78,
+    "ImagePath": "Data\\images\\student_503.png"
+  },
+  {
+    "Id": 504,
+    "FullName": "L\u00EA H\u00F9ng Ho\u00E0ng",
+    "GPA": 9.53,
+    "ImagePath": "Data\\images\\student_504.png"
+  },
+  {
+    "Id": 505,
+    "FullName": "V\u0169 Ng\u1ECDc B\u00ECnh",
+    "GPA": 9.5,
+    "ImagePath": "Data\\images\\student_505.png"
+  },
+  {
+    "Id": 506,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc D\u0169ng",
+    "GPA": 2.69,
+    "ImagePath": "Data\\images\\student_506.png"
+  },
+  {
+    "Id": 507,
+    "FullName": "Phan Xu\u00E2n D\u0169ng",
+    "GPA": 9.98,
+    "ImagePath": "Data\\images\\student_507.png"
+  },
+  {
+    "Id": 508,
+    "FullName": "Phan V\u0103n T\u00E0i",
+    "GPA": 6.86,
+    "ImagePath": "Data\\images\\student_508.png"
+  },
+  {
+    "Id": 509,
+    "FullName": "V\u0169 Qu\u00E2n Long",
+    "GPA": 1.93,
+    "ImagePath": "Data\\images\\student_509.png"
+  },
+  {
+    "Id": 510,
+    "FullName": "Ph\u1EA1m Duy D\u0169ng",
+    "GPA": 1.55,
+    "ImagePath": "Data\\images\\student_510.png"
+  },
+  {
+    "Id": 511,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Long",
+    "GPA": 9.72,
+    "ImagePath": "Data\\images\\student_511.png"
+  },
+  {
+    "Id": 512,
+    "FullName": "Nguy\u1EC5n V\u0103n Qu\u00E2n",
+    "GPA": 7.81,
+    "ImagePath": "Data\\images\\student_512.png"
+  },
+  {
+    "Id": 513,
+    "FullName": "Ho\u00E0ng Minh T\u00E0i",
+    "GPA": 9.98,
+    "ImagePath": "Data\\images\\student_513.png"
+  },
+  {
+    "Id": 514,
+    "FullName": "Tr\u1EA7n H\u00F9ng Qu\u00E2n",
+    "GPA": 3.89,
+    "ImagePath": "Data\\images\\student_514.png"
+  },
+  {
+    "Id": 515,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Khang",
+    "GPA": 9.19,
+    "ImagePath": "Data\\images\\student_515.png"
+  },
+  {
+    "Id": 516,
+    "FullName": "V\u0169 Ng\u1ECDc B\u1EA3o",
+    "GPA": 5.08,
+    "ImagePath": "Data\\images\\student_516.png"
+  },
+  {
+    "Id": 517,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n D\u0169ng",
+    "GPA": 9.06,
+    "ImagePath": "Data\\images\\student_517.png"
+  },
+  {
+    "Id": 518,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Qu\u00E2n",
+    "GPA": 1.94,
+    "ImagePath": "Data\\images\\student_518.png"
+  },
+  {
+    "Id": 519,
+    "FullName": "L\u00EA Qu\u00E2n Khoa",
+    "GPA": 3.49,
+    "ImagePath": "Data\\images\\student_519.png"
+  },
+  {
+    "Id": 520,
+    "FullName": "Phan Duy Khoa",
+    "GPA": 4.44,
+    "ImagePath": "Data\\images\\student_520.png"
+  },
+  {
+    "Id": 521,
+    "FullName": "Nguy\u1EC5n Minh Hi\u1EC7p",
+    "GPA": 9.02,
+    "ImagePath": "Data\\images\\student_521.png"
+  },
+  {
+    "Id": 522,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc T\u00E0i",
+    "GPA": 1.31,
+    "ImagePath": "Data\\images\\student_522.png"
+  },
+  {
+    "Id": 523,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Huy",
+    "GPA": 2.86,
+    "ImagePath": "Data\\images\\student_523.png"
+  },
+  {
+    "Id": 524,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n D\u0169ng",
+    "GPA": 1.46,
+    "ImagePath": "Data\\images\\student_524.png"
+  },
+  {
+    "Id": 525,
+    "FullName": "V\u00F5 Ng\u1ECDc D\u0169ng",
+    "GPA": 8.75,
+    "ImagePath": "Data\\images\\student_525.png"
+  },
+  {
+    "Id": 526,
+    "FullName": "Hu\u1EF3nh Minh B\u00ECnh",
+    "GPA": 8.41,
+    "ImagePath": "Data\\images\\student_526.png"
+  },
+  {
+    "Id": 527,
+    "FullName": "L\u00EA Duy D\u0169ng",
+    "GPA": 7.5,
+    "ImagePath": "Data\\images\\student_527.png"
+  },
+  {
+    "Id": 528,
+    "FullName": "Phan Qu\u00E2n Tu\u1EA5n",
+    "GPA": 4.83,
+    "ImagePath": "Data\\images\\student_528.png"
+  },
+  {
+    "Id": 529,
+    "FullName": "L\u00EA Qu\u00E2n Tu\u1EA5n",
+    "GPA": 5.14,
+    "ImagePath": "Data\\images\\student_529.png"
+  },
+  {
+    "Id": 530,
+    "FullName": "Phan V\u0103n Huy",
+    "GPA": 3.01,
+    "ImagePath": "Data\\images\\student_530.png"
+  },
+  {
+    "Id": 531,
+    "FullName": "V\u00F5 Duy Tu\u1EA5n",
+    "GPA": 7.89,
+    "ImagePath": "Data\\images\\student_531.png"
+  },
+  {
+    "Id": 532,
+    "FullName": "L\u00EA V\u0103n Tu\u1EA5n",
+    "GPA": 9.43,
+    "ImagePath": "Data\\images\\student_532.png"
+  },
+  {
+    "Id": 533,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc D\u0169ng",
+    "GPA": 1.89,
+    "ImagePath": "Data\\images\\student_533.png"
+  },
+  {
+    "Id": 534,
+    "FullName": "V\u0169 H\u00F9ng D\u0169ng",
+    "GPA": 8.72,
+    "ImagePath": "Data\\images\\student_534.png"
+  },
+  {
+    "Id": 535,
+    "FullName": "L\u00EA Xu\u00E2n Khang",
+    "GPA": 3.29,
+    "ImagePath": "Data\\images\\student_535.png"
+  },
+  {
+    "Id": 536,
+    "FullName": "Ho\u00E0ng Qu\u00E2n T\u00E0i",
+    "GPA": 2,
+    "ImagePath": "Data\\images\\student_536.png"
+  },
+  {
+    "Id": 537,
+    "FullName": "V\u00F5 Xu\u00E2n D\u0169ng",
+    "GPA": 5.53,
+    "ImagePath": "Data\\images\\student_537.png"
+  },
+  {
+    "Id": 538,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Hi\u1EC7p",
+    "GPA": 8.36,
+    "ImagePath": "Data\\images\\student_538.png"
+  },
+  {
+    "Id": 539,
+    "FullName": "Tr\u1EA7n Minh T\u00E0i",
+    "GPA": 2.54,
+    "ImagePath": "Data\\images\\student_539.png"
+  },
+  {
+    "Id": 540,
+    "FullName": "Hu\u1EF3nh V\u0103n B\u00ECnh",
+    "GPA": 3.27,
+    "ImagePath": "Data\\images\\student_540.png"
+  },
+  {
+    "Id": 541,
+    "FullName": "L\u00EA Duy Ho\u00E0ng",
+    "GPA": 7.55,
+    "ImagePath": "Data\\images\\student_541.png"
+  },
+  {
+    "Id": 542,
+    "FullName": "V\u00F5 Xu\u00E2n Huy",
+    "GPA": 7.35,
+    "ImagePath": "Data\\images\\student_542.png"
+  },
+  {
+    "Id": 543,
+    "FullName": "L\u00EA Duy B\u1EA3o",
+    "GPA": 8.1,
+    "ImagePath": "Data\\images\\student_543.png"
+  },
+  {
+    "Id": 544,
+    "FullName": "Hu\u1EF3nh Minh Khoa",
+    "GPA": 2.27,
+    "ImagePath": "Data\\images\\student_544.png"
+  },
+  {
+    "Id": 545,
+    "FullName": "V\u00F5 Qu\u00E2n Khang",
+    "GPA": 1.21,
+    "ImagePath": "Data\\images\\student_545.png"
+  },
+  {
+    "Id": 546,
+    "FullName": "Phan Duy Khoa",
+    "GPA": 3.31,
+    "ImagePath": "Data\\images\\student_546.png"
+  },
+  {
+    "Id": 547,
+    "FullName": "V\u00F5 Duy Khoa",
+    "GPA": 8.74,
+    "ImagePath": "Data\\images\\student_547.png"
+  },
+  {
+    "Id": 548,
+    "FullName": "V\u00F5 V\u0103n Long",
+    "GPA": 6.66,
+    "ImagePath": "Data\\images\\student_548.png"
+  },
+  {
+    "Id": 549,
+    "FullName": "Phan V\u0103n Qu\u00E2n",
+    "GPA": 1.47,
+    "ImagePath": "Data\\images\\student_549.png"
+  },
+  {
+    "Id": 550,
+    "FullName": "V\u0169 H\u00F9ng Ho\u00E0ng",
+    "GPA": 5.37,
+    "ImagePath": "Data\\images\\student_550.png"
+  },
+  {
+    "Id": 551,
+    "FullName": "Nguy\u1EC5n Duy B\u1EA3o",
+    "GPA": 8.69,
+    "ImagePath": "Data\\images\\student_551.png"
+  },
+  {
+    "Id": 552,
+    "FullName": "Hu\u1EF3nh Minh D\u0169ng",
+    "GPA": 8.53,
+    "ImagePath": "Data\\images\\student_552.png"
+  },
+  {
+    "Id": 553,
+    "FullName": "Phan H\u00F9ng B\u1EA3o",
+    "GPA": 5.19,
+    "ImagePath": "Data\\images\\student_553.png"
+  },
+  {
+    "Id": 554,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Khoa",
+    "GPA": 5.92,
+    "ImagePath": "Data\\images\\student_554.png"
+  },
+  {
+    "Id": 555,
+    "FullName": "Hu\u1EF3nh Minh Huy",
+    "GPA": 4.79,
+    "ImagePath": "Data\\images\\student_555.png"
+  },
+  {
+    "Id": 556,
+    "FullName": "Phan Ng\u1ECDc B\u00ECnh",
+    "GPA": 9.29,
+    "ImagePath": "Data\\images\\student_556.png"
+  },
+  {
+    "Id": 557,
+    "FullName": "V\u00F5 V\u0103n Hi\u1EC7p",
+    "GPA": 2.85,
+    "ImagePath": "Data\\images\\student_557.png"
+  },
+  {
+    "Id": 558,
+    "FullName": "Hu\u1EF3nh Duy T\u00E0i",
+    "GPA": 1.45,
+    "ImagePath": "Data\\images\\student_558.png"
+  },
+  {
+    "Id": 559,
+    "FullName": "Phan Xu\u00E2n Tu\u1EA5n",
+    "GPA": 6.34,
+    "ImagePath": "Data\\images\\student_559.png"
+  },
+  {
+    "Id": 560,
+    "FullName": "L\u00EA Ng\u1ECDc Qu\u00E2n",
+    "GPA": 3.88,
+    "ImagePath": "Data\\images\\student_560.png"
+  },
+  {
+    "Id": 561,
+    "FullName": "Phan H\u00F9ng B\u1EA3o",
+    "GPA": 2.36,
+    "ImagePath": "Data\\images\\student_561.png"
+  },
+  {
+    "Id": 562,
+    "FullName": "Nguy\u1EC5n Minh Qu\u00E2n",
+    "GPA": 8.24,
+    "ImagePath": "Data\\images\\student_562.png"
+  },
+  {
+    "Id": 563,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Ho\u00E0ng",
+    "GPA": 6.67,
+    "ImagePath": "Data\\images\\student_563.png"
+  },
+  {
+    "Id": 564,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc B\u00ECnh",
+    "GPA": 6.14,
+    "ImagePath": "Data\\images\\student_564.png"
+  },
+  {
+    "Id": 565,
+    "FullName": "Phan H\u00F9ng Long",
+    "GPA": 1.84,
+    "ImagePath": "Data\\images\\student_565.png"
+  },
+  {
+    "Id": 566,
+    "FullName": "Phan Minh Ho\u00E0ng",
+    "GPA": 8.85,
+    "ImagePath": "Data\\images\\student_566.png"
+  },
+  {
+    "Id": 567,
+    "FullName": "Tr\u1EA7n Duy B\u1EA3o",
+    "GPA": 6.62,
+    "ImagePath": "Data\\images\\student_567.png"
+  },
+  {
+    "Id": 568,
+    "FullName": "Nguy\u1EC5n V\u0103n B\u00ECnh",
+    "GPA": 4.63,
+    "ImagePath": "Data\\images\\student_568.png"
+  },
+  {
+    "Id": 569,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Tu\u1EA5n",
+    "GPA": 7.39,
+    "ImagePath": "Data\\images\\student_569.png"
+  },
+  {
+    "Id": 570,
+    "FullName": "V\u00F5 Qu\u00E2n Khang",
+    "GPA": 3.51,
+    "ImagePath": "Data\\images\\student_570.png"
+  },
+  {
+    "Id": 571,
+    "FullName": "Tr\u1EA7n H\u00F9ng Huy",
+    "GPA": 6.16,
+    "ImagePath": "Data\\images\\student_571.png"
+  },
+  {
+    "Id": 572,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Khoa",
+    "GPA": 8.11,
+    "ImagePath": "Data\\images\\student_572.png"
+  },
+  {
+    "Id": 573,
+    "FullName": "Nguy\u1EC5n V\u0103n Huy",
+    "GPA": 4.83,
+    "ImagePath": "Data\\images\\student_573.png"
+  },
+  {
+    "Id": 574,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Tu\u1EA5n",
+    "GPA": 4.22,
+    "ImagePath": "Data\\images\\student_574.png"
+  },
+  {
+    "Id": 575,
+    "FullName": "V\u00F5 Xu\u00E2n Qu\u00E2n",
+    "GPA": 1.51,
+    "ImagePath": "Data\\images\\student_575.png"
+  },
+  {
+    "Id": 576,
+    "FullName": "Ph\u1EA1m V\u0103n Ho\u00E0ng",
+    "GPA": 8.83,
+    "ImagePath": "Data\\images\\student_576.png"
+  },
+  {
+    "Id": 577,
+    "FullName": "Ph\u1EA1m H\u00F9ng Hi\u1EC7p",
+    "GPA": 2.22,
+    "ImagePath": "Data\\images\\student_577.png"
+  },
+  {
+    "Id": 578,
+    "FullName": "Ph\u1EA1m Duy Hi\u1EC7p",
+    "GPA": 9.24,
+    "ImagePath": "Data\\images\\student_578.png"
+  },
+  {
+    "Id": 579,
+    "FullName": "Tr\u1EA7n H\u00F9ng B\u1EA3o",
+    "GPA": 3.02,
+    "ImagePath": "Data\\images\\student_579.png"
+  },
+  {
+    "Id": 580,
+    "FullName": "Phan H\u00F9ng Tu\u1EA5n",
+    "GPA": 9.77,
+    "ImagePath": "Data\\images\\student_580.png"
+  },
+  {
+    "Id": 581,
+    "FullName": "Ho\u00E0ng Minh T\u00E0i",
+    "GPA": 4.05,
+    "ImagePath": "Data\\images\\student_581.png"
+  },
+  {
+    "Id": 582,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 9.98,
+    "ImagePath": "Data\\images\\student_582.png"
+  },
+  {
+    "Id": 583,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Qu\u00E2n",
+    "GPA": 4.76,
+    "ImagePath": "Data\\images\\student_583.png"
+  },
+  {
+    "Id": 584,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Qu\u00E2n",
+    "GPA": 8.7,
+    "ImagePath": "Data\\images\\student_584.png"
+  },
+  {
+    "Id": 585,
+    "FullName": "Hu\u1EF3nh Duy B\u1EA3o",
+    "GPA": 9.91,
+    "ImagePath": "Data\\images\\student_585.png"
+  },
+  {
+    "Id": 586,
+    "FullName": "Nguy\u1EC5n V\u0103n Ho\u00E0ng",
+    "GPA": 2.75,
+    "ImagePath": "Data\\images\\student_586.png"
+  },
+  {
+    "Id": 587,
+    "FullName": "Ph\u1EA1m Xu\u00E2n B\u1EA3o",
+    "GPA": 9.06,
+    "ImagePath": "Data\\images\\student_587.png"
+  },
+  {
+    "Id": 588,
+    "FullName": "L\u00EA Minh Huy",
+    "GPA": 7.7,
+    "ImagePath": "Data\\images\\student_588.png"
+  },
+  {
+    "Id": 589,
+    "FullName": "V\u00F5 V\u0103n Huy",
+    "GPA": 6.97,
+    "ImagePath": "Data\\images\\student_589.png"
+  },
+  {
+    "Id": 590,
+    "FullName": "L\u00EA Duy T\u00E0i",
+    "GPA": 3.73,
+    "ImagePath": "Data\\images\\student_590.png"
+  },
+  {
+    "Id": 591,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Qu\u00E2n",
+    "GPA": 3.53,
+    "ImagePath": "Data\\images\\student_591.png"
+  },
+  {
+    "Id": 592,
+    "FullName": "Ho\u00E0ng Minh Ho\u00E0ng",
+    "GPA": 6.16,
+    "ImagePath": "Data\\images\\student_592.png"
+  },
+  {
+    "Id": 593,
+    "FullName": "V\u00F5 Duy Huy",
+    "GPA": 6.44,
+    "ImagePath": "Data\\images\\student_593.png"
+  },
+  {
+    "Id": 594,
+    "FullName": "L\u00EA Minh T\u00E0i",
+    "GPA": 8.81,
+    "ImagePath": "Data\\images\\student_594.png"
+  },
+  {
+    "Id": 595,
+    "FullName": "Nguy\u1EC5n V\u0103n Huy",
+    "GPA": 8.62,
+    "ImagePath": "Data\\images\\student_595.png"
+  },
+  {
+    "Id": 596,
+    "FullName": "Tr\u1EA7n V\u0103n Long",
+    "GPA": 9.83,
+    "ImagePath": "Data\\images\\student_596.png"
+  },
+  {
+    "Id": 597,
+    "FullName": "Nguy\u1EC5n V\u0103n Qu\u00E2n",
+    "GPA": 2.93,
+    "ImagePath": "Data\\images\\student_597.png"
+  },
+  {
+    "Id": 598,
+    "FullName": "V\u00F5 V\u0103n Qu\u00E2n",
+    "GPA": 9.79,
+    "ImagePath": "Data\\images\\student_598.png"
+  },
+  {
+    "Id": 599,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n B\u00ECnh",
+    "GPA": 1.4,
+    "ImagePath": "Data\\images\\student_599.png"
+  },
+  {
+    "Id": 600,
+    "FullName": "Hu\u1EF3nh Minh T\u00E0i",
+    "GPA": 2.77,
+    "ImagePath": "Data\\images\\student_600.png"
+  },
+  {
+    "Id": 601,
+    "FullName": "L\u00EA V\u0103n Khoa",
+    "GPA": 7.36,
+    "ImagePath": "Data\\images\\student_601.png"
+  },
+  {
+    "Id": 602,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc T\u00E0i",
+    "GPA": 8.31,
+    "ImagePath": "Data\\images\\student_602.png"
+  },
+  {
+    "Id": 603,
+    "FullName": "Ho\u00E0ng H\u00F9ng Huy",
+    "GPA": 1.62,
+    "ImagePath": "Data\\images\\student_603.png"
+  },
+  {
+    "Id": 604,
+    "FullName": "Ho\u00E0ng Qu\u00E2n D\u0169ng",
+    "GPA": 2.35,
+    "ImagePath": "Data\\images\\student_604.png"
+  },
+  {
+    "Id": 605,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Khoa",
+    "GPA": 1.34,
+    "ImagePath": "Data\\images\\student_605.png"
+  },
+  {
+    "Id": 606,
+    "FullName": "V\u00F5 V\u0103n Qu\u00E2n",
+    "GPA": 3.34,
+    "ImagePath": "Data\\images\\student_606.png"
+  },
+  {
+    "Id": 607,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 6.64,
+    "ImagePath": "Data\\images\\student_607.png"
+  },
+  {
+    "Id": 608,
+    "FullName": "V\u0169 H\u00F9ng Hi\u1EC7p",
+    "GPA": 6.26,
+    "ImagePath": "Data\\images\\student_608.png"
+  },
+  {
+    "Id": 609,
+    "FullName": "V\u0169 Duy Ho\u00E0ng",
+    "GPA": 6.72,
+    "ImagePath": "Data\\images\\student_609.png"
+  },
+  {
+    "Id": 610,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Khoa",
+    "GPA": 5.37,
+    "ImagePath": "Data\\images\\student_610.png"
+  },
+  {
+    "Id": 611,
+    "FullName": "V\u00F5 V\u0103n Long",
+    "GPA": 4.77,
+    "ImagePath": "Data\\images\\student_611.png"
+  },
+  {
+    "Id": 612,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Huy",
+    "GPA": 1.76,
+    "ImagePath": "Data\\images\\student_612.png"
+  },
+  {
+    "Id": 613,
+    "FullName": "V\u00F5 Qu\u00E2n Tu\u1EA5n",
+    "GPA": 4.38,
+    "ImagePath": "Data\\images\\student_613.png"
+  },
+  {
+    "Id": 614,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Long",
+    "GPA": 1.65,
+    "ImagePath": "Data\\images\\student_614.png"
+  },
+  {
+    "Id": 615,
+    "FullName": "L\u00EA V\u0103n Khoa",
+    "GPA": 6.19,
+    "ImagePath": "Data\\images\\student_615.png"
+  },
+  {
+    "Id": 616,
+    "FullName": "Hu\u1EF3nh V\u0103n Qu\u00E2n",
+    "GPA": 9.67,
+    "ImagePath": "Data\\images\\student_616.png"
+  },
+  {
+    "Id": 617,
+    "FullName": "V\u0169 Qu\u00E2n Qu\u00E2n",
+    "GPA": 9.58,
+    "ImagePath": "Data\\images\\student_617.png"
+  },
+  {
+    "Id": 618,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc B\u00ECnh",
+    "GPA": 8.84,
+    "ImagePath": "Data\\images\\student_618.png"
+  },
+  {
+    "Id": 619,
+    "FullName": "Ph\u1EA1m V\u0103n Hi\u1EC7p",
+    "GPA": 4.52,
+    "ImagePath": "Data\\images\\student_619.png"
+  },
+  {
+    "Id": 620,
+    "FullName": "V\u0169 Duy Khoa",
+    "GPA": 7.79,
+    "ImagePath": "Data\\images\\student_620.png"
+  },
+  {
+    "Id": 621,
+    "FullName": "Ph\u1EA1m Duy Tu\u1EA5n",
+    "GPA": 1.77,
+    "ImagePath": "Data\\images\\student_621.png"
+  },
+  {
+    "Id": 622,
+    "FullName": "Tr\u1EA7n Duy Ho\u00E0ng",
+    "GPA": 1.51,
+    "ImagePath": "Data\\images\\student_622.png"
+  },
+  {
+    "Id": 623,
+    "FullName": "Ph\u1EA1m V\u0103n T\u00E0i",
+    "GPA": 5.83,
+    "ImagePath": "Data\\images\\student_623.png"
+  },
+  {
+    "Id": 624,
+    "FullName": "V\u00F5 V\u0103n T\u00E0i",
+    "GPA": 3.76,
+    "ImagePath": "Data\\images\\student_624.png"
+  },
+  {
+    "Id": 625,
+    "FullName": "Phan Duy Hi\u1EC7p",
+    "GPA": 7.62,
+    "ImagePath": "Data\\images\\student_625.png"
+  },
+  {
+    "Id": 626,
+    "FullName": "V\u00F5 H\u00F9ng Qu\u00E2n",
+    "GPA": 8.23,
+    "ImagePath": "Data\\images\\student_626.png"
+  },
+  {
+    "Id": 627,
+    "FullName": "Phan V\u0103n Long",
+    "GPA": 7.18,
+    "ImagePath": "Data\\images\\student_627.png"
+  },
+  {
+    "Id": 628,
+    "FullName": "Ho\u00E0ng Minh B\u1EA3o",
+    "GPA": 1.53,
+    "ImagePath": "Data\\images\\student_628.png"
+  },
+  {
+    "Id": 629,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Huy",
+    "GPA": 5.85,
+    "ImagePath": "Data\\images\\student_629.png"
+  },
+  {
+    "Id": 630,
+    "FullName": "Ho\u00E0ng V\u0103n Ho\u00E0ng",
+    "GPA": 6.7,
+    "ImagePath": "Data\\images\\student_630.png"
+  },
+  {
+    "Id": 631,
+    "FullName": "Nguy\u1EC5n Minh Qu\u00E2n",
+    "GPA": 5.64,
+    "ImagePath": "Data\\images\\student_631.png"
+  },
+  {
+    "Id": 632,
+    "FullName": "Tr\u1EA7n Duy Hi\u1EC7p",
+    "GPA": 6.42,
+    "ImagePath": "Data\\images\\student_632.png"
+  },
+  {
+    "Id": 633,
+    "FullName": "Tr\u1EA7n Qu\u00E2n B\u00ECnh",
+    "GPA": 5.13,
+    "ImagePath": "Data\\images\\student_633.png"
+  },
+  {
+    "Id": 634,
+    "FullName": "Tr\u1EA7n Minh B\u1EA3o",
+    "GPA": 8.9,
+    "ImagePath": "Data\\images\\student_634.png"
+  },
+  {
+    "Id": 635,
+    "FullName": "Phan Qu\u00E2n B\u00ECnh",
+    "GPA": 2.92,
+    "ImagePath": "Data\\images\\student_635.png"
+  },
+  {
+    "Id": 636,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Tu\u1EA5n",
+    "GPA": 9.94,
+    "ImagePath": "Data\\images\\student_636.png"
+  },
+  {
+    "Id": 637,
+    "FullName": "Phan V\u0103n Long",
+    "GPA": 5.71,
+    "ImagePath": "Data\\images\\student_637.png"
+  },
+  {
+    "Id": 638,
+    "FullName": "V\u00F5 Ng\u1ECDc T\u00E0i",
+    "GPA": 8.16,
+    "ImagePath": "Data\\images\\student_638.png"
+  },
+  {
+    "Id": 639,
+    "FullName": "Ph\u1EA1m Minh D\u0169ng",
+    "GPA": 5.44,
+    "ImagePath": "Data\\images\\student_639.png"
+  },
+  {
+    "Id": 640,
+    "FullName": "L\u00EA Xu\u00E2n Khoa",
+    "GPA": 3.39,
+    "ImagePath": "Data\\images\\student_640.png"
+  },
+  {
+    "Id": 641,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n B\u1EA3o",
+    "GPA": 3.38,
+    "ImagePath": "Data\\images\\student_641.png"
+  },
+  {
+    "Id": 642,
+    "FullName": "Ph\u1EA1m V\u0103n D\u0169ng",
+    "GPA": 2.78,
+    "ImagePath": "Data\\images\\student_642.png"
+  },
+  {
+    "Id": 643,
+    "FullName": "Ph\u1EA1m H\u00F9ng Huy",
+    "GPA": 9.23,
+    "ImagePath": "Data\\images\\student_643.png"
+  },
+  {
+    "Id": 644,
+    "FullName": "Phan Qu\u00E2n Tu\u1EA5n",
+    "GPA": 1.44,
+    "ImagePath": "Data\\images\\student_644.png"
+  },
+  {
+    "Id": 645,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Huy",
+    "GPA": 8.51,
+    "ImagePath": "Data\\images\\student_645.png"
+  },
+  {
+    "Id": 646,
+    "FullName": "L\u00EA V\u0103n Hi\u1EC7p",
+    "GPA": 8.19,
+    "ImagePath": "Data\\images\\student_646.png"
+  },
+  {
+    "Id": 647,
+    "FullName": "L\u00EA Qu\u00E2n B\u1EA3o",
+    "GPA": 4.87,
+    "ImagePath": "Data\\images\\student_647.png"
+  },
+  {
+    "Id": 648,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Huy",
+    "GPA": 8.79,
+    "ImagePath": "Data\\images\\student_648.png"
+  },
+  {
+    "Id": 649,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc B\u1EA3o",
+    "GPA": 7.59,
+    "ImagePath": "Data\\images\\student_649.png"
+  },
+  {
+    "Id": 650,
+    "FullName": "L\u00EA Qu\u00E2n Hi\u1EC7p",
+    "GPA": 6.51,
+    "ImagePath": "Data\\images\\student_650.png"
+  },
+  {
+    "Id": 651,
+    "FullName": "V\u00F5 Minh D\u0169ng",
+    "GPA": 6.18,
+    "ImagePath": "Data\\images\\student_651.png"
+  },
+  {
+    "Id": 652,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Huy",
+    "GPA": 1.96,
+    "ImagePath": "Data\\images\\student_652.png"
+  },
+  {
+    "Id": 653,
+    "FullName": "L\u00EA Minh B\u00ECnh",
+    "GPA": 1.98,
+    "ImagePath": "Data\\images\\student_653.png"
+  },
+  {
+    "Id": 654,
+    "FullName": "V\u0169 Duy Long",
+    "GPA": 6.25,
+    "ImagePath": "Data\\images\\student_654.png"
+  },
+  {
+    "Id": 655,
+    "FullName": "V\u00F5 Duy Huy",
+    "GPA": 5.46,
+    "ImagePath": "Data\\images\\student_655.png"
+  },
+  {
+    "Id": 656,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Tu\u1EA5n",
+    "GPA": 4.26,
+    "ImagePath": "Data\\images\\student_656.png"
+  },
+  {
+    "Id": 657,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Huy",
+    "GPA": 4.98,
+    "ImagePath": "Data\\images\\student_657.png"
+  },
+  {
+    "Id": 658,
+    "FullName": "Phan Ng\u1ECDc D\u0169ng",
+    "GPA": 7.14,
+    "ImagePath": "Data\\images\\student_658.png"
+  },
+  {
+    "Id": 659,
+    "FullName": "V\u0169 Duy Ho\u00E0ng",
+    "GPA": 4.72,
+    "ImagePath": "Data\\images\\student_659.png"
+  },
+  {
+    "Id": 660,
+    "FullName": "Hu\u1EF3nh V\u0103n B\u00ECnh",
+    "GPA": 4.36,
+    "ImagePath": "Data\\images\\student_660.png"
+  },
+  {
+    "Id": 661,
+    "FullName": "V\u00F5 Qu\u00E2n B\u1EA3o",
+    "GPA": 2.62,
+    "ImagePath": "Data\\images\\student_661.png"
+  },
+  {
+    "Id": 662,
+    "FullName": "Phan H\u00F9ng Long",
+    "GPA": 1.64,
+    "ImagePath": "Data\\images\\student_662.png"
+  },
+  {
+    "Id": 663,
+    "FullName": "Phan H\u00F9ng D\u0169ng",
+    "GPA": 6.69,
+    "ImagePath": "Data\\images\\student_663.png"
+  },
+  {
+    "Id": 664,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Ho\u00E0ng",
+    "GPA": 8.66,
+    "ImagePath": "Data\\images\\student_664.png"
+  },
+  {
+    "Id": 665,
+    "FullName": "V\u0169 V\u0103n Qu\u00E2n",
+    "GPA": 9.03,
+    "ImagePath": "Data\\images\\student_665.png"
+  },
+  {
+    "Id": 666,
+    "FullName": "Ho\u00E0ng V\u0103n Khang",
+    "GPA": 9.5,
+    "ImagePath": "Data\\images\\student_666.png"
+  },
+  {
+    "Id": 667,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Khang",
+    "GPA": 5.38,
+    "ImagePath": "Data\\images\\student_667.png"
+  },
+  {
+    "Id": 668,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Khang",
+    "GPA": 2.57,
+    "ImagePath": "Data\\images\\student_668.png"
+  },
+  {
+    "Id": 669,
+    "FullName": "Tr\u1EA7n Duy Khoa",
+    "GPA": 8.53,
+    "ImagePath": "Data\\images\\student_669.png"
+  },
+  {
+    "Id": 670,
+    "FullName": "Ph\u1EA1m V\u0103n B\u00ECnh",
+    "GPA": 1.62,
+    "ImagePath": "Data\\images\\student_670.png"
+  },
+  {
+    "Id": 671,
+    "FullName": "Tr\u1EA7n Xu\u00E2n T\u00E0i",
+    "GPA": 1.12,
+    "ImagePath": "Data\\images\\student_671.png"
+  },
+  {
+    "Id": 672,
+    "FullName": "V\u00F5 Ng\u1ECDc Qu\u00E2n",
+    "GPA": 3.98,
+    "ImagePath": "Data\\images\\student_672.png"
+  },
+  {
+    "Id": 673,
+    "FullName": "Tr\u1EA7n H\u00F9ng B\u00ECnh",
+    "GPA": 4.17,
+    "ImagePath": "Data\\images\\student_673.png"
+  },
+  {
+    "Id": 674,
+    "FullName": "Tr\u1EA7n V\u0103n Khang",
+    "GPA": 1.48,
+    "ImagePath": "Data\\images\\student_674.png"
+  },
+  {
+    "Id": 675,
+    "FullName": "V\u0169 Ng\u1ECDc Qu\u00E2n",
+    "GPA": 7.51,
+    "ImagePath": "Data\\images\\student_675.png"
+  },
+  {
+    "Id": 676,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Tu\u1EA5n",
+    "GPA": 2.47,
+    "ImagePath": "Data\\images\\student_676.png"
+  },
+  {
+    "Id": 677,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc D\u0169ng",
+    "GPA": 7.88,
+    "ImagePath": "Data\\images\\student_677.png"
+  },
+  {
+    "Id": 678,
+    "FullName": "Tr\u1EA7n Minh Khang",
+    "GPA": 5.3,
+    "ImagePath": "Data\\images\\student_678.png"
+  },
+  {
+    "Id": 679,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Khoa",
+    "GPA": 4.65,
+    "ImagePath": "Data\\images\\student_679.png"
+  },
+  {
+    "Id": 680,
+    "FullName": "Ph\u1EA1m H\u00F9ng Long",
+    "GPA": 2.84,
+    "ImagePath": "Data\\images\\student_680.png"
+  },
+  {
+    "Id": 681,
+    "FullName": "Ph\u1EA1m Minh Ho\u00E0ng",
+    "GPA": 1.29,
+    "ImagePath": "Data\\images\\student_681.png"
+  },
+  {
+    "Id": 682,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Ho\u00E0ng",
+    "GPA": 8.62,
+    "ImagePath": "Data\\images\\student_682.png"
+  },
+  {
+    "Id": 683,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Qu\u00E2n",
+    "GPA": 4.13,
+    "ImagePath": "Data\\images\\student_683.png"
+  },
+  {
+    "Id": 684,
+    "FullName": "V\u00F5 Duy B\u00ECnh",
+    "GPA": 1.63,
+    "ImagePath": "Data\\images\\student_684.png"
+  },
+  {
+    "Id": 685,
+    "FullName": "Tr\u1EA7n H\u00F9ng D\u0169ng",
+    "GPA": 5.85,
+    "ImagePath": "Data\\images\\student_685.png"
+  },
+  {
+    "Id": 686,
+    "FullName": "Tr\u1EA7n V\u0103n Khoa",
+    "GPA": 8.79,
+    "ImagePath": "Data\\images\\student_686.png"
+  },
+  {
+    "Id": 687,
+    "FullName": "Phan Minh Huy",
+    "GPA": 9.59,
+    "ImagePath": "Data\\images\\student_687.png"
+  },
+  {
+    "Id": 688,
+    "FullName": "V\u0169 V\u0103n T\u00E0i",
+    "GPA": 9.65,
+    "ImagePath": "Data\\images\\student_688.png"
+  },
+  {
+    "Id": 689,
+    "FullName": "Ph\u1EA1m Duy D\u0169ng",
+    "GPA": 7.69,
+    "ImagePath": "Data\\images\\student_689.png"
+  },
+  {
+    "Id": 690,
+    "FullName": "V\u0169 Minh Khang",
+    "GPA": 4.96,
+    "ImagePath": "Data\\images\\student_690.png"
+  },
+  {
+    "Id": 691,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc B\u00ECnh",
+    "GPA": 4.12,
+    "ImagePath": "Data\\images\\student_691.png"
+  },
+  {
+    "Id": 692,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Huy",
+    "GPA": 2.33,
+    "ImagePath": "Data\\images\\student_692.png"
+  },
+  {
+    "Id": 693,
+    "FullName": "Tr\u1EA7n Xu\u00E2n B\u1EA3o",
+    "GPA": 6.87,
+    "ImagePath": "Data\\images\\student_693.png"
+  },
+  {
+    "Id": 694,
+    "FullName": "Tr\u1EA7n Qu\u00E2n T\u00E0i",
+    "GPA": 2.09,
+    "ImagePath": "Data\\images\\student_694.png"
+  },
+  {
+    "Id": 695,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Huy",
+    "GPA": 5.05,
+    "ImagePath": "Data\\images\\student_695.png"
+  },
+  {
+    "Id": 696,
+    "FullName": "Phan V\u0103n T\u00E0i",
+    "GPA": 9.69,
+    "ImagePath": "Data\\images\\student_696.png"
+  },
+  {
+    "Id": 697,
+    "FullName": "Nguy\u1EC5n Duy Tu\u1EA5n",
+    "GPA": 7.11,
+    "ImagePath": "Data\\images\\student_698.png"
+  },
+  {
+    "Id": 698,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Huy",
+    "GPA": 4.61,
+    "ImagePath": "Data\\images\\student_699.png"
+  },
+  {
+    "Id": 699,
+    "FullName": "L\u00EA Qu\u00E2n B\u00ECnh",
+    "GPA": 4.22,
+    "ImagePath": "Data\\images\\student_700.png"
+  },
+  {
+    "Id": 700,
+    "FullName": "Ph\u1EA1m V\u0103n Khang",
+    "GPA": 5.82,
+    "ImagePath": "Data\\images\\student_701.png"
+  },
+  {
+    "Id": 701,
+    "FullName": "Phan V\u0103n T\u00E0i",
+    "GPA": 6.12,
+    "ImagePath": "Data\\images\\student_702.png"
+  },
+  {
+    "Id": 702,
+    "FullName": "Phan Minh B\u00ECnh",
+    "GPA": 3.93,
+    "ImagePath": "Data\\images\\student_703.png"
+  },
+  {
+    "Id": 703,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Huy",
+    "GPA": 1.13,
+    "ImagePath": "Data\\images\\student_704.png"
+  },
+  {
+    "Id": 704,
+    "FullName": "L\u00EA Qu\u00E2n Qu\u00E2n",
+    "GPA": 3.76,
+    "ImagePath": "Data\\images\\student_705.png"
+  },
+  {
+    "Id": 705,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Huy",
+    "GPA": 5.93,
+    "ImagePath": "Data\\images\\student_706.png"
+  },
+  {
+    "Id": 706,
+    "FullName": "L\u00EA Xu\u00E2n T\u00E0i",
+    "GPA": 2.12,
+    "ImagePath": "Data\\images\\student_707.png"
+  },
+  {
+    "Id": 707,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Qu\u00E2n",
+    "GPA": 4.59,
+    "ImagePath": "Data\\images\\student_708.png"
+  },
+  {
+    "Id": 708,
+    "FullName": "Phan Minh Hi\u1EC7p",
+    "GPA": 8.81,
+    "ImagePath": "Data\\images\\student_709.png"
+  },
+  {
+    "Id": 709,
+    "FullName": "Phan Ng\u1ECDc B\u1EA3o",
+    "GPA": 1.61,
+    "ImagePath": "Data\\images\\student_710.png"
+  },
+  {
+    "Id": 710,
+    "FullName": "Ho\u00E0ng H\u00F9ng T\u00E0i",
+    "GPA": 5.72,
+    "ImagePath": "Data\\images\\student_711.png"
+  },
+  {
+    "Id": 711,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Huy",
+    "GPA": 3.77,
+    "ImagePath": "Data\\images\\student_712.png"
+  },
+  {
+    "Id": 712,
+    "FullName": "Ph\u1EA1m Duy Ho\u00E0ng",
+    "GPA": 7.86,
+    "ImagePath": "Data\\images\\student_713.png"
+  },
+  {
+    "Id": 713,
+    "FullName": "Tr\u1EA7n Minh T\u00E0i",
+    "GPA": 5.64,
+    "ImagePath": "Data\\images\\student_714.png"
+  },
+  {
+    "Id": 714,
+    "FullName": "Phan Duy B\u00ECnh",
+    "GPA": 2.54,
+    "ImagePath": "Data\\images\\student_715.png"
+  },
+  {
+    "Id": 715,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 6.32,
+    "ImagePath": "Data\\images\\student_716.png"
+  },
+  {
+    "Id": 716,
+    "FullName": "Ho\u00E0ng Duy Huy",
+    "GPA": 9.26,
+    "ImagePath": "Data\\images\\student_717.png"
+  },
+  {
+    "Id": 717,
+    "FullName": "L\u00EA Qu\u00E2n Huy",
+    "GPA": 9.48,
+    "ImagePath": "Data\\images\\student_718.png"
+  },
+  {
+    "Id": 718,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 4.23,
+    "ImagePath": "Data\\images\\student_719.png"
+  },
+  {
+    "Id": 719,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc B\u1EA3o",
+    "GPA": 4.67,
+    "ImagePath": "Data\\images\\student_720.png"
+  },
+  {
+    "Id": 720,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc B\u00ECnh",
+    "GPA": 1.58,
+    "ImagePath": "Data\\images\\student_721.png"
+  },
+  {
+    "Id": 721,
+    "FullName": "Hu\u1EF3nh Minh T\u00E0i",
+    "GPA": 4.16,
+    "ImagePath": "Data\\images\\student_722.png"
+  },
+  {
+    "Id": 722,
+    "FullName": "V\u00F5 Minh Khang",
+    "GPA": 1.16,
+    "ImagePath": "Data\\images\\student_723.png"
+  },
+  {
+    "Id": 723,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Khang",
+    "GPA": 8.61,
+    "ImagePath": "Data\\images\\student_724.png"
+  },
+  {
+    "Id": 724,
+    "FullName": "L\u00EA Qu\u00E2n Tu\u1EA5n",
+    "GPA": 7.8,
+    "ImagePath": "Data\\images\\student_725.png"
+  },
+  {
+    "Id": 725,
+    "FullName": "V\u00F5 H\u00F9ng Tu\u1EA5n",
+    "GPA": 8.34,
+    "ImagePath": "Data\\images\\student_726.png"
+  },
+  {
+    "Id": 726,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Huy",
+    "GPA": 8.76,
+    "ImagePath": "Data\\images\\student_727.png"
+  },
+  {
+    "Id": 727,
+    "FullName": "Tr\u1EA7n H\u00F9ng Tu\u1EA5n",
+    "GPA": 3.97,
+    "ImagePath": "Data\\images\\student_728.png"
+  },
+  {
+    "Id": 728,
+    "FullName": "L\u00EA H\u00F9ng Hi\u1EC7p",
+    "GPA": 4.16,
+    "ImagePath": "Data\\images\\student_729.png"
+  },
+  {
+    "Id": 729,
+    "FullName": "V\u00F5 H\u00F9ng Ho\u00E0ng",
+    "GPA": 2.88,
+    "ImagePath": "Data\\images\\student_730.png"
+  },
+  {
+    "Id": 730,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Tu\u1EA5n",
+    "GPA": 7.7,
+    "ImagePath": "Data\\images\\student_731.png"
+  },
+  {
+    "Id": 731,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Huy",
+    "GPA": 8.58,
+    "ImagePath": "Data\\images\\student_732.png"
+  },
+  {
+    "Id": 732,
+    "FullName": "V\u0169 Qu\u00E2n B\u00ECnh",
+    "GPA": 1.14,
+    "ImagePath": "Data\\images\\student_733.png"
+  },
+  {
+    "Id": 733,
+    "FullName": "Ho\u00E0ng Qu\u00E2n T\u00E0i",
+    "GPA": 1.33,
+    "ImagePath": "Data\\images\\student_734.png"
+  },
+  {
+    "Id": 734,
+    "FullName": "L\u00EA H\u00F9ng Qu\u00E2n",
+    "GPA": 9.11,
+    "ImagePath": "Data\\images\\student_735.png"
+  },
+  {
+    "Id": 735,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc T\u00E0i",
+    "GPA": 1.98,
+    "ImagePath": "Data\\images\\student_736.png"
+  },
+  {
+    "Id": 736,
+    "FullName": "V\u00F5 Xu\u00E2n Long",
+    "GPA": 3.41,
+    "ImagePath": "Data\\images\\student_737.png"
+  },
+  {
+    "Id": 737,
+    "FullName": "Phan V\u0103n T\u00E0i",
+    "GPA": 3.87,
+    "ImagePath": "Data\\images\\student_738.png"
+  },
+  {
+    "Id": 738,
+    "FullName": "V\u00F5 H\u00F9ng Long",
+    "GPA": 8.19,
+    "ImagePath": "Data\\images\\student_739.png"
+  },
+  {
+    "Id": 739,
+    "FullName": "Ho\u00E0ng H\u00F9ng B\u00ECnh",
+    "GPA": 6.76,
+    "ImagePath": "Data\\images\\student_740.png"
+  },
+  {
+    "Id": 740,
+    "FullName": "L\u00EA Ng\u1ECDc Khang",
+    "GPA": 4.98,
+    "ImagePath": "Data\\images\\student_741.png"
+  },
+  {
+    "Id": 741,
+    "FullName": "Nguy\u1EC5n Minh Ho\u00E0ng",
+    "GPA": 3.66,
+    "ImagePath": "Data\\images\\student_742.png"
+  },
+  {
+    "Id": 742,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Khang",
+    "GPA": 2.53,
+    "ImagePath": "Data\\images\\student_743.png"
+  },
+  {
+    "Id": 743,
+    "FullName": "L\u00EA V\u0103n B\u00ECnh",
+    "GPA": 5.61,
+    "ImagePath": "Data\\images\\student_744.png"
+  },
+  {
+    "Id": 744,
+    "FullName": "Phan H\u00F9ng Long",
+    "GPA": 2.57,
+    "ImagePath": "Data\\images\\student_745.png"
+  },
+  {
+    "Id": 745,
+    "FullName": "Phan Ng\u1ECDc Tu\u1EA5n",
+    "GPA": 4.85,
+    "ImagePath": "Data\\images\\student_746.png"
+  },
+  {
+    "Id": 746,
+    "FullName": "Nguy\u1EC5n V\u0103n Long",
+    "GPA": 5.68,
+    "ImagePath": "Data\\images\\student_747.png"
+  },
+  {
+    "Id": 747,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Qu\u00E2n",
+    "GPA": 9.92,
+    "ImagePath": "Data\\images\\student_748.png"
+  },
+  {
+    "Id": 748,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Khang",
+    "GPA": 2.11,
+    "ImagePath": "Data\\images\\student_749.png"
+  },
+  {
+    "Id": 749,
+    "FullName": "Phan Minh Tu\u1EA5n",
+    "GPA": 1.66,
+    "ImagePath": "Data\\images\\student_750.png"
+  },
+  {
+    "Id": 750,
+    "FullName": "Hu\u1EF3nh V\u0103n B\u00ECnh",
+    "GPA": 9.88,
+    "ImagePath": "Data\\images\\student_751.png"
+  },
+  {
+    "Id": 751,
+    "FullName": "V\u00F5 Xu\u00E2n B\u1EA3o",
+    "GPA": 8.82,
+    "ImagePath": "Data\\images\\student_752.png"
+  },
+  {
+    "Id": 752,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Khang",
+    "GPA": 8.31,
+    "ImagePath": "Data\\images\\student_753.png"
+  },
+  {
+    "Id": 753,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Qu\u00E2n",
+    "GPA": 7.75,
+    "ImagePath": "Data\\images\\student_754.png"
+  },
+  {
+    "Id": 754,
+    "FullName": "Phan Minh Huy",
+    "GPA": 6.54,
+    "ImagePath": "Data\\images\\student_755.png"
+  },
+  {
+    "Id": 755,
+    "FullName": "V\u0169 Duy B\u00ECnh",
+    "GPA": 2.05,
+    "ImagePath": "Data\\images\\student_756.png"
+  },
+  {
+    "Id": 756,
+    "FullName": "Phan Duy Hi\u1EC7p",
+    "GPA": 9.84,
+    "ImagePath": "Data\\images\\student_757.png"
+  },
+  {
+    "Id": 757,
+    "FullName": "V\u0169 Qu\u00E2n Khoa",
+    "GPA": 7.55,
+    "ImagePath": "Data\\images\\student_758.png"
+  },
+  {
+    "Id": 758,
+    "FullName": "Ph\u1EA1m H\u00F9ng Huy",
+    "GPA": 5.27,
+    "ImagePath": "Data\\images\\student_759.png"
+  },
+  {
+    "Id": 759,
+    "FullName": "Hu\u1EF3nh Minh Hi\u1EC7p",
+    "GPA": 7.57,
+    "ImagePath": "Data\\images\\student_760.png"
+  },
+  {
+    "Id": 760,
+    "FullName": "Nguy\u1EC5n Minh Hi\u1EC7p",
+    "GPA": 6.21,
+    "ImagePath": "Data\\images\\student_761.png"
+  },
+  {
+    "Id": 761,
+    "FullName": "L\u00EA Ng\u1ECDc Long",
+    "GPA": 4.61,
+    "ImagePath": "Data\\images\\student_762.png"
+  },
+  {
+    "Id": 762,
+    "FullName": "Ho\u00E0ng V\u0103n Ho\u00E0ng",
+    "GPA": 1.17,
+    "ImagePath": "Data\\images\\student_763.png"
+  },
+  {
+    "Id": 763,
+    "FullName": "Tr\u1EA7n Duy D\u0169ng",
+    "GPA": 7.03,
+    "ImagePath": "Data\\images\\student_764.png"
+  },
+  {
+    "Id": 764,
+    "FullName": "Phan V\u0103n Khoa",
+    "GPA": 4.77,
+    "ImagePath": "Data\\images\\student_765.png"
+  },
+  {
+    "Id": 765,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Long",
+    "GPA": 7.9,
+    "ImagePath": "Data\\images\\student_766.png"
+  },
+  {
+    "Id": 766,
+    "FullName": "V\u0169 Minh Ho\u00E0ng",
+    "GPA": 3.04,
+    "ImagePath": "Data\\images\\student_767.png"
+  },
+  {
+    "Id": 767,
+    "FullName": "Ph\u1EA1m Duy B\u00ECnh",
+    "GPA": 1.79,
+    "ImagePath": "Data\\images\\student_768.png"
+  },
+  {
+    "Id": 768,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Hi\u1EC7p",
+    "GPA": 4.71,
+    "ImagePath": "Data\\images\\student_769.png"
+  },
+  {
+    "Id": 769,
+    "FullName": "Ho\u00E0ng Xu\u00E2n Qu\u00E2n",
+    "GPA": 9.58,
+    "ImagePath": "Data\\images\\student_770.png"
+  },
+  {
+    "Id": 770,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 3.93,
+    "ImagePath": "Data\\images\\student_771.png"
+  },
+  {
+    "Id": 771,
+    "FullName": "Nguy\u1EC5n Duy B\u1EA3o",
+    "GPA": 3.45,
+    "ImagePath": "Data\\images\\student_772.png"
+  },
+  {
+    "Id": 772,
+    "FullName": "V\u00F5 Duy B\u1EA3o",
+    "GPA": 4.41,
+    "ImagePath": "Data\\images\\student_773.png"
+  },
+  {
+    "Id": 773,
+    "FullName": "V\u00F5 V\u0103n T\u00E0i",
+    "GPA": 8.04,
+    "ImagePath": "Data\\images\\student_774.png"
+  },
+  {
+    "Id": 774,
+    "FullName": "V\u0169 Ng\u1ECDc Huy",
+    "GPA": 5.91,
+    "ImagePath": "Data\\images\\student_775.png"
+  },
+  {
+    "Id": 775,
+    "FullName": "V\u00F5 V\u0103n D\u0169ng",
+    "GPA": 3.75,
+    "ImagePath": "Data\\images\\student_776.png"
+  },
+  {
+    "Id": 776,
+    "FullName": "V\u00F5 Minh Tu\u1EA5n",
+    "GPA": 1.53,
+    "ImagePath": "Data\\images\\student_777.png"
+  },
+  {
+    "Id": 777,
+    "FullName": "Hu\u1EF3nh V\u0103n B\u1EA3o",
+    "GPA": 5.08,
+    "ImagePath": "Data\\images\\student_778.png"
+  },
+  {
+    "Id": 778,
+    "FullName": "Ph\u1EA1m Minh Khang",
+    "GPA": 3.79,
+    "ImagePath": "Data\\images\\student_779.png"
+  },
+  {
+    "Id": 779,
+    "FullName": "V\u0169 Xu\u00E2n Long",
+    "GPA": 5.91,
+    "ImagePath": "Data\\images\\student_780.png"
+  },
+  {
+    "Id": 780,
+    "FullName": "L\u00EA Minh Khang",
+    "GPA": 5.28,
+    "ImagePath": "Data\\images\\student_781.png"
+  },
+  {
+    "Id": 781,
+    "FullName": "V\u00F5 Duy Huy",
+    "GPA": 6.61,
+    "ImagePath": "Data\\images\\student_782.png"
+  },
+  {
+    "Id": 782,
+    "FullName": "V\u0169 Xu\u00E2n B\u00ECnh",
+    "GPA": 4.38,
+    "ImagePath": "Data\\images\\student_783.png"
+  },
+  {
+    "Id": 783,
+    "FullName": "Hu\u1EF3nh Duy Huy",
+    "GPA": 1.01,
+    "ImagePath": "Data\\images\\student_784.png"
+  },
+  {
+    "Id": 784,
+    "FullName": "Nguy\u1EC5n Minh B\u1EA3o",
+    "GPA": 6.6,
+    "ImagePath": "Data\\images\\student_785.png"
+  },
+  {
+    "Id": 785,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n D\u0169ng",
+    "GPA": 7.85,
+    "ImagePath": "Data\\images\\student_786.png"
+  },
+  {
+    "Id": 786,
+    "FullName": "V\u00F5 Ng\u1ECDc B\u1EA3o",
+    "GPA": 9.94,
+    "ImagePath": "Data\\images\\student_787.png"
+  },
+  {
+    "Id": 787,
+    "FullName": "Phan Qu\u00E2n Hi\u1EC7p",
+    "GPA": 7.44,
+    "ImagePath": "Data\\images\\student_788.png"
+  },
+  {
+    "Id": 788,
+    "FullName": "V\u0169 V\u0103n Khoa",
+    "GPA": 6.04,
+    "ImagePath": "Data\\images\\student_789.png"
+  },
+  {
+    "Id": 789,
+    "FullName": "Nguy\u1EC5n V\u0103n Long",
+    "GPA": 5.07,
+    "ImagePath": "Data\\images\\student_790.png"
+  },
+  {
+    "Id": 790,
+    "FullName": "V\u0169 Xu\u00E2n Long",
+    "GPA": 7.05,
+    "ImagePath": "Data\\images\\student_791.png"
+  },
+  {
+    "Id": 791,
+    "FullName": "V\u0169 Xu\u00E2n B\u00ECnh",
+    "GPA": 2.42,
+    "ImagePath": "Data\\images\\student_792.png"
+  },
+  {
+    "Id": 792,
+    "FullName": "V\u0169 Minh B\u1EA3o",
+    "GPA": 2.91,
+    "ImagePath": "Data\\images\\student_793.png"
+  },
+  {
+    "Id": 793,
+    "FullName": "Ho\u00E0ng Xu\u00E2n D\u0169ng",
+    "GPA": 6.56,
+    "ImagePath": "Data\\images\\student_794.png"
+  },
+  {
+    "Id": 794,
+    "FullName": "V\u0169 Minh Huy",
+    "GPA": 1.11,
+    "ImagePath": "Data\\images\\student_795.png"
+  },
+  {
+    "Id": 795,
+    "FullName": "V\u00F5 Duy Khang",
+    "GPA": 6.01,
+    "ImagePath": "Data\\images\\student_796.png"
+  },
+  {
+    "Id": 796,
+    "FullName": "Phan Xu\u00E2n Long",
+    "GPA": 9.67,
+    "ImagePath": "Data\\images\\student_797.png"
+  },
+  {
+    "Id": 797,
+    "FullName": "Ho\u00E0ng Duy B\u00ECnh",
+    "GPA": 9.06,
+    "ImagePath": "Data\\images\\student_798.png"
+  },
+  {
+    "Id": 798,
+    "FullName": "V\u00F5 H\u00F9ng T\u00E0i",
+    "GPA": 3.69,
+    "ImagePath": "Data\\images\\student_799.png"
+  },
+  {
+    "Id": 799,
+    "FullName": "Ph\u1EA1m Minh Qu\u00E2n",
+    "GPA": 3.13,
+    "ImagePath": "Data\\images\\student_800.png"
+  },
+  {
+    "Id": 800,
+    "FullName": "V\u00F5 Qu\u00E2n Hi\u1EC7p",
+    "GPA": 6.8,
+    "ImagePath": "Data\\images\\student_801.png"
+  },
+  {
+    "Id": 801,
+    "FullName": "Ho\u00E0ng H\u00F9ng Khoa",
+    "GPA": 8.93,
+    "ImagePath": "Data\\images\\student_802.png"
+  },
+  {
+    "Id": 802,
+    "FullName": "L\u00EA V\u0103n B\u1EA3o",
+    "GPA": 9.17,
+    "ImagePath": "Data\\images\\student_803.png"
+  },
+  {
+    "Id": 803,
+    "FullName": "Hu\u1EF3nh Duy Khang",
+    "GPA": 9.41,
+    "ImagePath": "Data\\images\\student_804.png"
+  },
+  {
+    "Id": 804,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n B\u1EA3o",
+    "GPA": 8.99,
+    "ImagePath": "Data\\images\\student_805.png"
+  },
+  {
+    "Id": 805,
+    "FullName": "V\u00F5 Qu\u00E2n Qu\u00E2n",
+    "GPA": 8.04,
+    "ImagePath": "Data\\images\\student_806.png"
+  },
+  {
+    "Id": 806,
+    "FullName": "Ph\u1EA1m Minh D\u0169ng",
+    "GPA": 5.82,
+    "ImagePath": "Data\\images\\student_807.png"
+  },
+  {
+    "Id": 807,
+    "FullName": "Ho\u00E0ng V\u0103n Long",
+    "GPA": 1.3,
+    "ImagePath": "Data\\images\\student_808.png"
+  },
+  {
+    "Id": 808,
+    "FullName": "Ho\u00E0ng Minh B\u1EA3o",
+    "GPA": 3.4,
+    "ImagePath": "Data\\images\\student_809.png"
+  },
+  {
+    "Id": 809,
+    "FullName": "Ph\u1EA1m V\u0103n Tu\u1EA5n",
+    "GPA": 7.86,
+    "ImagePath": "Data\\images\\student_810.png"
+  },
+  {
+    "Id": 810,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n T\u00E0i",
+    "GPA": 7.23,
+    "ImagePath": "Data\\images\\student_811.png"
+  },
+  {
+    "Id": 811,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Qu\u00E2n",
+    "GPA": 7.4,
+    "ImagePath": "Data\\images\\student_812.png"
+  },
+  {
+    "Id": 812,
+    "FullName": "L\u00EA Qu\u00E2n Huy",
+    "GPA": 9.31,
+    "ImagePath": "Data\\images\\student_813.png"
+  },
+  {
+    "Id": 813,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Long",
+    "GPA": 3.23,
+    "ImagePath": "Data\\images\\student_814.png"
+  },
+  {
+    "Id": 814,
+    "FullName": "Phan V\u0103n Long",
+    "GPA": 2.29,
+    "ImagePath": "Data\\images\\student_815.png"
+  },
+  {
+    "Id": 815,
+    "FullName": "Ph\u1EA1m H\u00F9ng B\u00ECnh",
+    "GPA": 4.07,
+    "ImagePath": "Data\\images\\student_816.png"
+  },
+  {
+    "Id": 816,
+    "FullName": "Phan Qu\u00E2n B\u00ECnh",
+    "GPA": 2.88,
+    "ImagePath": "Data\\images\\student_817.png"
+  },
+  {
+    "Id": 817,
+    "FullName": "V\u0169 Xu\u00E2n Qu\u00E2n",
+    "GPA": 2.67,
+    "ImagePath": "Data\\images\\student_818.png"
+  },
+  {
+    "Id": 818,
+    "FullName": "Hu\u1EF3nh Duy B\u00ECnh",
+    "GPA": 6.85,
+    "ImagePath": "Data\\images\\student_819.png"
+  },
+  {
+    "Id": 819,
+    "FullName": "Ho\u00E0ng Qu\u00E2n B\u00ECnh",
+    "GPA": 1.08,
+    "ImagePath": "Data\\images\\student_820.png"
+  },
+  {
+    "Id": 820,
+    "FullName": "Ho\u00E0ng V\u0103n Khang",
+    "GPA": 3.1,
+    "ImagePath": "Data\\images\\student_821.png"
+  },
+  {
+    "Id": 821,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Khang",
+    "GPA": 3.38,
+    "ImagePath": "Data\\images\\student_822.png"
+  },
+  {
+    "Id": 822,
+    "FullName": "V\u00F5 Minh Tu\u1EA5n",
+    "GPA": 5.52,
+    "ImagePath": "Data\\images\\student_823.png"
+  },
+  {
+    "Id": 823,
+    "FullName": "Tr\u1EA7n Xu\u00E2n B\u1EA3o",
+    "GPA": 2.53,
+    "ImagePath": "Data\\images\\student_824.png"
+  },
+  {
+    "Id": 824,
+    "FullName": "V\u00F5 Duy D\u0169ng",
+    "GPA": 3.3,
+    "ImagePath": "Data\\images\\student_825.png"
+  },
+  {
+    "Id": 825,
+    "FullName": "Nguy\u1EC5n Duy Ho\u00E0ng",
+    "GPA": 6.11,
+    "ImagePath": "Data\\images\\student_826.png"
+  },
+  {
+    "Id": 826,
+    "FullName": "Ho\u00E0ng Duy B\u00ECnh",
+    "GPA": 9.58,
+    "ImagePath": "Data\\images\\student_827.png"
+  },
+  {
+    "Id": 827,
+    "FullName": "V\u0169 H\u00F9ng D\u0169ng",
+    "GPA": 9.19,
+    "ImagePath": "Data\\images\\student_828.png"
+  },
+  {
+    "Id": 828,
+    "FullName": "Tr\u1EA7n Xu\u00E2n Ho\u00E0ng",
+    "GPA": 9.68,
+    "ImagePath": "Data\\images\\student_829.png"
+  },
+  {
+    "Id": 829,
+    "FullName": "Ho\u00E0ng Qu\u00E2n B\u00ECnh",
+    "GPA": 2.39,
+    "ImagePath": "Data\\images\\student_830.png"
+  },
+  {
+    "Id": 830,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc T\u00E0i",
+    "GPA": 4.37,
+    "ImagePath": "Data\\images\\student_831.png"
+  },
+  {
+    "Id": 831,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc Huy",
+    "GPA": 5.14,
+    "ImagePath": "Data\\images\\student_832.png"
+  },
+  {
+    "Id": 832,
+    "FullName": "V\u00F5 V\u0103n Khoa",
+    "GPA": 2.11,
+    "ImagePath": "Data\\images\\student_833.png"
+  },
+  {
+    "Id": 833,
+    "FullName": "V\u0169 Qu\u00E2n Hi\u1EC7p",
+    "GPA": 5.78,
+    "ImagePath": "Data\\images\\student_834.png"
+  },
+  {
+    "Id": 834,
+    "FullName": "Hu\u1EF3nh V\u0103n B\u00ECnh",
+    "GPA": 3.16,
+    "ImagePath": "Data\\images\\student_835.png"
+  },
+  {
+    "Id": 835,
+    "FullName": "Hu\u1EF3nh Minh Tu\u1EA5n",
+    "GPA": 1.56,
+    "ImagePath": "Data\\images\\student_836.png"
+  },
+  {
+    "Id": 836,
+    "FullName": "V\u0169 Qu\u00E2n Hi\u1EC7p",
+    "GPA": 2.16,
+    "ImagePath": "Data\\images\\student_837.png"
+  },
+  {
+    "Id": 837,
+    "FullName": "Tr\u1EA7n Duy T\u00E0i",
+    "GPA": 8.95,
+    "ImagePath": "Data\\images\\student_838.png"
+  },
+  {
+    "Id": 838,
+    "FullName": "Phan Ng\u1ECDc Khoa",
+    "GPA": 9.37,
+    "ImagePath": "Data\\images\\student_839.png"
+  },
+  {
+    "Id": 839,
+    "FullName": "V\u0169 Duy Ho\u00E0ng",
+    "GPA": 7.67,
+    "ImagePath": "Data\\images\\student_840.png"
+  },
+  {
+    "Id": 840,
+    "FullName": "V\u0169 Qu\u00E2n Khang",
+    "GPA": 1.14,
+    "ImagePath": "Data\\images\\student_841.png"
+  },
+  {
+    "Id": 841,
+    "FullName": "Phan Ng\u1ECDc Long",
+    "GPA": 2.97,
+    "ImagePath": "Data\\images\\student_842.png"
+  },
+  {
+    "Id": 842,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Khang",
+    "GPA": 2.26,
+    "ImagePath": "Data\\images\\student_843.png"
+  },
+  {
+    "Id": 843,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n T\u00E0i",
+    "GPA": 3.64,
+    "ImagePath": "Data\\images\\student_844.png"
+  },
+  {
+    "Id": 844,
+    "FullName": "V\u0169 Minh Khoa",
+    "GPA": 9.83,
+    "ImagePath": "Data\\images\\student_845.png"
+  },
+  {
+    "Id": 845,
+    "FullName": "Ph\u1EA1m V\u0103n Khoa",
+    "GPA": 1.46,
+    "ImagePath": "Data\\images\\student_846.png"
+  },
+  {
+    "Id": 846,
+    "FullName": "Phan Ng\u1ECDc Tu\u1EA5n",
+    "GPA": 7.34,
+    "ImagePath": "Data\\images\\student_847.png"
+  },
+  {
+    "Id": 847,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc Qu\u00E2n",
+    "GPA": 5.33,
+    "ImagePath": "Data\\images\\student_848.png"
+  },
+  {
+    "Id": 848,
+    "FullName": "Tr\u1EA7n Duy Ho\u00E0ng",
+    "GPA": 2.22,
+    "ImagePath": "Data\\images\\student_849.png"
+  },
+  {
+    "Id": 849,
+    "FullName": "Ph\u1EA1m H\u00F9ng Khang",
+    "GPA": 3.83,
+    "ImagePath": "Data\\images\\student_850.png"
+  },
+  {
+    "Id": 850,
+    "FullName": "L\u00EA H\u00F9ng D\u0169ng",
+    "GPA": 6.74,
+    "ImagePath": "Data\\images\\student_851.png"
+  },
+  {
+    "Id": 851,
+    "FullName": "V\u0169 Ng\u1ECDc Khoa",
+    "GPA": 7.44,
+    "ImagePath": "Data\\images\\student_852.png"
+  },
+  {
+    "Id": 852,
+    "FullName": "L\u00EA V\u0103n B\u1EA3o",
+    "GPA": 7.41,
+    "ImagePath": "Data\\images\\student_853.png"
+  },
+  {
+    "Id": 853,
+    "FullName": "Tr\u1EA7n Qu\u00E2n B\u1EA3o",
+    "GPA": 3.95,
+    "ImagePath": "Data\\images\\student_854.png"
+  },
+  {
+    "Id": 854,
+    "FullName": "Phan H\u00F9ng B\u00ECnh",
+    "GPA": 1.5,
+    "ImagePath": "Data\\images\\student_855.png"
+  },
+  {
+    "Id": 855,
+    "FullName": "L\u00EA V\u0103n D\u0169ng",
+    "GPA": 5.6,
+    "ImagePath": "Data\\images\\student_856.png"
+  },
+  {
+    "Id": 856,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Hi\u1EC7p",
+    "GPA": 3.8,
+    "ImagePath": "Data\\images\\student_857.png"
+  },
+  {
+    "Id": 857,
+    "FullName": "V\u00F5 Duy Qu\u00E2n",
+    "GPA": 9.92,
+    "ImagePath": "Data\\images\\student_858.png"
+  },
+  {
+    "Id": 858,
+    "FullName": "Ph\u1EA1m H\u00F9ng B\u00ECnh",
+    "GPA": 5.84,
+    "ImagePath": "Data\\images\\student_859.png"
+  },
+  {
+    "Id": 859,
+    "FullName": "L\u00EA Qu\u00E2n Khang",
+    "GPA": 9.18,
+    "ImagePath": "Data\\images\\student_860.png"
+  },
+  {
+    "Id": 860,
+    "FullName": "Nguy\u1EC5n Minh Huy",
+    "GPA": 8.13,
+    "ImagePath": "Data\\images\\student_861.png"
+  },
+  {
+    "Id": 861,
+    "FullName": "Phan V\u0103n B\u00ECnh",
+    "GPA": 9.68,
+    "ImagePath": "Data\\images\\student_862.png"
+  },
+  {
+    "Id": 862,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n B\u00ECnh",
+    "GPA": 1.39,
+    "ImagePath": "Data\\images\\student_863.png"
+  },
+  {
+    "Id": 863,
+    "FullName": "Tr\u1EA7n Xu\u00E2n B\u1EA3o",
+    "GPA": 8.08,
+    "ImagePath": "Data\\images\\student_864.png"
+  },
+  {
+    "Id": 864,
+    "FullName": "Ph\u1EA1m H\u00F9ng Long",
+    "GPA": 4.2,
+    "ImagePath": "Data\\images\\student_865.png"
+  },
+  {
+    "Id": 865,
+    "FullName": "Ho\u00E0ng Duy Khang",
+    "GPA": 6.36,
+    "ImagePath": "Data\\images\\student_866.png"
+  },
+  {
+    "Id": 866,
+    "FullName": "L\u00EA Xu\u00E2n Hi\u1EC7p",
+    "GPA": 1.18,
+    "ImagePath": "Data\\images\\student_867.png"
+  },
+  {
+    "Id": 867,
+    "FullName": "Ph\u1EA1m Xu\u00E2n T\u00E0i",
+    "GPA": 3.79,
+    "ImagePath": "Data\\images\\student_868.png"
+  },
+  {
+    "Id": 868,
+    "FullName": "V\u00F5 V\u0103n Huy",
+    "GPA": 9.49,
+    "ImagePath": "Data\\images\\student_869.png"
+  },
+  {
+    "Id": 869,
+    "FullName": "Ho\u00E0ng V\u0103n T\u00E0i",
+    "GPA": 5.79,
+    "ImagePath": "Data\\images\\student_870.png"
+  },
+  {
+    "Id": 870,
+    "FullName": "Ho\u00E0ng Duy Ho\u00E0ng",
+    "GPA": 8.79,
+    "ImagePath": "Data\\images\\student_871.png"
+  },
+  {
+    "Id": 871,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Qu\u00E2n",
+    "GPA": 4.84,
+    "ImagePath": "Data\\images\\student_872.png"
+  },
+  {
+    "Id": 872,
+    "FullName": "L\u00EA Qu\u00E2n Qu\u00E2n",
+    "GPA": 9.63,
+    "ImagePath": "Data\\images\\student_873.png"
+  },
+  {
+    "Id": 873,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc B\u1EA3o",
+    "GPA": 5.48,
+    "ImagePath": "Data\\images\\student_874.png"
+  },
+  {
+    "Id": 874,
+    "FullName": "Nguy\u1EC5n V\u0103n D\u0169ng",
+    "GPA": 6.96,
+    "ImagePath": "Data\\images\\student_875.png"
+  },
+  {
+    "Id": 875,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n Qu\u00E2n",
+    "GPA": 4.04,
+    "ImagePath": "Data\\images\\student_876.png"
+  },
+  {
+    "Id": 876,
+    "FullName": "Tr\u1EA7n H\u00F9ng Khoa",
+    "GPA": 1.45,
+    "ImagePath": "Data\\images\\student_877.png"
+  },
+  {
+    "Id": 877,
+    "FullName": "Tr\u1EA7n Duy Hi\u1EC7p",
+    "GPA": 4.01,
+    "ImagePath": "Data\\images\\student_878.png"
+  },
+  {
+    "Id": 878,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Khoa",
+    "GPA": 2.19,
+    "ImagePath": "Data\\images\\student_879.png"
+  },
+  {
+    "Id": 879,
+    "FullName": "Phan H\u00F9ng Khang",
+    "GPA": 3.92,
+    "ImagePath": "Data\\images\\student_880.png"
+  },
+  {
+    "Id": 880,
+    "FullName": "Ho\u00E0ng V\u0103n Qu\u00E2n",
+    "GPA": 1.29,
+    "ImagePath": "Data\\images\\student_881.png"
+  },
+  {
+    "Id": 881,
+    "FullName": "V\u0169 Xu\u00E2n D\u0169ng",
+    "GPA": 4.72,
+    "ImagePath": "Data\\images\\student_882.png"
+  },
+  {
+    "Id": 882,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Huy",
+    "GPA": 9.26,
+    "ImagePath": "Data\\images\\student_883.png"
+  },
+  {
+    "Id": 883,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Khang",
+    "GPA": 1.3,
+    "ImagePath": "Data\\images\\student_884.png"
+  },
+  {
+    "Id": 884,
+    "FullName": "Ho\u00E0ng Qu\u00E2n B\u1EA3o",
+    "GPA": 6.98,
+    "ImagePath": "Data\\images\\student_885.png"
+  },
+  {
+    "Id": 885,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Khang",
+    "GPA": 6.82,
+    "ImagePath": "Data\\images\\student_886.png"
+  },
+  {
+    "Id": 886,
+    "FullName": "V\u00F5 Ng\u1ECDc Huy",
+    "GPA": 2.61,
+    "ImagePath": "Data\\images\\student_887.png"
+  },
+  {
+    "Id": 887,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Khoa",
+    "GPA": 5.39,
+    "ImagePath": "Data\\images\\student_888.png"
+  },
+  {
+    "Id": 888,
+    "FullName": "Phan H\u00F9ng Long",
+    "GPA": 1.72,
+    "ImagePath": "Data\\images\\student_889.png"
+  },
+  {
+    "Id": 889,
+    "FullName": "Ho\u00E0ng Ng\u1ECDc T\u00E0i",
+    "GPA": 4.25,
+    "ImagePath": "Data\\images\\student_890.png"
+  },
+  {
+    "Id": 890,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Hi\u1EC7p",
+    "GPA": 1.66,
+    "ImagePath": "Data\\images\\student_891.png"
+  },
+  {
+    "Id": 891,
+    "FullName": "Phan H\u00F9ng Long",
+    "GPA": 7.05,
+    "ImagePath": "Data\\images\\student_892.png"
+  },
+  {
+    "Id": 892,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc Long",
+    "GPA": 8.15,
+    "ImagePath": "Data\\images\\student_893.png"
+  },
+  {
+    "Id": 893,
+    "FullName": "Phan Ng\u1ECDc Long",
+    "GPA": 2.37,
+    "ImagePath": "Data\\images\\student_894.png"
+  },
+  {
+    "Id": 894,
+    "FullName": "L\u00EA V\u0103n B\u1EA3o",
+    "GPA": 1.64,
+    "ImagePath": "Data\\images\\student_895.png"
+  },
+  {
+    "Id": 895,
+    "FullName": "Phan H\u00F9ng Khoa",
+    "GPA": 4.24,
+    "ImagePath": "Data\\images\\student_896.png"
+  },
+  {
+    "Id": 896,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n T\u00E0i",
+    "GPA": 3.75,
+    "ImagePath": "Data\\images\\student_897.png"
+  },
+  {
+    "Id": 897,
+    "FullName": "V\u00F5 Duy Hi\u1EC7p",
+    "GPA": 4.85,
+    "ImagePath": "Data\\images\\student_898.png"
+  },
+  {
+    "Id": 898,
+    "FullName": "Nguy\u1EC5n Duy Qu\u00E2n",
+    "GPA": 8.43,
+    "ImagePath": "Data\\images\\student_899.png"
+  },
+  {
+    "Id": 899,
+    "FullName": "Ph\u1EA1m H\u00F9ng Khang",
+    "GPA": 2.53,
+    "ImagePath": "Data\\images\\student_900.png"
+  },
+  {
+    "Id": 900,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n Hi\u1EC7p",
+    "GPA": 7.99,
+    "ImagePath": "Data\\images\\student_901.png"
+  },
+  {
+    "Id": 901,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n B\u1EA3o",
+    "GPA": 6.12,
+    "ImagePath": "Data\\images\\student_902.png"
+  },
+  {
+    "Id": 902,
+    "FullName": "Nguy\u1EC5n Minh D\u0169ng",
+    "GPA": 3.56,
+    "ImagePath": "Data\\images\\student_903.png"
+  },
+  {
+    "Id": 903,
+    "FullName": "Nguy\u1EC5n Minh Tu\u1EA5n",
+    "GPA": 4,
+    "ImagePath": "Data\\images\\student_904.png"
+  },
+  {
+    "Id": 904,
+    "FullName": "V\u00F5 Duy Khoa",
+    "GPA": 1.71,
+    "ImagePath": "Data\\images\\student_905.png"
+  },
+  {
+    "Id": 905,
+    "FullName": "Ph\u1EA1m H\u00F9ng Qu\u00E2n",
+    "GPA": 1.36,
+    "ImagePath": "Data\\images\\student_906.png"
+  },
+  {
+    "Id": 906,
+    "FullName": "Ph\u1EA1m H\u00F9ng Ho\u00E0ng",
+    "GPA": 3.18,
+    "ImagePath": "Data\\images\\student_907.png"
+  },
+  {
+    "Id": 907,
+    "FullName": "Nguy\u1EC5n Xu\u00E2n D\u0169ng",
+    "GPA": 3.28,
+    "ImagePath": "Data\\images\\student_908.png"
+  },
+  {
+    "Id": 908,
+    "FullName": "Ho\u00E0ng V\u0103n Khoa",
+    "GPA": 1.02,
+    "ImagePath": "Data\\images\\student_909.png"
+  },
+  {
+    "Id": 909,
+    "FullName": "Phan Minh Ho\u00E0ng",
+    "GPA": 5.14,
+    "ImagePath": "Data\\images\\student_910.png"
+  },
+  {
+    "Id": 910,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Huy",
+    "GPA": 2.09,
+    "ImagePath": "Data\\images\\student_911.png"
+  },
+  {
+    "Id": 911,
+    "FullName": "Ph\u1EA1m V\u0103n Khoa",
+    "GPA": 5.51,
+    "ImagePath": "Data\\images\\student_912.png"
+  },
+  {
+    "Id": 912,
+    "FullName": "Ho\u00E0ng V\u0103n Ho\u00E0ng",
+    "GPA": 6.72,
+    "ImagePath": "Data\\images\\student_913.png"
+  },
+  {
+    "Id": 913,
+    "FullName": "Nguy\u1EC5n Minh D\u0169ng",
+    "GPA": 1.9,
+    "ImagePath": "Data\\images\\student_914.png"
+  },
+  {
+    "Id": 914,
+    "FullName": "V\u0169 Duy Khoa",
+    "GPA": 9.55,
+    "ImagePath": "Data\\images\\student_915.png"
+  },
+  {
+    "Id": 915,
+    "FullName": "Ho\u00E0ng Minh Khoa",
+    "GPA": 6.95,
+    "ImagePath": "Data\\images\\student_916.png"
+  },
+  {
+    "Id": 916,
+    "FullName": "Phan Minh Khoa",
+    "GPA": 1.77,
+    "ImagePath": "Data\\images\\student_917.png"
+  },
+  {
+    "Id": 917,
+    "FullName": "V\u00F5 Ng\u1ECDc Khoa",
+    "GPA": 1.87,
+    "ImagePath": "Data\\images\\student_918.png"
+  },
+  {
+    "Id": 918,
+    "FullName": "Hu\u1EF3nh H\u00F9ng D\u0169ng",
+    "GPA": 5.9,
+    "ImagePath": "Data\\images\\student_919.png"
+  },
+  {
+    "Id": 919,
+    "FullName": "Ph\u1EA1m Xu\u00E2n Khoa",
+    "GPA": 9.44,
+    "ImagePath": "Data\\images\\student_920.png"
+  },
+  {
+    "Id": 920,
+    "FullName": "Tr\u1EA7n Qu\u00E2n Khang",
+    "GPA": 2.6,
+    "ImagePath": "Data\\images\\student_921.png"
+  },
+  {
+    "Id": 921,
+    "FullName": "Phan Ng\u1ECDc Long",
+    "GPA": 6.81,
+    "ImagePath": "Data\\images\\student_922.png"
+  },
+  {
+    "Id": 922,
+    "FullName": "L\u00EA Xu\u00E2n Hi\u1EC7p",
+    "GPA": 4.04,
+    "ImagePath": "Data\\images\\student_923.png"
+  },
+  {
+    "Id": 923,
+    "FullName": "V\u00F5 Ng\u1ECDc Qu\u00E2n",
+    "GPA": 2.03,
+    "ImagePath": "Data\\images\\student_924.png"
+  },
+  {
+    "Id": 924,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc B\u00ECnh",
+    "GPA": 7.86,
+    "ImagePath": "Data\\images\\student_925.png"
+  },
+  {
+    "Id": 925,
+    "FullName": "V\u0169 Qu\u00E2n Ho\u00E0ng",
+    "GPA": 6.41,
+    "ImagePath": "Data\\images\\student_926.png"
+  },
+  {
+    "Id": 926,
+    "FullName": "V\u0169 Xu\u00E2n Long",
+    "GPA": 7.26,
+    "ImagePath": "Data\\images\\student_927.png"
+  },
+  {
+    "Id": 927,
+    "FullName": "V\u00F5 Minh Qu\u00E2n",
+    "GPA": 6.45,
+    "ImagePath": "Data\\images\\student_928.png"
+  },
+  {
+    "Id": 928,
+    "FullName": "V\u0169 Minh Long",
+    "GPA": 4.16,
+    "ImagePath": "Data\\images\\student_929.png"
+  },
+  {
+    "Id": 929,
+    "FullName": "Ho\u00E0ng Minh Khoa",
+    "GPA": 5.19,
+    "ImagePath": "Data\\images\\student_930.png"
+  },
+  {
+    "Id": 930,
+    "FullName": "V\u0169 V\u0103n B\u1EA3o",
+    "GPA": 2.4,
+    "ImagePath": "Data\\images\\student_931.png"
+  },
+  {
+    "Id": 931,
+    "FullName": "Ho\u00E0ng H\u00F9ng Khoa",
+    "GPA": 5.79,
+    "ImagePath": "Data\\images\\student_932.png"
+  },
+  {
+    "Id": 932,
+    "FullName": "L\u00EA Minh Qu\u00E2n",
+    "GPA": 7.01,
+    "ImagePath": "Data\\images\\student_933.png"
+  },
+  {
+    "Id": 933,
+    "FullName": "Ph\u1EA1m Qu\u00E2n Long",
+    "GPA": 4.54,
+    "ImagePath": "Data\\images\\student_934.png"
+  },
+  {
+    "Id": 934,
+    "FullName": "V\u00F5 Duy D\u0169ng",
+    "GPA": 6.19,
+    "ImagePath": "Data\\images\\student_935.png"
+  },
+  {
+    "Id": 935,
+    "FullName": "Ph\u1EA1m H\u00F9ng Huy",
+    "GPA": 4.78,
+    "ImagePath": "Data\\images\\student_936.png"
+  },
+  {
+    "Id": 936,
+    "FullName": "L\u00EA V\u0103n T\u00E0i",
+    "GPA": 9.17,
+    "ImagePath": "Data\\images\\student_937.png"
+  },
+  {
+    "Id": 937,
+    "FullName": "Nguy\u1EC5n H\u00F9ng Qu\u00E2n",
+    "GPA": 5.54,
+    "ImagePath": "Data\\images\\student_938.png"
+  },
+  {
+    "Id": 938,
+    "FullName": "Tr\u1EA7n Minh Long",
+    "GPA": 3.59,
+    "ImagePath": "Data\\images\\student_939.png"
+  },
+  {
+    "Id": 939,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 2.38,
+    "ImagePath": "Data\\images\\student_940.png"
+  },
+  {
+    "Id": 940,
+    "FullName": "Ph\u1EA1m Ng\u1ECDc Hi\u1EC7p",
+    "GPA": 4.05,
+    "ImagePath": "Data\\images\\student_941.png"
+  },
+  {
+    "Id": 941,
+    "FullName": "V\u0169 H\u00F9ng B\u00ECnh",
+    "GPA": 3.33,
+    "ImagePath": "Data\\images\\student_942.png"
+  },
+  {
+    "Id": 942,
+    "FullName": "Phan Duy Hi\u1EC7p",
+    "GPA": 9.51,
+    "ImagePath": "Data\\images\\student_943.png"
+  },
+  {
+    "Id": 943,
+    "FullName": "Hu\u1EF3nh Duy B\u00ECnh",
+    "GPA": 8.2,
+    "ImagePath": "Data\\images\\student_944.png"
+  },
+  {
+    "Id": 944,
+    "FullName": "Tr\u1EA7n V\u0103n Tu\u1EA5n",
+    "GPA": 3.51,
+    "ImagePath": "Data\\images\\student_946.png"
+  },
+  {
+    "Id": 945,
+    "FullName": "V\u0169 H\u00F9ng Ho\u00E0ng",
+    "GPA": 5.17,
+    "ImagePath": "Data\\images\\student_947.png"
+  },
+  {
+    "Id": 946,
+    "FullName": "Tr\u1EA7n V\u0103n Long",
+    "GPA": 7.57,
+    "ImagePath": "Data\\images\\student_948.png"
+  },
+  {
+    "Id": 947,
+    "FullName": "Ph\u1EA1m V\u0103n Tu\u1EA5n",
+    "GPA": 9.54,
+    "ImagePath": "Data\\images\\student_949.png"
+  },
+  {
+    "Id": 948,
+    "FullName": "Hu\u1EF3nh Ng\u1ECDc Khoa",
+    "GPA": 4.48,
+    "ImagePath": "Data\\images\\student_950.png"
+  },
+  {
+    "Id": 949,
+    "FullName": "V\u0169 Xu\u00E2n Qu\u00E2n",
+    "GPA": 4.89,
+    "ImagePath": "Data\\images\\student_951.png"
+  },
+  {
+    "Id": 950,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Huy",
+    "GPA": 3.51,
+    "ImagePath": "Data\\images\\student_952.png"
+  },
+  {
+    "Id": 951,
+    "FullName": "Ph\u1EA1m V\u0103n Long",
+    "GPA": 9.01,
+    "ImagePath": "Data\\images\\student_953.png"
+  },
+  {
+    "Id": 952,
+    "FullName": "V\u0169 V\u0103n B\u1EA3o",
+    "GPA": 6.42,
+    "ImagePath": "Data\\images\\student_954.png"
+  },
+  {
+    "Id": 953,
+    "FullName": "Nguy\u1EC5n Ng\u1ECDc D\u0169ng",
+    "GPA": 3.39,
+    "ImagePath": "Data\\images\\student_955.png"
+  },
+  {
+    "Id": 954,
+    "FullName": "V\u0169 V\u0103n D\u0169ng",
+    "GPA": 4.41,
+    "ImagePath": "Data\\images\\student_956.png"
+  },
+  {
+    "Id": 955,
+    "FullName": "L\u00EA V\u0103n Long",
+    "GPA": 4.01,
+    "ImagePath": "Data\\images\\student_957.png"
+  },
+  {
+    "Id": 956,
+    "FullName": "L\u00EA Qu\u00E2n Khoa",
+    "GPA": 2.44,
+    "ImagePath": "Data\\images\\student_958.png"
+  },
+  {
+    "Id": 957,
+    "FullName": "Hu\u1EF3nh H\u00F9ng B\u1EA3o",
+    "GPA": 7.48,
+    "ImagePath": "Data\\images\\student_959.png"
+  },
+  {
+    "Id": 958,
+    "FullName": "V\u0169 Qu\u00E2n Long",
+    "GPA": 4.87,
+    "ImagePath": "Data\\images\\student_960.png"
+  },
+  {
+    "Id": 959,
+    "FullName": "Hu\u1EF3nh Minh B\u1EA3o",
+    "GPA": 3.54,
+    "ImagePath": "Data\\images\\student_961.png"
+  },
+  {
+    "Id": 960,
+    "FullName": "Ho\u00E0ng Qu\u00E2n Ho\u00E0ng",
+    "GPA": 1.69,
+    "ImagePath": "Data\\images\\student_962.png"
+  },
+  {
+    "Id": 961,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Long",
+    "GPA": 8.62,
+    "ImagePath": "Data\\images\\student_963.png"
+  },
+  {
+    "Id": 962,
+    "FullName": "L\u00EA Duy Long",
+    "GPA": 1.4,
+    "ImagePath": "Data\\images\\student_964.png"
+  },
+  {
+    "Id": 963,
+    "FullName": "Phan H\u00F9ng Qu\u00E2n",
+    "GPA": 9.82,
+    "ImagePath": "Data\\images\\student_965.png"
+  },
+  {
+    "Id": 964,
+    "FullName": "Hu\u1EF3nh H\u00F9ng Qu\u00E2n",
+    "GPA": 9.71,
+    "ImagePath": "Data\\images\\student_966.png"
+  },
+  {
+    "Id": 965,
+    "FullName": "Phan Minh T\u00E0i",
+    "GPA": 3.6,
+    "ImagePath": "Data\\images\\student_967.png"
+  },
+  {
+    "Id": 966,
+    "FullName": "Hu\u1EF3nh Xu\u00E2n Hi\u1EC7p",
+    "GPA": 4.39,
+    "ImagePath": "Data\\images\\student_968.png"
+  },
+  {
+    "Id": 967,
+    "FullName": "V\u00F5 Ng\u1ECDc Khoa",
+    "GPA": 3.24,
+    "ImagePath": "Data\\images\\student_969.png"
+  },
+  {
+    "Id": 968,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Khang",
+    "GPA": 2.37,
+    "ImagePath": "Data\\images\\student_970.png"
+  },
+  {
+    "Id": 969,
+    "FullName": "Nguy\u1EC5n Qu\u00E2n B\u00ECnh",
+    "GPA": 2.67,
+    "ImagePath": "Data\\images\\student_971.png"
+  },
+  {
+    "Id": 970,
+    "FullName": "V\u0169 Qu\u00E2n B\u1EA3o",
+    "GPA": 3.02,
+    "ImagePath": "Data\\images\\student_972.png"
+  },
+  {
+    "Id": 971,
+    "FullName": "Hu\u1EF3nh Minh D\u0169ng",
+    "GPA": 8.6,
+    "ImagePath": "Data\\images\\student_973.png"
+  },
+  {
+    "Id": 972,
+    "FullName": "Phan Minh Tu\u1EA5n",
+    "GPA": 5.67,
+    "ImagePath": "Data\\images\\student_974.png"
+  },
+  {
+    "Id": 973,
+    "FullName": "Nguy\u1EC5n Duy Huy",
+    "GPA": 9.36,
+    "ImagePath": "Data\\images\\student_975.png"
+  },
+  {
+    "Id": 974,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Huy",
+    "GPA": 8.13,
+    "ImagePath": "Data\\images\\student_976.png"
+  },
+  {
+    "Id": 975,
+    "FullName": "L\u00EA Xu\u00E2n Huy",
+    "GPA": 5.24,
+    "ImagePath": "Data\\images\\student_977.png"
+  },
+  {
+    "Id": 976,
+    "FullName": "Ho\u00E0ng H\u00F9ng Ho\u00E0ng",
+    "GPA": 5.83,
+    "ImagePath": "Data\\images\\student_978.png"
+  },
+  {
+    "Id": 977,
+    "FullName": "Tr\u1EA7n H\u00F9ng Khang",
+    "GPA": 4.08,
+    "ImagePath": "Data\\images\\student_979.png"
+  },
+  {
+    "Id": 978,
+    "FullName": "V\u00F5 Xu\u00E2n Khang",
+    "GPA": 7.89,
+    "ImagePath": "Data\\images\\student_980.png"
+  },
+  {
+    "Id": 979,
+    "FullName": "V\u0169 Duy Long",
+    "GPA": 1.33,
+    "ImagePath": "Data\\images\\student_981.png"
+  },
+  {
+    "Id": 980,
+    "FullName": "L\u00EA Duy Hi\u1EC7p",
+    "GPA": 5.16,
+    "ImagePath": "Data\\images\\student_982.png"
+  },
+  {
+    "Id": 981,
+    "FullName": "V\u00F5 V\u0103n B\u00ECnh",
+    "GPA": 7.85,
+    "ImagePath": "Data\\images\\student_983.png"
+  },
+  {
+    "Id": 982,
+    "FullName": "Ph\u1EA1m Minh Huy",
+    "GPA": 4.28,
+    "ImagePath": "Data\\images\\student_984.png"
+  },
+  {
+    "Id": 983,
+    "FullName": "V\u0169 Minh B\u00ECnh",
+    "GPA": 2.74,
+    "ImagePath": "Data\\images\\student_985.png"
+  },
+  {
+    "Id": 984,
+    "FullName": "L\u00EA Minh Tu\u1EA5n",
+    "GPA": 4.96,
+    "ImagePath": "Data\\images\\student_986.png"
+  },
+  {
+    "Id": 985,
+    "FullName": "Phan Duy B\u1EA3o",
+    "GPA": 2,
+    "ImagePath": "Data\\images\\student_987.png"
+  },
+  {
+    "Id": 986,
+    "FullName": "V\u00F5 Qu\u00E2n Qu\u00E2n",
+    "GPA": 4.72,
+    "ImagePath": "Data\\images\\student_988.png"
+  },
+  {
+    "Id": 987,
+    "FullName": "Tr\u1EA7n Minh D\u0169ng",
+    "GPA": 7.45,
+    "ImagePath": "Data\\images\\student_989.png"
+  },
+  {
+    "Id": 988,
+    "FullName": "Hu\u1EF3nh Qu\u00E2n Huy",
+    "GPA": 6.48,
+    "ImagePath": "Data\\images\\student_990.png"
+  },
+  {
+    "Id": 989,
+    "FullName": "Phan H\u00F9ng Khoa",
+    "GPA": 5.28,
+    "ImagePath": "Data\\images\\student_991.png"
+  },
+  {
+    "Id": 990,
+    "FullName": "Tr\u1EA7n Duy Qu\u00E2n",
+    "GPA": 1.88,
+    "ImagePath": "Data\\images\\student_992.png"
+  },
+  {
+    "Id": 991,
+    "FullName": "Hu\u1EF3nh Duy Khang",
+    "GPA": 7.46,
+    "ImagePath": "Data\\images\\student_993.png"
+  },
+  {
+    "Id": 992,
+    "FullName": "V\u00F5 V\u0103n Long",
+    "GPA": 6.89,
+    "ImagePath": "Data\\images\\student_994.png"
+  },
+  {
+    "Id": 993,
+    "FullName": "Nguy\u1EC5n V\u0103n B\u1EA3o",
+    "GPA": 8.85,
+    "ImagePath": "Data\\images\\student_995.png"
+  },
+  {
+    "Id": 994,
+    "FullName": "Tr\u1EA7n Qu\u00E2n B\u1EA3o",
+    "GPA": 6.91,
+    "ImagePath": "Data\\images\\student_996.png"
+  },
+  {
+    "Id": 995,
+    "FullName": "V\u0169 Xu\u00E2n Long",
+    "GPA": 3.89,
+    "ImagePath": "Data\\images\\student_997.png"
+  },
+  {
+    "Id": 996,
+    "FullName": "Tr\u1EA7n Ng\u1ECDc Ho\u00E0ng",
+    "GPA": 9.6,
+    "ImagePath": "Data\\images\\student_998.png"
+  },
+  {
+    "Id": 997,
+    "FullName": "Nguy\u1EC5n Minh Khang",
+    "GPA": 6.38,
+    "ImagePath": "Data\\images\\student_999.png"
+  },
+  {
+    "Id": 998,
+    "FullName": "Nguy\u1EC5n Minh Tu\u1EA5n",
+    "GPA": 1.26,
+    "ImagePath": "Data\\images\\student_1000.png"
+  },
+  {
+    "Id": 999,
+    "FullName": "Tr\u1EA7n K\u00EDnh Ho\u00E0ng",
+    "GPA": 10,
+    "ImagePath": "Data\\images\\student_999.png"
+  }
+]
