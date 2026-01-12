@@ -52,7 +52,7 @@ var app = builder.Build();
 
 app.UseMiddleware<ExceptionsMiddleware>();
 
-app.UseMiddleware<ResponsesMiddleware>();
+//app.UseMiddleware<ResponsesMiddleware>();
 
 // Middleware hệ thống phải đặt trước Controller
 // Middleware request response thì phải đặt sau middlware mà wrap toàn bộ pipline

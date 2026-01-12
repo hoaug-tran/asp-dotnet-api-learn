@@ -16,13 +16,18 @@ namespace LearnLinQWeb.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll(int? page, int? limit, string? title, string? author, string? sortBy, string? order)
         {
-            return Ok(_bookService.GetAllBooks());
+            return Ok(new
+            {
+                paging = page.HasValue && limit.HasValue,
+                data = _bookService.GetAllBooks(page, limit, title, author, sortBy, order),
+                message = "OK"
+            });
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id) // Nên đặt tên rõ ràng hơn là Get
+        public IActionResult GetById(int id) 
         {
             var book = _bookService.GetBookById(id);
             return book != null ? Ok(book) : NotFound("Không tìm thấy sách");

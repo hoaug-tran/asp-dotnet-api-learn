@@ -1,4 +1,5 @@
-﻿using LearnLinQWeb.Data;
+﻿using System.Linq;
+using LearnLinQWeb.Data;
 using LearnLinQWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +15,53 @@ namespace LearnLinQWeb.Services
             _db = db;
         }
 
-        public List<Book> GetAllBooks()
+        public List<Book> GetAllBooks(int? page, int? limit, string? title, string? author, string? sortBy, string? order)
         {
-            return _db.Books.AsNoTracking().ToList();
+            // AsQueryable -> "query này là query động -> chưa chạy -> vẫn còn build tiếp"
+            var query = _db.Books.AsNoTracking().AsQueryable();
+
+            // tìm kiếm, filter
+            if (!string.IsNullOrWhiteSpace(title))
+            {
+                query = query.Where(b => b.Title.Contains(title));
+            }
+
+            if (!string.IsNullOrWhiteSpace(author))
+            {
+                query = query.Where(b => b.Author.Contains(author));
+            }
+
+            // sắp xếp theo title hoặc author
+            bool isDesc = order?.ToLower() == "desc";
+            query = sortBy?.ToLower() switch
+            {
+                "title" => isDesc ? query.OrderByDescending(b => b.Title) : query.OrderBy(b => b.Title),
+                "author" => isDesc ? query.OrderByDescending(b => b.Author) : query.OrderBy(b => b.Author),
+                _ => query.OrderBy(b => b.Id)
+            };
+
+            /*
+             sort phụ -> option
+            "title" => isDesc
+                ? query.OrderByDescending(b => b.Title).ThenBy(b => b.Id)
+                : query.OrderBy(b => b.Title).ThenBy(b => b.Id),
+
+            "author" => isDesc
+                ? query.OrderByDescending(b => b.Author).ThenBy(b => b.Id)
+                : query.OrderBy(b => b.Author).ThenBy(b => b.Id),
+            */
+
+            // phân trang, limit. PHÂN TRANG PHẢI CÓ ORDERBY !!!!
+            if (page.HasValue && limit.HasValue)
+            {
+                int pageSize = limit.Value < 1 ? 10 : limit.Value;
+                int currentPage = page.Value < 1 ? 1 : page.Value;
+
+                query = query.Skip((currentPage - 1) * pageSize).Take(pageSize);
+            }
+
+            // chạy query
+            return query.ToList();
         }
 
         public Book? GetBookById(int id)
@@ -57,6 +102,8 @@ namespace LearnLinQWeb.Services
 
             return false;
         }
+
+
 
     }   
 }

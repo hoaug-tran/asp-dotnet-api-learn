@@ -19,7 +19,5 @@ namespace LearnLinQWeb.Controllers
         {
             return Ok(_userService.GetAllUsers());
         }
-
-
     }
 }

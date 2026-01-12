@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Numerics;
 
 namespace LearnLinQWeb.Models
 {
@@ -16,13 +17,16 @@ namespace LearnLinQWeb.Models
         [MaxLength(255)]
         [Column(TypeName = "varchar(255)")]
         public string? AvatarUrl { get; set; }
+        [MaxLength(10)]
+        [Column(TypeName = "varchar(10)")]
+        public string? Phone { get; set; }
 
         public User()
         {
 
         }
 
-        public User(int id, string name, string username, string password, string? email, string? avatarUrl, string role)
+        public User(int id, string name, string username, string password, string? email, string? avatarUrl, string? phone, string role)
         {
             Id = id;
             Name = name;
@@ -30,6 +34,7 @@ namespace LearnLinQWeb.Models
             Password = password;
             Email = email;
             AvatarUrl = avatarUrl;
+            Phone = phone;
             Role = role;
         }
     }
