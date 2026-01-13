@@ -1,5 +1,6 @@
-﻿using LearnLinQWeb.Models;
+﻿using LearnLinQWeb.Domain.Entities;
 using LearnLinQWeb.Services;
+using LearnLinQWeb.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearnLinQWeb.Controllers
@@ -8,20 +9,19 @@ namespace LearnLinQWeb.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly BookService _bookService;
+        private readonly IBookService _service;
 
-        public BooksController(BookService bookService)
+        public BooksController(IBookService service)
         {
-            _bookService = bookService;
+            _service = service;
         }
 
         [HttpGet]
-        public IActionResult GetAll(int? page, int? limit, string? title, string? author, string? sortBy, string? order)
+        public IActionResult GetAll(int page, int limit, string? title, string? author, string? sortBy, string? order)
         {
             return Ok(new
             {
-                paging = page.HasValue && limit.HasValue,
-                data = _bookService.GetAllBooks(page, limit, title, author, sortBy, order),
+                data = _service.GetAllBooks(page, limit, title, author, sortBy, order),
                 message = "OK"
             });
         }
@@ -29,14 +29,14 @@ namespace LearnLinQWeb.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(int id) 
         {
-            var book = _bookService.GetBookById(id);
+            var book = _service.GetBookById(id);
             return book != null ? Ok(book) : NotFound("Không tìm thấy sách");
         }
 
         [HttpPost]
         public IActionResult Create(Book book)
         {
-            return (_bookService.AddBook(book))
+            return (_service.AddBook(book))
                 ? Ok("Thêm thành công")
                 : BadRequest("Lỗi khi thêm sách");
         }
@@ -44,7 +44,7 @@ namespace LearnLinQWeb.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, Book book)
         {
-            return (_bookService.UpdateBook(id, book))
+            return (_service.UpdateBook(id, book))
                 ? Ok("Cập nhật sách thành công")
                 : BadRequest("Lỗi khi cập nhật sách hoặc không tìm thấy ID");
         }
@@ -52,7 +52,7 @@ namespace LearnLinQWeb.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            return (_bookService.DeleteBook(id))
+            return (_service.DeleteBook(id))
                 ? Ok("Xoá sách thành công")
                 : BadRequest("Xoá sách thất bại (ID không tồn tại)");
         }

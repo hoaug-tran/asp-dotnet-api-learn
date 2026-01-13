@@ -1,9 +1,12 @@
 ﻿using System;
 using LearnLinQWeb.Controllers;
 using LearnLinQWeb.Data;
+using LearnLinQWeb.Data.Interfaces.Auth;
+using LearnLinQWeb.Data.Interfaces.Book;
+using LearnLinQWeb.Data.Interfaces.User;
 using LearnLinQWeb.Middlewares;
-using LearnLinQWeb.Models;
 using LearnLinQWeb.Services;
+using LearnLinQWeb.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,13 +16,21 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString)
         .UseSnakeCaseNamingConvention());
 
-builder.Services.AddScoped<BookService>();
-builder.Services.AddScoped<AuthService>();
-builder.Services.AddScoped<UserService>();
+// book
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IBookQuery, BookEfQuery>();
+builder.Services.AddScoped<IBookCommand, BookEfCommand>();
 
+// auth
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAuthQuery, AuthEfQuery>();
+//builder.Services.AddScoped<IAuthCommand, AuthEfCommand>();
 
+// user
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserQuery, UserEfQuery>();
+builder.Services.AddScoped<IUserCommand, UserEfCommand>();
 
-// Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

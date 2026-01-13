@@ -1,22 +1,25 @@
 ﻿using LearnLinQWeb.Data;
-using LearnLinQWeb.Models;
+using LearnLinQWeb.Data.Interfaces.Auth;
+using LearnLinQWeb.Data.Interfaces.User;
+using LearnLinQWeb.Domain.Entities;
+using LearnLinQWeb.Services.Interfaces;
 
 namespace LearnLinQWeb.Services
 {
-    public class AuthService
+    public class AuthService : IAuthService
     {
 
-        private readonly AppDbContext _db;
+        private readonly IAuthQuery _command;
 
-        public AuthService(AppDbContext db)
+        public AuthService(IAuthQuery command)
         {
-            _db = db;
+            _command = command;
         }
 
         public User? Login(string username,string password)
         {
 
-            return _db.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
+            return _command.Query().FirstOrDefault(u => u.Username == username && u.Password == password);
         }
 
     }

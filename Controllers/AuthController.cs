@@ -1,6 +1,8 @@
 ﻿using LearnLinQWeb.Services;
+using LearnLinQWeb.Services.Interfaces;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using LoginRequest = LearnLinQWeb.DTOs.LoginRequest;
 
 namespace LearnLinQWeb.Controllers
@@ -9,25 +11,31 @@ namespace LearnLinQWeb.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly AuthService _authServices;
+        private readonly IAuthService _service;
 
-        public AuthController(AuthService authService)
+        public AuthController(IAuthService service)
         {
-            _authServices = authService;
+            _service = service;
         }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest rq)
         {
-            var user = _authServices.Login(rq.Username, rq.Password);
+            if (string.IsNullOrWhiteSpace(rq.Username) ||
+                string.IsNullOrWhiteSpace(rq.Password))
+            {
+                return BadRequest(new { message = "Dữ liệu không hợp lệ" });
+            }
 
-            if (user!=null)
+            var user = _service.Login(rq.Username, rq.Password);
+
+            if (user != null)
             {
                 return Ok(new
                 {
                     message = "Đăng nhập thành công",
-                    username = user.Username,
-                    role = user.Role 
+                    username = rq.Username,
+                    role = user.Role
                 });
             }
 

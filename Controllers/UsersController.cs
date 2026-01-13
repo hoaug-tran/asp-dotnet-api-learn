@@ -1,4 +1,5 @@
 ﻿using LearnLinQWeb.Services;
+using LearnLinQWeb.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearnLinQWeb.Controllers
@@ -7,17 +8,17 @@ namespace LearnLinQWeb.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly UserService _userService;
+        private readonly IUserService _service;
 
-        public UsersController(UserService userService)
+        public UsersController(UserService service)
         {
-            _userService = userService;
+            _service = service;
         }
 
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(_userService.GetAllUsers());
+            return Ok(_service.GetAllUsers());
         }
     }
 }

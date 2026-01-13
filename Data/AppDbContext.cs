@@ -1,4 +1,4 @@
-﻿using LearnLinQWeb.Models;
+﻿using LearnLinQWeb.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace LearnLinQWeb.Data
@@ -12,7 +12,5 @@ namespace LearnLinQWeb.Data
         public DbSet<Book> Books { get; set; }
 
         public DbSet<User> Users { get; set; }
-
-
     }
 }
