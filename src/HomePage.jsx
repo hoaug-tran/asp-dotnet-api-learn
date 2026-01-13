@@ -1,30 +1,64 @@
 import axios from "axios";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import "./HomePage.css";
 
 const HomePage = () => {
   const [books, setBooks] = useState([]);
   const [newBook, setNewBook] = useState({ title: "", author: "", price: "" });
   const [sortBy, setSortBy] = useState("");
   const [search, setSearch] = useState("");
+  const [page, setPage] = useState(1);
+  const [limit, setLimit] = useState(10);
+  const [pageStatus, setPageStatus] = useState({
+    hasNext: true,
+    hasPrevious: true,
+  });
+
   const navigate = useNavigate();
 
-  const fetchData = useCallback(async () => {
-    const [sort, order] = sortBy ? sortBy.split("-") : ["", ""];
-
-    try {
-      const res = await axios.get(
-        `https://localhost:7216/api/v1/Books?page=1&limit=10&title=&sortBy=${sort}&order=${order}`
-      );
-      setBooks(res.data.data);
-    } catch (error) {
-      console.error("Lỗi khi fetch dữ liệu:", error);
+  const handleClickNext = () => {
+    if (pageStatus.hasNext) {
+      setPage((p) => p + 1);
     }
-  }, [sortBy]);
+  };
+
+  const handleClickPrevious = () => {
+    if (pageStatus.hasPrevious) {
+      setPage((p) => p - 1);
+    }
+  };
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    const fetchData = async () => {
+      const [sort, order] = sortBy ? sortBy.split("-") : ["", ""];
+
+      try {
+        const params = {
+          page,
+          limit,
+          title: search || "",
+          sortBy: sort,
+          order,
+        };
+        const res = await axios.get("https://localhost:7216/api/v1/Books", {
+          params,
+        });
+        const { items, hasNext, hasPrevious } = res.data.data;
+        setBooks(items);
+        setPageStatus({ hasNext, hasPrevious });
+      } catch (error) {
+        console.error("Lỗi khi fetch dữ liệu:", error);
+      }
+    };
+
+    const delay = search !== "" ? 500 : 0;
+    const timeoutId = setTimeout(() => {
+      fetchData();
+    }, delay);
+
+    return () => clearTimeout(timeoutId);
+  }, [page, limit, search, sortBy]);
 
   const deleteBookHandle = async (id) => {
     const allowUser = JSON.parse(localStorage.getItem("user"));
@@ -61,7 +95,8 @@ const HomePage = () => {
     e.preventDefault();
     try {
       await axios.post("https://localhost:7216/api/v1/Books/", newBook);
-      fetchData();
+      setPage(1);
+      setLimit(10);
       setNewBook({ title: "", author: "", price: "" });
       alert("Thêm thành công");
     } catch (error) {
@@ -103,126 +138,135 @@ const HomePage = () => {
     }
   };
 
-  const handleSearch = useCallback(async () => {
-    const [sort, order] = sortBy ? sortBy.split("-") : ["", ""];
-    try {
-      const res = await axios.get(
-        `https://localhost:7216/api/v1/Books?page=1&limit=10&title=${search}&sortBy=${sort}&order=${order}`
-      );
-      setBooks(res.data.data);
-    } catch (error) {
-      console.error("Lỗi khi fetch:", error);
-    }
-  }, [sortBy, search]);
-
-  // const handleOrder = () => {
-  //   setOrder((o) => (b.order = order));
-  // };
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      handleSearch();
-    }, 500);
-
-    return () => clearTimeout(timeoutId);
-  }, [search, sortBy, handleSearch]);
-
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
+    setPage(1);
   };
 
   const user = JSON.parse(localStorage.getItem("user"));
 
   return (
-    <>
-      <button onClick={handleLogout} style={{ float: "right" }}>
-        Đăng xuất
-      </button>
-      {user?.role === "Admin" && (
+    <div className="home-container">
+      <div className="header">
         <div>
-          <h1>Thêm sách mới</h1>
-          <label>Title: </label>
+          <h3>Xin chào {user.username} 👋</h3>
+        </div>
+        <button className="logout-btn" onClick={handleLogout}>
+          Đăng xuất
+        </button>
+      </div>
+
+      {user?.role === "Admin" && (
+        <div className="admin-section">
+          <h2>Thêm sách mới</h2>
           <form onSubmit={addBookHandle}>
-            <input
-              name="title"
-              placeholder="Title"
-              value={newBook.title}
-              onChange={handleInputChange}
-              required
-            />
-            <br></br>
-            <label>Author: </label>
-            <input
-              name="author"
-              placeholder="Author"
-              value={newBook.author}
-              onChange={handleInputChange}
-              required
-            />
-            <br></br>
-            <label>Price: </label>
-            <input
-              type="number"
-              name="price"
-              placeholder="Price"
-              value={newBook.price}
-              onChange={handleInputChange}
-              required
-            />
-            <br></br>
-            <button type="submit">Thêm sách</button>
+            <div className="form-group">
+              <label>Title</label>
+              <input
+                name="title"
+                placeholder="Nhập tên sách"
+                value={newBook.title}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label>Author</label>
+              <input
+                name="author"
+                placeholder="Nhập tên tác giả"
+                value={newBook.author}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label>Price</label>
+              <input
+                type="number"
+                name="price"
+                placeholder="Nhập giá"
+                value={newBook.price}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <button type="submit" className="submit-btn">
+              Thêm sách
+            </button>
           </form>
         </div>
       )}
-      <h1>Danh sách sách thư viện</h1>
-      <span>Tìm kiếm </span>
-      <input
-        type="text"
-        name="find"
-        onChange={handleSearchChange}
-        value={search}
-      ></input>
-      {/* <button onClick={handleSearch} value={search}>
-        Tìm kiếm
-      </button> */}
-      <br></br>
-      <span>Sắp xếp theo </span>
-      <select onChange={handleSortBy} value={sortBy}>
-        <option value="">Chọn sắp xếp theo</option>
-        <option value="author-asc">Tên tác giả tăng dần</option>
-        <option value="author-desc">Tên tác giả giảm dần</option>
-        <option value="title-asc">Tên sách tăng dần</option>
-        <option value="title-desc">Tên sách giảm dần</option>
-      </select>
 
-      <hr></hr>
+      <div className="main-section">
+        <h1 style={{ fontWeight: "bold" }}>Thư viện sách</h1>
 
-      <table border="1" style={{ width: "100%" }}>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Price</th>
-            <th>Method</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books.map((book) => (
-            <tr key={book.id}>
-              <td>{book.id}</td>
-              <td>{book.title}</td>
-              <td>{book.author}</td>
-              <td>{book.price.toLocaleString()} đ</td>
-              <td style={{ textAlign: "center" }}>
-                <button style={{ marginRight: "10px" }}>Sửa</button>
-                <button onClick={() => deleteBookHandle(book.id)}>Xoá</button>
-              </td>
+        <div className="filters">
+          <div className="filter-group">
+            <label>Tìm kiếm</label>
+            <input
+              type="text"
+              placeholder="Nhập tên sách..."
+              onChange={handleSearchChange}
+              value={search}
+            />
+          </div>
+          <div className="filter-group">
+            <label>Sắp xếp</label>
+            <select onChange={handleSortBy} value={sortBy}>
+              <option value="">Chọn sắp xếp</option>
+              <option value="author-asc">Tác giả: A → Z</option>
+              <option value="author-desc">Tác giả: Z → A</option>
+              <option value="title-asc">Tên sách: A → Z</option>
+              <option value="title-desc">Tên sách: Z → A</option>
+            </select>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tên sách</th>
+              <th>Tác giả</th>
+              <th>Giá</th>
+              <th>Thao tác</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </>
+          </thead>
+          <tbody>
+            {books.map((book) => (
+              <tr key={book.id}>
+                <td>{book.id}</td>
+                <td>{book.title}</td>
+                <td>{book.author}</td>
+                <td>{book.price.toLocaleString()} đ</td>
+                <td>
+                  <div className="action-buttons">
+                    <button className="edit-btn">Sửa</button>
+                    <button
+                      className="delete-btn"
+                      onClick={() => deleteBookHandle(book.id)}
+                    >
+                      Xoá
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+            {Array.from({ length: 10 - books.length }).map((_, idx) => (
+              <tr key={`empty-${idx}`} className="empty-row">
+                <td colSpan="5"></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <div className="pagination">
+          <button onClick={handleClickPrevious}>Trang trước</button>
+          <button onClick={handleClickNext}>Trang sau</button>
+        </div>
+      </div>
+    </div>
   );
 };
 
