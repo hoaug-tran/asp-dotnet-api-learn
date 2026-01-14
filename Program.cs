@@ -1,6 +1,8 @@
 ﻿using System;
+using LearnLinQWeb.Application.Mappings;
 using LearnLinQWeb.Controllers;
 using LearnLinQWeb.Data;
+using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Data.Interfaces.Auth;
 using LearnLinQWeb.Data.Interfaces.Book;
 using LearnLinQWeb.Data.Interfaces.User;
@@ -16,20 +18,30 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString)
         .UseSnakeCaseNamingConvention());
 
+
+// mapping
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+
+// unit of work
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 // book
 builder.Services.AddScoped<IBookService, BookService>();
-builder.Services.AddScoped<IBookQuery, BookEfQuery>();
-builder.Services.AddScoped<IBookCommand, BookEfCommand>();
+//builder.Services.AddScoped<IBookQuery, BookEfQuery>();
+//builder.Services.AddScoped<IBookCommand, BookEfCommand>();
 
 // auth
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IAuthQuery, AuthEfQuery>();
+//builder.Services.AddScoped<IAuthQuery, AuthEfQuery>();
 //builder.Services.AddScoped<IAuthCommand, AuthEfCommand>();
 
 // user
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IUserQuery, UserEfQuery>();
-builder.Services.AddScoped<IUserCommand, UserEfCommand>();
+//builder.Services.AddScoped<IUserQuery, UserEfQuery>();
+//builder.Services.AddScoped<IUserCommand, UserEfCommand>();
 
 
 builder.Services.AddControllers();

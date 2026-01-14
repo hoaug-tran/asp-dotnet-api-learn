@@ -1,4 +1,5 @@
 ﻿using LearnLinQWeb.Data;
+using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Data.Interfaces.Auth;
 using LearnLinQWeb.Data.Interfaces.User;
 using LearnLinQWeb.Domain.Entities;
@@ -9,17 +10,17 @@ namespace LearnLinQWeb.Services
     public class AuthService : IAuthService
     {
 
-        private readonly IAuthQuery _command;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AuthService(IAuthQuery command)
+        public AuthService(IUnitOfWork unitOfWork)
         {
-            _command = command;
+            _unitOfWork = unitOfWork;
         }
 
         public User? Login(string username,string password)
         {
 
-            return _command.Query().FirstOrDefault(u => u.Username == username && u.Password == password);
+            return _unitOfWork.AuthQuery.Query().FirstOrDefault(u => u.Username == username && u.Password == password);
         }
 
     }

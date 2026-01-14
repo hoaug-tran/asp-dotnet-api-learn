@@ -59,18 +59,18 @@ Chú ý: Đọc chi tiết tài liệu API .NET Core tương ứng với từng 
 
 ## PHẦN 4 — KIẾN TRÚC & XÂY DỰNG ỨNG DỤNG SẠCH
 
-- [ ] 8. Clean / Onion Architecture
-  - [ ] API (Controllers)
-  - [ ] Application (Services / DTO)
-  - [ ] Domain (Entities / Business Logic)
-  - [ ] Infrastructure (EF, Repository)
+- [x] 8. Clean / Onion Architecture
+  - [x] API (Controllers)
+  - [x] Application (Services / DTO)
+  - [x] Domain (Entities / Business Logic)
+  - [x] Infrastructure (EF, Repository)
 
-- [ ] 9. Repository & Unit of Work
-  - [ ] Generic repository
-  - [ ] Interface abstraction
-  - [ ] Unit of Work
+- [x] 9. Repository & Unit of Work
+  - [x] Generic repository
+  - [x] Interface abstraction
+  - [x] Unit of Work
 
-- [ ] 10. AutoMapper (Entity ↔ DTO)
+- [x] 10. AutoMapper (Entity ↔ DTO)
 
 Tài liệu tham khảo AutoMapper:
 - https://dotnettutorials.net/course/asp-net-core-web-api-tutorials/

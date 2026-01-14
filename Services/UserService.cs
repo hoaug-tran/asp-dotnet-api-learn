@@ -1,4 +1,5 @@
 ﻿using LearnLinQWeb.Data;
+using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Data.Interfaces.User;
 using LearnLinQWeb.Domain.Entities;
 using LearnLinQWeb.Services.Interfaces;
@@ -8,43 +9,49 @@ namespace LearnLinQWeb.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserQuery _query;
-        private readonly IUserCommand _command;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public UserService(IUserQuery query, IUserCommand command)
+        public UserService(IUnitOfWork unitOfWork)
         {
-            _query = query;
-            _command = command;
+            _unitOfWork = unitOfWork;
         }
 
         public List<User> GetAllUsers()
         {
-            return _query.Query().ToList();
+            return _unitOfWork.UserQuery.Query().ToList();
         }
 
         public User? GetUserById(int id)
         {
-            return _query.Query().FirstOrDefault(u => u.Id == id);
+            return _unitOfWork.UserQuery.Query().FirstOrDefault(u => u.Id == id);
         }
 
         public User? GetUserByUsername(string username)
         {
-            return _query.Query().FirstOrDefault(u => u.Username == username);
+            return _unitOfWork.UserQuery.Query().FirstOrDefault(u => u.Username == username);
         }
 
-        public bool AddUser()
-        {
-            return false;
-        }
+        //public bool AddUser(User user)
+        //{
+        //    _unitOfWork.UserCommand.Add(user);
+        //    return _unitOfWork.SaveChanges() > 0;
+        //}
 
-        public bool DeleteUser()
-        {
-            return false;
-        }
+        //public bool UpdateUser(User user)
+        //{
+        //    _unitOfWork.UserCommand.Update(user);
+        //    return _unitOfWork.SaveChanges() > 0;
+        //}
 
-        public bool UpdateUser()
-        {
-            return false;
-        }
+        //public bool DeleteUser(int id)
+        //{
+        //    var user = GetUserById(id);
+        //    if (user != null)
+        //    {
+        //        _unitOfWork.UserCommand.Delete(user);
+        //        return _unitOfWork.SaveChanges() > 0;
+        //    }
+        //    return false;
+        //}
     }
 }

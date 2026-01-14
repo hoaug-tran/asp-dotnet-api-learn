@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using LearnLinQWeb.Data;
+using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Data.Interfaces.Book;
 using LearnLinQWeb.Domain.Entities;
 using LearnLinQWeb.DTOs.Common;
@@ -11,13 +12,11 @@ namespace LearnLinQWeb.Services
 {
     public class BookService : IBookService
     {
-        private readonly IBookQuery _query;
-        private readonly IBookCommand _command;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public BookService(IBookQuery query, IBookCommand command)
+        public BookService(IUnitOfWork unitOfWork)
         {
-            _query = query;
-            _command = command; 
+            _unitOfWork = unitOfWork;
         }
 
         public PagedResult<Book> GetAllBooks(
@@ -29,7 +28,7 @@ namespace LearnLinQWeb.Services
             string? order
         )
         {
-            var query = _query.Query();
+            var query = _unitOfWork.BookQuery.Query();
 
             // filter
             if (!string.IsNullOrWhiteSpace(title))
@@ -86,13 +85,13 @@ namespace LearnLinQWeb.Services
 
         public Book? GetBookById(int id)
         {
-            return _query.Query().FirstOrDefault(b => b.Id == id);
+            return _unitOfWork.BookQuery.Query().FirstOrDefault(b => b.Id == id);
         }
 
         public bool AddBook(Book book)
         {
-            _command.Add(book);
-            return _command.SaveChanges() > 0;
+            _unitOfWork.BookCommand.Add(book);
+            return _unitOfWork.SaveChanges() > 0;
         }
 
         public bool UpdateBook(int id, Book updatedBook)
@@ -104,9 +103,9 @@ namespace LearnLinQWeb.Services
                 existBook.Author = updatedBook.Author;
                 existBook.Price = updatedBook.Price;
 
-                _command.Update(existBook);
+                _unitOfWork.BookCommand.Update(existBook);
 
-                return _command.SaveChanges() > 0;
+                return _unitOfWork.SaveChanges() > 0;
             }
             return false;
         }
@@ -116,8 +115,8 @@ namespace LearnLinQWeb.Services
             var book = GetBookById(id);
             if (book != null)
             {
-                _command.Delete(book);
-                return _command.SaveChanges() > 0;
+                _unitOfWork.BookCommand.Delete(book);
+                return _unitOfWork.SaveChanges() > 0;
             }
 
             return false;

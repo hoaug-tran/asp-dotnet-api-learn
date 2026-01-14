@@ -1,9 +1,7 @@
-﻿using LearnLinQWeb.Services;
+﻿using AutoMapper;
+using LearnLinQWeb.DTOs;
 using LearnLinQWeb.Services.Interfaces;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using LoginRequest = LearnLinQWeb.DTOs.LoginRequest;
 
 namespace LearnLinQWeb.Controllers
 {
@@ -12,16 +10,19 @@ namespace LearnLinQWeb.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _service;
+        private readonly IMapper _mapper;
 
-        public AuthController(IAuthService service)
+        public AuthController(IAuthService service, IMapper mapper)
         {
             _service = service;
+            _mapper = mapper;
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginRequest rq)
+        public IActionResult Login([FromBody] LoginRequest? rq)
         {
-            if (string.IsNullOrWhiteSpace(rq.Username) ||
+            if (rq == null ||
+                string.IsNullOrWhiteSpace(rq.Username) ||
                 string.IsNullOrWhiteSpace(rq.Password))
             {
                 return BadRequest(new { message = "Dữ liệu không hợp lệ" });
@@ -31,17 +32,16 @@ namespace LearnLinQWeb.Controllers
 
             if (user != null)
             {
+                var response = _mapper.Map<LoginResponse>(user);
+
                 return Ok(new
                 {
                     message = "Đăng nhập thành công",
-                    username = rq.Username,
-                    role = user.Role
+                    data = response
                 });
             }
 
-            return Unauthorized(new {message = "Tài khoản hoặc mật khẩu không đúng" });
+            return Unauthorized(new { message = "Tài khoản hoặc mật khẩu không đúng" });
         }
     }
-
-
 }
