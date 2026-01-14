@@ -24,7 +24,7 @@ class Program
         var jsonPath = Path.Combine(
             projectRoot,
             "Data",
-            "test_import.json"
+            "students.json"
         );
 
         //if (!File.Exists(jsonPath))

@@ -14,12 +14,7 @@ namespace StudentManagementSystem.Services
 
         public static string GetProjectRoot()
         {
-            return Directory
-                .GetParent(AppContext.BaseDirectory)!
-                .Parent!
-                .Parent!
-                .Parent!
-                .FullName;
+            return Directory.GetParent(AppContext.BaseDirectory)!.Parent!.Parent!.Parent!.FullName;
         }
 
         public static void Table()
@@ -69,8 +64,15 @@ namespace StudentManagementSystem.Services
                     var fileName = $"student_{nextId}{ext}";
                     var destPath = Path.Combine(imageDir, fileName);
 
-                    File.Copy(inputPath, destPath, overwrite: true);
-                    avatarPath = Path.Combine("Data", "images", fileName); 
+                    try
+                    {
+                        File.Copy(inputPath, destPath, overwrite: true);
+                        avatarPath = Path.Combine("Data", "images", fileName).Replace("\\", "/");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi khi sao chép ảnh: {ex.Message}");
+                    }
                 }
             }
 
@@ -83,41 +85,86 @@ namespace StudentManagementSystem.Services
         // thêm từ json
         public async Task ImportFromJsonAsync()
         {
-            Console.Write("Nhập đường dẫn file JSON: ");
-            var path = Console.ReadLine()?.Trim();
+            var projectRoot = GetProjectRoot();
+            var defaultPath = Path.Combine(projectRoot, "test_import.json");
+            
+            Console.Write("Nhập đường dẫn file JSON (mặc định: test_import.json): ");
+            var input = Console.ReadLine()?.Trim() ?? "";
+            
+            var path = string.IsNullOrWhiteSpace(input) ? defaultPath : input;
 
-            if (string.IsNullOrWhiteSpace(path) || !File.Exists(path))
+            if (!File.Exists(path))
             {
-                Console.WriteLine("File không tồn tại.");
+                Console.WriteLine($"File không tồn tại: {path}");
                 return;
             }
 
-            using FileStream fs = File.OpenRead(path);
-            var imported = await JsonSerializer.DeserializeAsync<List<Student>>(fs) ?? new List<Student>();
-
-            if (imported.Count == 0)
+            try
             {
-                Console.WriteLine("File không có dữ liệu.");
-                return;
+                using FileStream fs = File.OpenRead(path);
+                var jsonOptions = new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                
+                var imported = new List<Student>();
+                
+                using (var reader = new System.IO.StreamReader(fs))
+                {
+                    var jsonText = await reader.ReadToEndAsync();
+                    jsonText = jsonText.Trim();
+                    
+                    if (jsonText.StartsWith("["))
+                    {
+                        imported = await JsonSerializer.DeserializeAsync<List<Student>>(
+                            new MemoryStream(System.Text.Encoding.UTF8.GetBytes(jsonText)), 
+                            jsonOptions) ?? new List<Student>();
+                    }
+                    else if (jsonText.StartsWith("{"))
+                    {
+                        var singleStudent = await JsonSerializer.DeserializeAsync<Student>(
+                            new MemoryStream(System.Text.Encoding.UTF8.GetBytes(jsonText)), 
+                            jsonOptions);
+                        if (singleStudent != null)
+                        {
+                            imported.Add(singleStudent);
+                        }
+                    }
+                }
+
+                if (imported.Count == 0)
+                {
+                    Console.WriteLine("File không có dữ liệu hoặc định dạng không hợp lệ.");
+                    return;
+                }
+
+                var students = await _jsonServices.LoadAsync();
+                int nextId = students.Any() ? students.Max(s => s.Id) + 1 : 1;
+
+                int addedCount = 0;
+
+                foreach (var s in imported)
+                {
+                    if (string.IsNullOrWhiteSpace(s.FullName))
+                        continue;
+
+                    if (students.Any(x => x.FullName == s.FullName && x.GPA == s.GPA))
+                        continue;
+
+                    s.Id = nextId++;
+                    students.Add(s);
+                    addedCount++;
+                }
+
+                await _jsonServices.SaveAsync(students);
+                Console.WriteLine($"Đã nhập thành công {addedCount} sinh viên vào students.json");
+                Console.WriteLine($"Tổng sinh viên hiện có: {students.Count}");
             }
-
-            var students = await _jsonServices.LoadAsync();
-            int nextId = students.Any() ? students.Max(s => s.Id) + 1 : 1;
-
-            int addedCount = 0;
-
-            foreach (var s in imported)
+            catch (System.Text.Json.JsonException ex)
             {
-                if (students.Any(x => x.FullName == s.FullName && x.GPA == s.GPA))
-                    continue;
-
-                s.Id = nextId++;
-                students.Add(s);
-                addedCount++;
+                Console.WriteLine($"Lỗi khi đọc file JSON: {ex.Message}");
             }
-
-            await _jsonServices.SaveAsync(students);
-            Console.WriteLine($"Đã nhập {addedCount} sinh viên từ file JSON");
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi: {ex.Message}");
+            }
         }
 
         // sửa
@@ -190,12 +237,19 @@ namespace StudentManagementSystem.Services
                             var imageDir = Path.Combine(projectRoot, "Data", "images");
                             Directory.CreateDirectory(imageDir);
 
-                                var ext = Path.GetExtension(inputPath);
+                            var ext = Path.GetExtension(inputPath);
                             var fileName = $"student_{student.Id}{ext}";
                             var destPath = Path.Combine(imageDir, fileName);
 
-                            File.Copy(inputPath, destPath, overwrite: true);
-                            student.ImagePath = Path.Combine("Data", "images", fileName); 
+                            try
+                            {
+                                File.Copy(inputPath, destPath, overwrite: true);
+                                student.ImagePath = Path.Combine("Data", "images", fileName).Replace("\\", "/");
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Lỗi khi sao chép ảnh: {ex.Message}");
+                            }
                         }
 
                         break;
@@ -230,8 +284,15 @@ namespace StudentManagementSystem.Services
                             var fileName = $"student_{student.Id}{ext}";
                             var destPath = Path.Combine(imageDir, fileName);
 
-                            File.Copy(inputPath, destPath, overwrite: true);
-                            student.ImagePath = Path.Combine("Data", "images", fileName);
+                            try
+                            {
+                                File.Copy(inputPath, destPath, overwrite: true);
+                                student.ImagePath = Path.Combine("Data", "images", fileName).Replace("\\", "/");
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Lỗi khi sao chép ảnh: {ex.Message}");
+                            }
                         }
 
                         break;

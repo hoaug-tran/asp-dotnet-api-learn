@@ -19,11 +19,24 @@ namespace StudentManagementSystem.Services
                 return new List<Student>();
             }
 
-            using FileStream fs = File.OpenRead(_filePath);
+            try
+            {
+                var fileInfo = new FileInfo(_filePath);
+                if (fileInfo.Length == 0)
+                {
+                    return new List<Student>();
+                }
 
-            var students = await JsonSerializer.DeserializeAsync<List<Student>>(fs);
+                using FileStream fs = File.OpenRead(_filePath);
 
-            return students ?? new List<Student>();
+                var students = await JsonSerializer.DeserializeAsync<List<Student>>(fs);
+
+                return students ?? new List<Student>();
+            }
+            catch (System.Text.Json.JsonException)
+            {
+                return new List<Student>();
+            }
         }
 
         public async Task SaveAsync(List<Student> students)
