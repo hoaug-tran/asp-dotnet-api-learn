@@ -11,6 +11,7 @@ import Books from "./Books";
 import ComponentA from "./ComponentA";
 import HomePage from "./HomePage";
 import LoginPage from "./LoginPage";
+import RegisterPage from "./RegisterPage";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -37,6 +38,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
           </Routes>
         </BrowserRouter>
       </QueryClientProvider>

@@ -34,9 +34,7 @@ function Books() {
   //   if (error) return <p>Error: {error}</p>;
 
   const fetchBooks = async () => {
-    const res = await axios.get(
-      "https://localhost:7216/api/v1/Books?page=1&limit=10&title=&sortBy=author&order=desc"
-    );
+    const res = await axios.get("https://api.libsys.me/api/v1/books");
     return res.data.data;
   };
 

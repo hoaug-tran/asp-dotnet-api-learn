@@ -4,8 +4,10 @@ import "./LoginPage.css";
 import axiosClient from "./axiosClient";
 
 const LoginPage = () => {
+  const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [verifyPassword, setVerifyPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -20,19 +22,20 @@ const LoginPage = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axiosClient.post("/Auth/login", {
+      await axiosClient.post("/Auth/register", {
+        name: name,
         username: username,
         password: password,
+        verifyPassword: verifyPassword,
       });
-      const { accessToken, user } = res.data;
-      localStorage.setItem("accessToken", accessToken);
-      localStorage.setItem("user", JSON.stringify(user));
 
-      alert("Đăng nhập thành công");
-      navigate("/");
+      alert("Đăng ký thành công");
+      navigate("/login");
     } catch (err) {
-      alert("Tên đăng nhập hoặc mật khẩu không đúng");
-      setPassword("");
+      const msg =
+        err.response?.data?.message || err.response?.data || "Đăng ký thất bại";
+
+      alert(msg);
       console.error(err);
     } finally {
       setLoading(false);
@@ -47,8 +50,19 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h1>Đăng Nhập</h1>
+        <h1>Đăng Ký</h1>
         <form onSubmit={handleLogin}>
+          <div className="form-group">
+            <label>Tên người dùng</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Nhập tên người dùng"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
           <div className="form-group">
             <label>Tên đăng nhập</label>
             <input
@@ -72,9 +86,20 @@ const LoginPage = () => {
               required
             />
           </div>
+          <div className="form-group">
+            <label>Nhập lại khẩu</label>
+            <input
+              type="password"
+              name="verifyPassword"
+              placeholder="Nhập mật lại khẩu"
+              value={verifyPassword}
+              onChange={(e) => setVerifyPassword(e.target.value)}
+              required
+            />
+          </div>
 
           <button type="submit" className="login-btn" disabled={loading}>
-            {loading ? "Đang đăng nhập..." : "Đăng Nhập"}
+            {loading ? "Đang thực hiện..." : "Đăng ký"}
           </button>
         </form>
         <button

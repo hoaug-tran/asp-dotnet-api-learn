@@ -1,4 +1,5 @@
-import axios from "axios";
+// import axios from "axios";
+import axiosClient from "./axiosClient";
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import "./HomePage.css";
@@ -41,9 +42,7 @@ const HomePage = () => {
           sortBy: sort,
           order,
         };
-        const res = await axios.get("https://localhost:7216/api/v1/Books", {
-          params,
-        });
+        const res = await axiosClient.get("/Books", { params });
         const { items, hasNext, hasPrevious } = res.data.data;
         setBooks(items);
         setPageStatus({ hasNext, hasPrevious });
@@ -76,7 +75,7 @@ const HomePage = () => {
 
     if (window.confirm("Bạn có chắc muốn xoá?")) {
       try {
-        await axios.delete(`https://localhost:7216/api/v1/Books/${id}`);
+        await axiosClient.delete(`/Books/${id}`);
         setBooks(books.filter((b) => b.id !== id));
         alert("Xoá thành công!");
       } catch (error) {
@@ -94,7 +93,7 @@ const HomePage = () => {
   const addBookHandle = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://localhost:7216/api/v1/Books/", newBook);
+      await axiosClient.post("/Books", newBook);
       setPage(1);
       setLimit(10);
       setNewBook({ title: "", author: "", price: "" });
@@ -107,7 +106,14 @@ const HomePage = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("accessToken");
     navigate("/login");
+  };
+
+  const handleRegister = () => {
+    localStorage.removeItem("user");
+    localStorage.removeItem("accessToken");
+    navigate("/register");
   };
 
   const handleSortBy = (e) => {
@@ -131,6 +137,16 @@ const HomePage = () => {
         break;
       }
 
+      case "price-asc": {
+        setSortBy("price-asc");
+        break;
+      }
+
+      case "price-desc": {
+        setSortBy("price-desc");
+        break;
+      }
+
       default: {
         setSortBy("");
         break;
@@ -148,12 +164,30 @@ const HomePage = () => {
   return (
     <div className="home-container">
       <div className="header">
-        <div>
-          <h3>Xin chào {user.username} 👋</h3>
-        </div>
-        <button className="logout-btn" onClick={handleLogout}>
-          Đăng xuất
-        </button>
+        {user ? (
+          <>
+            <h3>Xin chào {user?.name} 👋</h3>
+            <button className="logout-btn" onClick={handleLogout}>
+              Đăng xuất
+            </button>
+          </>
+        ) : (
+          <>
+            <h3>Xin chào 👋</h3>
+            <div>
+              <button className="logout-btn" onClick={handleLogout}>
+                Đăng nhập
+              </button>
+              <button
+                className="logout-btn"
+                style={{ marginLeft: 10 }}
+                onClick={handleRegister}
+              >
+                Đăng ký
+              </button>
+            </div>
+          </>
+        )}
       </div>
 
       {user?.role === "Admin" && (
@@ -219,6 +253,8 @@ const HomePage = () => {
               <option value="author-desc">Tác giả: Z → A</option>
               <option value="title-asc">Tên sách: A → Z</option>
               <option value="title-desc">Tên sách: Z → A</option>
+              <option value="price-asc">Giá sách: Thấp → Cao</option>
+              <option value="price-desc">Giá sách: Cao → Thấp</option>
             </select>
           </div>
         </div>
