@@ -1,5 +1,6 @@
 ﻿using LearnLinQWeb.Data.Interfaces.User;
 using LearnLinQWeb.Domain.Entities;
+using LearnLinQWeb.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace LearnLinQWeb.Data;

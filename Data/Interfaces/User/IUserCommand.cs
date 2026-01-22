@@ -4,7 +4,7 @@ namespace LearnLinQWeb.Data.Interfaces.User;
 
 public interface IUserCommand
 {
-    bool AddUser();
+    void AddUser(Domain.Entities.User user);
     bool UpdateUser();
     bool DeleteUser();
     int SaveChanges();

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+using LearnLinQWeb.Application.Interfaces;
 using LearnLinQWeb.Application.Mappings;
 using LearnLinQWeb.Controllers;
 using LearnLinQWeb.Data;
@@ -6,10 +8,14 @@ using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Data.Interfaces.Auth;
 using LearnLinQWeb.Data.Interfaces.Book;
 using LearnLinQWeb.Data.Interfaces.User;
+using LearnLinQWeb.Infrastructure.Persistence;
+using LearnLinQWeb.Infrastructure.Security;
 using LearnLinQWeb.Middlewares;
 using LearnLinQWeb.Services;
 using LearnLinQWeb.Services.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -35,13 +41,16 @@ builder.Services.AddScoped<IBookService, BookService>();
 
 // auth
 builder.Services.AddScoped<IAuthService, AuthService>();
-//builder.Services.AddScoped<IAuthQuery, AuthEfQuery>();
+builder.Services.AddScoped<IAuthQuery, AuthEfQuery>();
 //builder.Services.AddScoped<IAuthCommand, AuthEfCommand>();
 
 // user
 builder.Services.AddScoped<IUserService, UserService>();
 //builder.Services.AddScoped<IUserQuery, UserEfQuery>();
 //builder.Services.AddScoped<IUserCommand, UserEfCommand>();
+
+builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
 
 builder.Services.AddControllers();
@@ -53,9 +62,37 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("Web", policy =>
     {
-        policy.WithOrigins("http://localhost:5173").AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins("http://localhost:5173")
+            .AllowAnyMethod()
+            .AllowAnyHeader();
     });
 });
+
+var jwtKey = builder.Configuration["Jwt:Key"];
+var jwtIssuer = builder.Configuration["Jwt:Issuer"];
+var jwtAudience = builder.Configuration["Jwt:Audience"];
+
+builder.Services
+    .AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtIssuer,
+            ValidAudience = jwtAudience,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+        };
+    });
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -87,6 +124,7 @@ app.UseHttpsRedirection();
 // Cors phải đứng trước Auth
 app.UseCors("Web");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 

@@ -2,6 +2,7 @@
 using LearnLinQWeb.Data.Interfaces.Auth;
 using LearnLinQWeb.Data.Interfaces.Book;
 using LearnLinQWeb.Data.Interfaces.User;
+using LearnLinQWeb.Infrastructure.Persistence;
 
 namespace LearnLinQWeb.Data;
 

@@ -1,5 +1,6 @@
 ﻿using LearnLinQWeb.Data.Interfaces.User;
 using LearnLinQWeb.Domain.Entities;
+using LearnLinQWeb.Infrastructure.Persistence;
 
 namespace LearnLinQWeb.Data;
 
@@ -12,9 +13,9 @@ public class UserEfCommand : IUserCommand
         _db = db;
     }
 
-    public bool AddUser()
+    public void AddUser(User user)
     {
-        return false;
+        _db.Users.Add(user);
     }
 
     public bool UpdateUser()

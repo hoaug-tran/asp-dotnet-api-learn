@@ -80,13 +80,13 @@ Tài liệu tham khảo AutoMapper:
 ## PHẦN 5 — SECURITY & AUTHENTICATION
 
 - [ ] 11. JWT Authentication
-  - [ ] Login & JWT generation
+  - [x] Login & JWT generation
   - [ ] Refresh token
-  - [ ] Role / Policy
+  - [x] Role / Policy
 
 - [ ] 12. Authorization nâng cao
-  - [ ] Policy
-  - [ ] Claims
+  - [x] Policy
+  - [x] Claims
   - [ ] Permission-based authorization
 
 ---

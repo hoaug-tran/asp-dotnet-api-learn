@@ -2,6 +2,7 @@
 using LearnLinQWeb.Domain.Entities;
 using LearnLinQWeb.Services;
 using LearnLinQWeb.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearnLinQWeb.Controllers
@@ -13,12 +14,12 @@ namespace LearnLinQWeb.Controllers
         private readonly IUserService _service;
         private readonly IUnitOfWork _unitOfWork;
 
-        public UsersController(UserService service, IUnitOfWork unitOfWork)
+        public UsersController(UserService service)
         {
             _service = service;
-            _unitOfWork = unitOfWork;
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult GetAll()
         {

@@ -47,11 +47,17 @@ namespace LearnLinQWeb.Services
 
             query = sort switch
             {
-                "title" => isDesc ? query.OrderByDescending(b => b.Title)
+                "title" => isDesc
+                    ? query.OrderByDescending(b => b.Title)
                     : query.OrderBy(b => b.Title),
 
-                "author" => isDesc ? query.OrderByDescending(b => b.Author)
+                "author" => isDesc
+                    ? query.OrderByDescending(b => b.Author)
                     : query.OrderBy(b => b.Author),
+
+                "price" => isDesc
+                    ? query.OrderByDescending(b => b.Price)
+                    : query.OrderBy(b => b.Price),
 
                 _ => query.OrderBy(b => b.Id)
             };
@@ -121,8 +127,5 @@ namespace LearnLinQWeb.Services
 
             return false;
         }
-
-
-
     }   
 }

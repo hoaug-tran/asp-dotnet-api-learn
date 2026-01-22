@@ -6,6 +6,7 @@ using LearnLinQWeb.DTOs;
 using LearnLinQWeb.DTOs.Common;
 using LearnLinQWeb.Services;
 using LearnLinQWeb.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearnLinQWeb.Controllers
@@ -58,6 +59,7 @@ namespace LearnLinQWeb.Controllers
             return Ok(response);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Create([FromBody] CreateBookRequest request)
         {
@@ -65,6 +67,7 @@ namespace LearnLinQWeb.Controllers
             return (_service.AddBook(book)) ? Ok(new { message = "Thêm thành công" }) : BadRequest(new { message = "Lỗi khi thêm sách" });
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] UpdateBookRequest request)
         {
@@ -72,6 +75,7 @@ namespace LearnLinQWeb.Controllers
             return (_service.UpdateBook(id, book)) ? Ok(new { message = "Cập nhật sách thành công" }) : BadRequest(new { message = "Lỗi khi cập nhật sách hoặc không tìm thấy ID" });
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

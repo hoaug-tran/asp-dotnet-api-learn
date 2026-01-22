@@ -1,7 +1,7 @@
 ﻿using LearnLinQWeb.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace LearnLinQWeb.Data
+namespace LearnLinQWeb.Infrastructure.Persistence
 {
     public class AppDbContext : DbContext
     {

@@ -1,4 +1,5 @@
-﻿using LearnLinQWeb.Data;
+﻿using LearnLinQWeb.Application.Interfaces;
+using LearnLinQWeb.Data;
 using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Data.Interfaces.User;
 using LearnLinQWeb.Domain.Entities;
@@ -10,10 +11,12 @@ namespace LearnLinQWeb.Services
     public class UserService : IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IPasswordHasher _passwordHasher;
 
-        public UserService(IUnitOfWork unitOfWork)
+        public UserService(IUnitOfWork unitOfWork, IPasswordHasher passwordHasher)
         {
             _unitOfWork = unitOfWork;
+            _passwordHasher = passwordHasher;
         }
 
         public List<User> GetAllUsers()
@@ -26,16 +29,18 @@ namespace LearnLinQWeb.Services
             return _unitOfWork.UserQuery.Query().FirstOrDefault(u => u.Id == id);
         }
 
-        public User? GetUserByUsername(string username)
+        public async Task<User?> GetUserByUsernameAsync(string username)
         {
             return _unitOfWork.UserQuery.Query().FirstOrDefault(u => u.Username == username);
         }
 
-        //public bool AddUser(User user)
-        //{
-        //    _unitOfWork.UserCommand.Add(user);
-        //    return _unitOfWork.SaveChanges() > 0;
-        //}
+        public async Task<bool> AddUserAsync(User user, string plainPassword)
+        {
+            user.PasswordHash = _passwordHasher.Hash(plainPassword);
+            _unitOfWork.UserCommand.AddUser(user);
+
+            return await _unitOfWork.SaveChangesAsync() > 0;
+        }
 
         //public bool UpdateUser(User user)
         //{
