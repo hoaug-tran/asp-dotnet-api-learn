@@ -72,14 +72,25 @@ const LoginPage = () => {
               required
             />
           </div>
-
+          <p style={{ display: "inline-block", fontSize: "0.9rem" }}>
+            Chưa có tài khoản ?{" "}
+            <span>
+              <a
+                style={{ textDecoration: "none", color: "blue" }}
+                href="/register"
+              >
+                Đăng ký
+              </a>{" "}
+              ngay.
+            </span>
+          </p>
           <button type="submit" className="login-btn" disabled={loading}>
             {loading ? "Đang đăng nhập..." : "Đăng Nhập"}
           </button>
         </form>
         <button
           type="submit"
-          className="login-btn"
+          className="back-btn"
           onClick={(e) => handleBackHome(e)}
         >
           Quay về trang chủ

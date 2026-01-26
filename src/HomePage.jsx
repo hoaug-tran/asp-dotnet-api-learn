@@ -3,6 +3,7 @@ import axiosClient from "./axiosClient";
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import "./HomePage.css";
+import EditBookModal from "./EditBookModal";
 
 const HomePage = () => {
   const [books, setBooks] = useState([]);
@@ -15,6 +16,8 @@ const HomePage = () => {
     hasNext: true,
     hasPrevious: true,
   });
+
+  const [editingBook, setEditingBook] = useState(null);
 
   const navigate = useNavigate();
 
@@ -159,14 +162,136 @@ const HomePage = () => {
     setPage(1);
   };
 
+  const handleUpdate = (book) => {
+    const allowUser = JSON.parse(localStorage.getItem("user"));
+
+    if (!allowUser) {
+      alert("Bạn phải đăng nhập để thực hiện thao tác này");
+      navigate("/login");
+      return;
+    }
+
+    if (allowUser.role !== "Admin") {
+      alert("Chỉ Admin mới có quyền sửa sách!");
+      return;
+    }
+
+    setEditingBook(book);
+  };
+
+  const getGreetingByLocalTime = () => {
+    const h = new Date().getHours();
+
+    if (h < 10) return "Chào buổi sáng";
+    if (h < 13) return "Chào buổi trưa";
+    if (h < 18) return "Chào buổi chiều";
+    return "Chào buổi tối";
+  };
+
+  const getCurrentPosition = () =>
+    new Promise((resolve, reject) => {
+      if (!navigator.geolocation) {
+        reject("Geolocation not supported");
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          resolve({
+            lat: pos.coords.latitude,
+            lon: pos.coords.longitude,
+          });
+        },
+        (err) => reject(err),
+        { enableHighAccuracy: true, timeout: 10000 },
+      );
+    });
+
+  const API_KEY = import.meta.env.VITE_WEATHER_KEY;
+
+  const fetchWeatherByLocation = async () => {
+    const { lat, lon } = await getCurrentPosition();
+
+    const res = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=vi`,
+    );
+
+    return res.json();
+  };
+
+  const fetchWeatherByDefault = async () => {
+    const res = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=${API_KEY}&units=metric&lang=vi`,
+    );
+    return res.json();
+  };
+
+  const [weather, setWeather] = useState(null);
+
+  useEffect(() => {
+    fetchWeatherByLocation()
+      .then(setWeather)
+      .catch(() => {
+        console.warn("Không lấy được vị trí, dùng mặc định");
+        return fetchWeatherByDefault();
+      })
+      .then((data) => {
+        if (data) setWeather(data);
+      })
+      .catch((err) => console.error("Lỗi fetch thời tiết:", err));
+  }, []);
+
+  const weatherIconMap = {
+    Clear: "☀️",
+    Clouds: "☁️",
+    Rain: "🌧️",
+    Thunderstorm: "⛈️",
+    Snow: "❄️",
+    Mist: "🌫️",
+  };
+
+  const getWeatherIcon = (main) => weatherIconMap[main] || "🌤️";
+
+  const capitalize = (text) =>
+    text ? text.charAt(0).toUpperCase() + text.slice(1) : "";
+
+  const weatherMain = weather?.weather?.[0]?.main;
   const user = JSON.parse(localStorage.getItem("user"));
+
+  const handleSubmitUpdate = async (updatedBook) => {
+    try {
+      await axiosClient.put(`/Books/${updatedBook.id}`, updatedBook);
+
+      setBooks(books.map((b) => (b.id === updatedBook.id ? updatedBook : b)));
+
+      alert("Cập nhật sách thành công");
+      setEditingBook(null);
+    } catch (err) {
+      alert("Cập nhật thất bại");
+      console.error(err);
+    }
+  };
 
   return (
     <div className="home-container">
       <div className="header">
         {user ? (
           <>
-            <h3>Xin chào {user?.name} 👋</h3>
+            <div>
+              <h3>
+                {getGreetingByLocalTime()}, {user?.name} 👋
+              </h3>
+
+              {weather && (
+                <div className="weather-info">
+                  <span>{weather.name},</span>
+                  <span>
+                    {capitalize(weather.weather[0].description)}{" "}
+                    {getWeatherIcon(weatherMain)},
+                  </span>
+                  <span>{Math.round(weather.main.temp)}°C</span>
+                </div>
+              )}
+            </div>
             <button className="logout-btn" onClick={handleLogout}>
               Đăng xuất
             </button>
@@ -270,38 +395,76 @@ const HomePage = () => {
             </tr>
           </thead>
           <tbody>
-            {books.map((book) => (
-              <tr key={book.id}>
-                <td>{book.id}</td>
-                <td>{book.title}</td>
-                <td>{book.author}</td>
-                <td>{book.price.toLocaleString()} đ</td>
-                <td>
-                  <div className="action-buttons">
-                    <button className="edit-btn">Sửa</button>
-                    <button
-                      className="delete-btn"
-                      onClick={() => deleteBookHandle(book.id)}
-                    >
-                      Xoá
-                    </button>
-                  </div>
-                </td>
-              </tr>
-            ))}
-            {Array.from({ length: 10 - books.length }).map((_, idx) => (
-              <tr key={`empty-${idx}`} className="empty-row">
-                <td colSpan="5"></td>
-              </tr>
-            ))}
+            {books.length === 0 ? (
+              <>
+                <tr>
+                  <td colSpan={5} style={{ textAlign: "center", padding: 16 }}>
+                    Không có kết quả phù hợp
+                  </td>
+                </tr>
+
+                {Array.from({ length: limit - 1 }).map((_, idx) => (
+                  <tr key={`empty-${idx}`} className="empty-row">
+                    <td colSpan={5}></td>
+                  </tr>
+                ))}
+              </>
+            ) : (
+              <>
+                {books.map((book) => (
+                  <tr key={book.id}>
+                    <td>{book.id}</td>
+                    <td>{book.title}</td>
+                    <td>{book.author}</td>
+                    <td>{book.price.toLocaleString()} đ</td>
+                    <td>
+                      <div className="action-buttons">
+                        <button
+                          className="edit-btn"
+                          onClick={() => handleUpdate(book)}
+                        >
+                          Sửa
+                        </button>
+                        <button
+                          className="delete-btn"
+                          onClick={() => deleteBookHandle(book.id)}
+                        >
+                          Xoá
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+                {Array.from({ length: 10 - books.length }).map((_, idx) => (
+                  <tr key={`empty-${idx}`} className="empty-row">
+                    <td colSpan="5"></td>
+                  </tr>
+                ))}
+              </>
+            )}
           </tbody>
         </table>
 
         <div className="pagination">
-          <button onClick={handleClickPrevious}>Trang trước</button>
-          <button onClick={handleClickNext}>Trang sau</button>
+          <button
+            onClick={handleClickPrevious}
+            disabled={!pageStatus.hasPrevious}
+          >
+            Trang trước
+          </button>
+          <button onClick={handleClickNext} disabled={!pageStatus.hasNext}>
+            Trang sau
+          </button>
         </div>
       </div>
+
+      {editingBook && (
+        <EditBookModal
+          book={editingBook}
+          onClose={() => setEditingBook(null)}
+          onSubmit={handleSubmitUpdate}
+        />
+      )}
     </div>
   );
 };
