@@ -1,6 +1,118 @@
-@LearnLinQWeb_HostAddress = http://localhost:5107
-
-GET {{LearnLinQWeb_HostAddress}}/weatherforecast/
-Accept: application/json
+@Sever_API = http://localhost:5107/api/v1
+@baseUrl = http://localhost:5107/api/v1
+@adminUsername = hoaug
+@adminPassword = 1111
+@userUsername = huy
+@userPassword = 1234
+@accessToken = 
+@refreshToken = 
 
 ###
+GET {{Sever_API}}/ping
+Accept: Application/json
+
+### test server
+
+GET {{Sever_API}}/Books
+Accept: application/json
+
+### đăng ký
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "username": "{{userUsername}}",
+  "password": "{{userPassword}}",
+  "verifyPassword": "{{userPassword}}"
+}
+
+### đăng ký admin
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Admin User",
+  "username": "{{adminUsername}}",
+  "password": "{{adminPassword}}",
+  "verifyPassword": "{{adminPassword}}"
+}
+
+### đăng nhập
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "{{userUsername}}",
+  "password": "{{userPassword}}"
+}
+
+@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+@refreshToken = refresh_token_here
+
+### get hết sách public
+GET {{baseUrl}}/books?page=1&limit=10
+Content-Type: application/json
+
+### get sách theo id public
+GET {{baseUrl}}/books/1
+
+### tạo sách mới admin
+POST {{baseUrl}}/books
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "description": "A classic American novel",
+  "publishYear": 1925,
+  "genre": "Fiction",
+  "coverImageUrl": "https://example.com/cover.jpg",
+  "totalPages": 180
+}
+
+### cập nhật thông tin sách admin
+PUT {{baseUrl}}/books/1
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby (Updated)",
+  "author": "F. Scott Fitzgerald",
+  "description": "A classic American novel (Updated)",
+  "publishYear": 1925,
+  "genre": "Fiction",
+  "coverImageUrl": "https://example.com/cover.jpg",
+  "totalPages": 180
+}
+
+### xoá sách admin
+DELETE {{baseUrl}}/books/1
+Authorization: Bearer {{accessToken}}
+
+### get hết user admin
+GET {{baseUrl}}/users
+Authorization: Bearer {{accessToken}}
+
+### refresh token
+POST {{baseUrl}}/auth/refresh-token
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "refreshToken": "{{refreshToken}}"
+}
+
+### đăng xuất
+POST {{baseUrl}}/auth/logout
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "refreshToken": "{{refreshToken}}"
+}
+
+### test vào endpoint của admin khi là user
+GET {{baseUrl}}/users
+Authorization: Bearer {{accessToken}}

@@ -2,7 +2,7 @@
 using Azure.Core;
 using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Domain.Entities;
-using LearnLinQWeb.DTOs;
+using LearnLinQWeb.DTOs.Books;
 using LearnLinQWeb.DTOs.Common;
 using LearnLinQWeb.Services;
 using LearnLinQWeb.Services.Interfaces;
@@ -25,9 +25,9 @@ namespace LearnLinQWeb.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll(int page, int limit, string? title, string? author, string? sortBy, string? order)
+        public IActionResult GetAll(int page = 1, int limit = 10, string? search = null, string? sortBy = null, string? order = null)
         {
-            var books = _service.GetAllBooks(page, limit, title, author, sortBy, order);
+            var books = _service.GetAllBooks(page, limit, search, sortBy, order);
             var res = new PagedResult<BookResponse>
             {
                 Items = _mapper.Map<List<BookResponse>>(books.Items),

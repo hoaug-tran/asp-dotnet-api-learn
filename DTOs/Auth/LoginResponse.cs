@@ -1,4 +1,4 @@
-﻿namespace LearnLinQWeb.DTOs
+﻿namespace LearnLinQWeb.DTOs.Auth
 {
     public class LoginResponse
     {

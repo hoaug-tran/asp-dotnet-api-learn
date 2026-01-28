@@ -26,7 +26,7 @@ public class JwtService : IJwtService
 
         var secret = _config["Jwt:Key"];
         if (string.IsNullOrWhiteSpace(secret))
-            throw new Exception("JWT Key is missing");
+            throw new Exception("Thiếu JWT Key");
 
         var key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(secret)
@@ -42,5 +42,10 @@ public class JwtService : IJwtService
         );
 
         return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+
+    public string GenerateAccessToken(User user)
+    {
+        return GenerateToken(user);
     }
 }

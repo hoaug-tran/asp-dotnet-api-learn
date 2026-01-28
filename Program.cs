@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 using LearnLinQWeb.Application.Interfaces;
-using LearnLinQWeb.Application.Mappings;
+using LearnLinQWeb.Application.Mapping;
 using LearnLinQWeb.Controllers;
 using LearnLinQWeb.Data;
 using LearnLinQWeb.Data.Interfaces;
@@ -46,23 +46,42 @@ builder.Services.AddScoped<IAuthQuery, AuthEfQuery>();
 
 // user
 builder.Services.AddScoped<IUserService, UserService>();
-//builder.Services.AddScoped<IUserQuery, UserEfQuery>();
+builder.Services.AddScoped<IUserQuery, UserEfQuery>();
 //builder.Services.AddScoped<IUserCommand, UserEfCommand>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+builder.Services.AddScoped<IFileUploadService, FileUploadService>();
 
-
+    
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+//var allowedOrigins = new[] {
+//    "http://localhost:5173",
+//    "http://172.31.4.97:5173",
+//    "http://trkhoang.online"
+//};
+
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("Web", policy =>
+//    {
+//        policy.WithOrigins("http://localhost:5173", "http://0.0.0.0:5173")
+//            .AllowAnyMethod()
+//            .AllowAnyHeader();
+//    });
+//});
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Web", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+        policy
+            .SetIsOriginAllowed(origin => true)
             .AllowAnyMethod()
             .AllowAnyHeader();
     });
@@ -70,7 +89,7 @@ builder.Services.AddCors(options =>
 
 var jwtKey = builder.Configuration["Jwt:Key"];
 var jwtIssuer = builder.Configuration["Jwt:Issuer"];
-var jwtAudience = builder.Configuration["Jwt:Audience"];
+var jwtAudience = builder.Configuration["Jwt:Audience"];    
 
 builder.Services
     .AddAuthentication(options =>
@@ -111,8 +130,8 @@ var app = builder.Build();
 //}
 
 app.UseMiddleware<ExceptionsMiddleware>();
-
-//app.UseMiddleware<ResponsesMiddleware>();
+app.UseMiddleware<RequestsMiddleware>();
+// app.UseMiddleware<ResponsesMiddleware>();
 
 // Middleware hệ thống phải đặt trước Controller
 // Middleware request response thì phải đặt sau middlware mà wrap toàn bộ pipline
@@ -120,6 +139,8 @@ app.UseMiddleware<ExceptionsMiddleware>();
 
 app.UseHttpsRedirection();
 
+// Upload file
+app.UseStaticFiles();
 
 // Cors phải đứng trước Auth
 app.UseCors("Web");

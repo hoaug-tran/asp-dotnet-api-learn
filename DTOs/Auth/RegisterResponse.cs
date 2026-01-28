@@ -1,6 +1,6 @@
 ﻿using LearnLinQWeb.Domain.Entities;
 
-namespace LearnLinQWeb.DTOs;
+namespace LearnLinQWeb.DTOs.Auth;
 
 public class RegisterResponse
 {

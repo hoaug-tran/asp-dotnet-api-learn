@@ -1,6 +1,7 @@
 # TÀI LIỆU API .NET CORE
 
 ## Tài liệu tham khảo
+
 - C# cơ bản: https://dotnettutorials.net/lesson/exception-handling-csharp/
 - ASP.NET Core Web API: https://dotnettutorials.net/lesson/hypertext-transport-protocol/
 
@@ -59,6 +60,8 @@ Chú ý: Đọc chi tiết tài liệu API .NET Core tương ứng với từng 
 
 ## PHẦN 4 — KIẾN TRÚC & XÂY DỰNG ỨNG DỤNG SẠCH
 
+I'M MAD WITH YOU
+
 - [x] 8. Clean / Onion Architecture
   - [x] API (Controllers)
   - [x] Application (Services / DTO)
@@ -73,21 +76,22 @@ Chú ý: Đọc chi tiết tài liệu API .NET Core tương ứng với từng 
 - [x] 10. AutoMapper (Entity ↔ DTO)
 
 Tài liệu tham khảo AutoMapper:
+
 - https://dotnettutorials.net/course/asp-net-core-web-api-tutorials/
 
 ---
 
 ## PHẦN 5 — SECURITY & AUTHENTICATION
 
-- [ ] 11. JWT Authentication
+- [x] 11. JWT Authentication
   - [x] Login & JWT generation
-  - [ ] Refresh token
+  - [x] Refresh token
   - [x] Role / Policy
 
-- [ ] 12. Authorization nâng cao
+- [x] 12. Authorization nâng cao
   - [x] Policy
   - [x] Claims
-  - [ ] Permission-based authorization
+  - [x] Permission-based authorization
 
 ---
 
@@ -100,18 +104,18 @@ Tài liệu tham khảo AutoMapper:
 
 - [ ] 14. Logging & Error Handling
   - [ ] Serilog / NLog
-  - [ ] Global exception handler
+  - [x] Global exception handler
 
 ---
 
 ## PHẦN 7 — TRIỂN KHAI & DEVOPS
 
-- [ ] 15. Swagger / OpenAPI
-  - [ ] Generate API documentation
+- [x] 15. Swagger / OpenAPI
+  - [x] Generate API documentation
 
 - [ ] 16. Dockerize API
-  - [ ] Dockerfile
-  - [ ] Docker Compose
+  - [x] Dockerfile
+  - [x] Docker Compose
 
 - [ ] 17. CI/CD Deployment
   - [ ] GitHub Actions

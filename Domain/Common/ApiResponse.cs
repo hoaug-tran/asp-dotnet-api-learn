@@ -1,4 +1,4 @@
-﻿namespace LearnLinQWeb.Domain.Entities;
+﻿namespace LearnLinQWeb.Domain.Common;
 
 public class ApiResponse<T>
 {

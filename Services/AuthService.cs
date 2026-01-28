@@ -4,7 +4,7 @@ using LearnLinQWeb.Data.Interfaces;
 using LearnLinQWeb.Data.Interfaces.Auth;
 using LearnLinQWeb.Data.Interfaces.User;
 using LearnLinQWeb.Domain.Entities;
-using LearnLinQWeb.DTOs;
+using LearnLinQWeb.DTOs.Auth;
 using LearnLinQWeb.Services.Interfaces;
 
 namespace LearnLinQWeb.Services
@@ -16,13 +16,15 @@ namespace LearnLinQWeb.Services
         private readonly IUserService _service;
         private readonly IPasswordHasher _hasher;
         private readonly IJwtService _jwt;
+        private readonly IRefreshTokenService _refreshTokenService;
 
-        public AuthService(IAuthQuery query, IUserService service, IPasswordHasher hasher, IJwtService jwt)
+        public AuthService(IAuthQuery query, IUserService service, IPasswordHasher hasher, IJwtService jwt, IRefreshTokenService refreshTokenService)
         {
             _query = query;
             _hasher = hasher;
             _jwt = jwt;
             _service = service;
+            _refreshTokenService = refreshTokenService;
         }
 
         //public User? Login(string username,string password)

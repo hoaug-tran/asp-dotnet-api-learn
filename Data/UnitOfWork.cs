@@ -2,6 +2,8 @@
 using LearnLinQWeb.Data.Interfaces.Auth;
 using LearnLinQWeb.Data.Interfaces.Book;
 using LearnLinQWeb.Data.Interfaces.User;
+using LearnLinQWeb.Data.Interfaces.RefreshToken;
+using LearnLinQWeb.Data.RefreshToken;
 using LearnLinQWeb.Infrastructure.Persistence;
 
 namespace LearnLinQWeb.Data;
@@ -14,6 +16,8 @@ public class UnitOfWork : IUnitOfWork
     private IUserQuery _userQuery;
     private IUserCommand _userCommand;
     private IAuthQuery _authQuery;
+    private IRefreshTokenQuery _refreshTokenQuery;
+    private IRefreshTokenCommand _refreshTokenCommand;
 
     public UnitOfWork(AppDbContext db)
     {
@@ -29,6 +33,10 @@ public class UnitOfWork : IUnitOfWork
     public IUserCommand UserCommand => _userCommand ??= new UserEfCommand(_db);
 
     public IAuthQuery AuthQuery => _authQuery ??= new AuthEfQuery(_db);
+
+    public IRefreshTokenQuery RefreshTokenQuery => _refreshTokenQuery ??= new RefreshTokenEfQuery(_db);
+
+    public IRefreshTokenCommand RefreshTokenCommand => _refreshTokenCommand ??= new RefreshTokenEfCommand(_db);
 
     public int SaveChanges() => _db.SaveChanges();
 

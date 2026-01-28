@@ -1,5 +1,6 @@
 ﻿using System.IO.Pipelines;
 using System.Text.Json;
+using LearnLinQWeb.Domain.Common;
 using LearnLinQWeb.Domain.Entities;
 
 namespace LearnLinQWeb.Middlewares;

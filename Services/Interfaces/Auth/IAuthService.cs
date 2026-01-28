@@ -1,5 +1,5 @@
 ﻿using LearnLinQWeb.Domain.Entities;
-using LearnLinQWeb.DTOs;
+using LearnLinQWeb.DTOs.Auth;
 
 namespace LearnLinQWeb.Services.Interfaces;
 

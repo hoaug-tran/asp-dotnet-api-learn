@@ -19,23 +19,24 @@ namespace LearnLinQWeb.Services
             _unitOfWork = unitOfWork;
         }
 
-        public PagedResult<Book> GetAllBooks(
-            int page,
-            int limit,
-            string? title,
-            string? author,
-            string? sortBy,
-            string? order
-        )
+        public PagedResult<Book> GetAllBooks(int page, int limit, string? search, string? sortBy, string? order)
         {
             var query = _unitOfWork.BookQuery.Query();
 
-            // filter
-            if (!string.IsNullOrWhiteSpace(title))
-                query = query.Where(b => b.Title.Contains(title));
+            // filter and
+            //if (!string.IsNullOrWhiteSpace(title))
+            //    query = query.Where(b => b.Title.Contains(title));
 
-            if (!string.IsNullOrWhiteSpace(author))
-                query = query.Where(b => b.Author.Contains(author));
+            //if (!string.IsNullOrWhiteSpace(author))
+            //    query = query.Where(b => b.Author.Contains(author));
+
+            // filter or
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                search = search.Trim().ToLower();
+                query = query.Where(b => b.Title.Contains(search) || b.Author.Contains(search));
+            }
 
             int totalItems = query.Count();
 
@@ -69,7 +70,9 @@ namespace LearnLinQWeb.Services
 
             int totalPages = (int)Math.Ceiling(totalItems / (double)limit);
             if (page > totalPages && totalPages > 0)
+            {
                 page = totalPages;
+            }
 
             var items = query
                 .Skip((page - 1) * limit)
@@ -113,6 +116,7 @@ namespace LearnLinQWeb.Services
 
                 return _unitOfWork.SaveChanges() > 0;
             }
+
             return false;
         }
 

@@ -18,9 +18,19 @@ public class UserEfCommand : IUserCommand
         _db.Users.Add(user);
     }
 
-    public bool UpdateUser()
+    public void UpdateUser(User user)
     {
-        return false;
+        var existingEntity = _db.Users.Local.FirstOrDefault(u => u.Id == user.Id);
+        
+        if (existingEntity != null)
+        {
+            _db.Entry(existingEntity).CurrentValues.SetValues(user);
+        }
+        else
+        {
+            _db.Attach(user);
+            _db.Entry(user).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+        }
     }
 
     public bool DeleteUser()

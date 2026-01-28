@@ -8,18 +8,6 @@
   </PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Data\NewFolder\**" />
-	  <Compile Remove="NewFolder\**" />
-	  <Compile Remove="Services\Interfaces\NewFolder\**" />
-	  <Content Remove="Data\NewFolder\**" />
-	  <Content Remove="NewFolder\**" />
-	  <Content Remove="Services\Interfaces\NewFolder\**" />
-	  <EmbeddedResource Remove="Data\NewFolder\**" />
-	  <EmbeddedResource Remove="NewFolder\**" />
-	  <EmbeddedResource Remove="Services\Interfaces\NewFolder\**" />
-	  <None Remove="Data\NewFolder\**" />
-	  <None Remove="NewFolder\**" />
-	  <None Remove="Services\Interfaces\NewFolder\**" />
 	</ItemGroup>
 
 	<ItemGroup>

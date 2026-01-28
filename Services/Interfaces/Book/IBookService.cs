@@ -5,7 +5,7 @@ namespace LearnLinQWeb.Services.Interfaces;
 
 public interface IBookService
 {
-    PagedResult<Book> GetAllBooks(int page, int limit, string? title, string? author, string? sortBy, string? order);
+    PagedResult<Book> GetAllBooks(int page, int limit, string? search, string? sortBy, string? order);
 
     Book? GetBookById(int id);
 

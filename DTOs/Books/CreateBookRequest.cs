@@ -1,6 +1,6 @@
-﻿namespace LearnLinQWeb.DTOs;
+﻿namespace LearnLinQWeb.DTOs.Books;
 
-public class UpdateBookRequest
+public class CreateBookRequest
 {
     public string? Title { get; set; }
     public string? Author { get; set; }
