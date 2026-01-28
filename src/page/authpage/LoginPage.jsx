@@ -1,14 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import "./LoginPage.css";
-import axiosClient from "./axiosClient";
+import "../../style/LoginPage.css";
+import axiosClient from "../../api/axiosClient";
+import { NotificationContext } from "../common/NotificationContext";
 
 const LoginPage = () => {
-  const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [verifyPassword, setVerifyPassword] = useState("");
   const [loading, setLoading] = useState(false);
+
+  const { notify } = useContext(NotificationContext);
 
   const navigate = useNavigate();
 
@@ -16,26 +17,26 @@ const LoginPage = () => {
     if (localStorage.getItem("accessToken")) {
       navigate("/");
     }
-  }, []);
+  });
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axiosClient.post("/Auth/register", {
-        name: name,
+      const res = await axiosClient.post("/Auth/login", {
         username: username,
         password: password,
-        verifyPassword: verifyPassword,
       });
+      const { accessToken, refreshToken, user } = res.data;
+      localStorage.setItem("accessToken", accessToken);
+      localStorage.setItem("refreshToken", refreshToken);
+      localStorage.setItem("user", JSON.stringify(user));
 
-      alert("Đăng ký thành công");
-      navigate("/login");
+      notify("success", "Đăng nhập thành công");
+      navigate("/");
     } catch (err) {
-      const msg =
-        err.response?.data?.message || err.response?.data || "Đăng ký thất bại";
-
-      alert(msg);
+      notify("error", "Email hoặc mật khẩu sai!");
+      setPassword("");
       console.error(err);
     } finally {
       setLoading(false);
@@ -50,19 +51,8 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h1>Đăng Ký</h1>
+        <h1>Đăng Nhập</h1>
         <form onSubmit={handleLogin}>
-          <div className="form-group">
-            <label>Tên người dùng</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Nhập tên người dùng"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </div>
           <div className="form-group">
             <label>Tên đăng nhập</label>
             <input
@@ -86,25 +76,25 @@ const LoginPage = () => {
               required
             />
           </div>
-          <div className="form-group">
-            <label>Nhập lại khẩu</label>
-            <input
-              type="password"
-              name="verifyPassword"
-              placeholder="Nhập mật lại khẩu"
-              value={verifyPassword}
-              onChange={(e) => setVerifyPassword(e.target.value)}
-              required
-            />
-          </div>
-
+          <p style={{ display: "inline-block", fontSize: "0.9rem" }}>
+            Chưa có tài khoản ?{" "}
+            <span>
+              <a
+                style={{ textDecoration: "none", color: "blue" }}
+                href="/register"
+              >
+                Đăng ký
+              </a>{" "}
+              ngay.
+            </span>
+          </p>
           <button type="submit" className="login-btn" disabled={loading}>
-            {loading ? "Đang thực hiện..." : "Đăng ký"}
+            {loading ? "Đang đăng nhập..." : "Đăng Nhập"}
           </button>
         </form>
         <button
           type="submit"
-          className="login-btn"
+          className="back-btn"
           onClick={(e) => handleBackHome(e)}
         >
           Quay về trang chủ

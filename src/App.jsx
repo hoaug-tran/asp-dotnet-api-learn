@@ -1,21 +1,11 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Foot from "./Foot";
-import Card from "./Card";
-import Student from "./Student";
-import UserGreeting from "./UserGreeting";
-import List from "./List";
-import Button from "./Button";
-import MyComponent from "./MyComponent";
-import Books from "./Books";
-import ComponentA from "./ComponentA";
-import HomePage from "./HomePage";
-import LoginPage from "./LoginPage";
-import RegisterPage from "./RegisterPage";
+import HomePage from "./page/homepage/HomePage";
+import LoginPage from "./page/authpage/LoginPage";
+import RegisterPage from "./page/authpage/RegisterPage";
+import NotificationProvider from "./page/common/NotificationContext";
+import UserPage from "./page/homepage/UserPage";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Router } from "react-router-dom";
 
 const queryClient = new QueryClient();
 
@@ -34,13 +24,18 @@ function App() {
         <MyComponent />
         <Books />
         <ComponentA /> */}
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
-          </Routes>
-        </BrowserRouter>
+        <NotificationProvider
+          child={
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/admin/users" element={<UserPage />} />
+              </Routes>
+            </BrowserRouter>
+          }
+        />
       </QueryClientProvider>
     </>
   );

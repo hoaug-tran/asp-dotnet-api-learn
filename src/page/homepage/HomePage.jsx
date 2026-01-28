@@ -1,9 +1,46 @@
-// import axios from "axios";
-import axiosClient from "./axiosClient";
-import { useEffect, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
-import "./HomePage.css";
-import EditBookModal from "./EditBookModal";
+import axiosClient from "../../api/axiosClient";
+import { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../../style/HomePage.css";
+import EditBookModal from "../common/EditBookModal";
+import { NotificationContext } from "../common/NotificationContext";
+
+const API_KEY = import.meta.env.VITE_WEATHER_KEY;
+
+const getCurrentPosition = () =>
+  new Promise((resolve, reject) => {
+    if (!navigator.geolocation) {
+      reject("Geolocation not supported");
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        resolve({
+          lat: pos.coords.latitude,
+          lon: pos.coords.longitude,
+        });
+      },
+      (err) => reject(err),
+      { enableHighAccuracy: true, timeout: 10000 },
+    );
+  });
+
+const fetchWeatherByLocation = async () => {
+  const { lat, lon } = await getCurrentPosition();
+
+  const res = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=vi`,
+  );
+
+  return res.json();
+};
+
+const fetchWeatherByDefault = async () => {
+  const res = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=${API_KEY}&units=metric&lang=vi`,
+  );
+  return res.json();
+};
 
 const HomePage = () => {
   const [books, setBooks] = useState([]);
@@ -16,8 +53,9 @@ const HomePage = () => {
     hasNext: true,
     hasPrevious: true,
   });
-
   const [editingBook, setEditingBook] = useState(null);
+
+  const { notify } = useContext(NotificationContext);
 
   const navigate = useNavigate();
 
@@ -41,7 +79,7 @@ const HomePage = () => {
         const params = {
           page,
           limit,
-          title: search || "",
+          search,
           sortBy: sort,
           order,
         };
@@ -66,13 +104,13 @@ const HomePage = () => {
     const allowUser = JSON.parse(localStorage.getItem("user"));
 
     if (!allowUser) {
-      alert("Bạn phải đăng nhập để thực hiện thao tác này");
+      notify("warning", "Bạn phải đăng nhập để thực hiện thao tác này");
       navigate("/login");
       return;
     }
 
     if (allowUser.role !== "Admin") {
-      alert("Chỉ Admin mới có quyền xóa sách!");
+      notify("warning", "Chỉ Admin mới có quyền xóa sách!");
       return;
     }
 
@@ -80,9 +118,9 @@ const HomePage = () => {
       try {
         await axiosClient.delete(`/Books/${id}`);
         setBooks(books.filter((b) => b.id !== id));
-        alert("Xoá thành công!");
+        notify("success", "Xoá sách thành công");
       } catch (error) {
-        alert("Xoá thất bại");
+        notify("error", "Xoá sách thất bại");
         console.error(error);
       }
     }
@@ -100,9 +138,9 @@ const HomePage = () => {
       setPage(1);
       setLimit(10);
       setNewBook({ title: "", author: "", price: "" });
-      alert("Thêm thành công");
+      notify("success", "Thêm sách mới thành công");
     } catch (error) {
-      alert("Thêm thất bại");
+      notify("error", "Thêm sách mới thất bại!");
       console.error(error);
     }
   };
@@ -117,6 +155,10 @@ const HomePage = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("accessToken");
     navigate("/register");
+  };
+
+  const handleAdmin = () => {
+    navigate("/admin/users");
   };
 
   const handleSortBy = (e) => {
@@ -166,17 +208,31 @@ const HomePage = () => {
     const allowUser = JSON.parse(localStorage.getItem("user"));
 
     if (!allowUser) {
-      alert("Bạn phải đăng nhập để thực hiện thao tác này");
+      notify("warning", "Bạn phải đăng nhập để thực hiện thao tác này!");
       navigate("/login");
       return;
     }
 
     if (allowUser.role !== "Admin") {
-      alert("Chỉ Admin mới có quyền sửa sách!");
+      notify("warning", "Chỉ Admin mới có quyền sửa sách!");
       return;
     }
 
     setEditingBook(book);
+  };
+
+  const handleSubmitUpdate = async (updatedBook) => {
+    try {
+      await axiosClient.put(`/Books/${updatedBook.id}`, updatedBook);
+
+      setBooks(books.map((b) => (b.id === updatedBook.id ? updatedBook : b)));
+
+      notify("success", "Cập nhật sách thành công");
+      setEditingBook(null);
+    } catch (err) {
+      notify("error", "Cập nhật sách thất bại!");
+      console.error(err);
+    }
   };
 
   const getGreetingByLocalTime = () => {
@@ -188,56 +244,20 @@ const HomePage = () => {
     return "Chào buổi tối";
   };
 
-  const getCurrentPosition = () =>
-    new Promise((resolve, reject) => {
-      if (!navigator.geolocation) {
-        reject("Geolocation not supported");
-      }
-
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          resolve({
-            lat: pos.coords.latitude,
-            lon: pos.coords.longitude,
-          });
-        },
-        (err) => reject(err),
-        { enableHighAccuracy: true, timeout: 10000 },
-      );
-    });
-
-  const API_KEY = import.meta.env.VITE_WEATHER_KEY;
-
-  const fetchWeatherByLocation = async () => {
-    const { lat, lon } = await getCurrentPosition();
-
-    const res = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=vi`,
-    );
-
-    return res.json();
-  };
-
-  const fetchWeatherByDefault = async () => {
-    const res = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=${API_KEY}&units=metric&lang=vi`,
-    );
-    return res.json();
-  };
-
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
-    fetchWeatherByLocation()
-      .then(setWeather)
-      .catch(() => {
-        console.warn("Không lấy được vị trí, dùng mặc định");
-        return fetchWeatherByDefault();
-      })
-      .then((data) => {
-        if (data) setWeather(data);
-      })
-      .catch((err) => console.error("Lỗi fetch thời tiết:", err));
+    const fetchWeather = async () => {
+      try {
+        const data = await fetchWeatherByLocation();
+        setWeather(data);
+      } catch {
+        const data = await fetchWeatherByDefault();
+        setWeather(data);
+      }
+    };
+
+    fetchWeather();
   }, []);
 
   const weatherIconMap = {
@@ -256,20 +276,7 @@ const HomePage = () => {
 
   const weatherMain = weather?.weather?.[0]?.main;
   const user = JSON.parse(localStorage.getItem("user"));
-
-  const handleSubmitUpdate = async (updatedBook) => {
-    try {
-      await axiosClient.put(`/Books/${updatedBook.id}`, updatedBook);
-
-      setBooks(books.map((b) => (b.id === updatedBook.id ? updatedBook : b)));
-
-      alert("Cập nhật sách thành công");
-      setEditingBook(null);
-    } catch (err) {
-      alert("Cập nhật thất bại");
-      console.error(err);
-    }
-  };
+  const isAdmin = user?.role === "Admin";
 
   return (
     <div className="home-container">
@@ -283,18 +290,29 @@ const HomePage = () => {
 
               {weather && (
                 <div className="weather-info">
-                  <span>{weather.name},</span>
                   <span>
-                    {capitalize(weather.weather[0].description)}{" "}
-                    {getWeatherIcon(weatherMain)},
+                    {weather.name}, {capitalize(weather.weather[0].description)}{" "}
+                    {getWeatherIcon(weatherMain)},{" "}
+                    {Math.round(weather.main.temp)}°C
                   </span>
-                  <span>{Math.round(weather.main.temp)}°C</span>
                 </div>
               )}
             </div>
-            <button className="logout-btn" onClick={handleLogout}>
-              Đăng xuất
-            </button>
+
+            <div>
+              {isAdmin && (
+                <button
+                  className="logout-btn"
+                  onClick={handleAdmin}
+                  style={{ marginRight: 10, width: "fit-content" }}
+                >
+                  Trang quản trị
+                </button>
+              )}
+              <button className="logout-btn" onClick={handleLogout}>
+                Đăng xuất
+              </button>
+            </div>
           </>
         ) : (
           <>
@@ -315,7 +333,7 @@ const HomePage = () => {
         )}
       </div>
 
-      {user?.role === "Admin" && (
+      {isAdmin && (
         <div className="admin-section">
           <h2>Thêm sách mới</h2>
           <form onSubmit={addBookHandle}>
@@ -391,21 +409,24 @@ const HomePage = () => {
               <th>Tên sách</th>
               <th>Tác giả</th>
               <th>Giá</th>
-              <th>Thao tác</th>
+              {isAdmin && <th>Thao tác</th>}
             </tr>
           </thead>
           <tbody>
             {books.length === 0 ? (
               <>
                 <tr>
-                  <td colSpan={5} style={{ textAlign: "center", padding: 16 }}>
+                  <td
+                    colSpan={isAdmin ? 5 : 4}
+                    style={{ textAlign: "center", padding: 16 }}
+                  >
                     Không có kết quả phù hợp
                   </td>
                 </tr>
 
                 {Array.from({ length: limit - 1 }).map((_, idx) => (
                   <tr key={`empty-${idx}`} className="empty-row">
-                    <td colSpan={5}></td>
+                    <td colSpan={isAdmin ? 5 : 4}></td>
                   </tr>
                 ))}
               </>
@@ -417,27 +438,29 @@ const HomePage = () => {
                     <td>{book.title}</td>
                     <td>{book.author}</td>
                     <td>{book.price.toLocaleString()} đ</td>
-                    <td>
-                      <div className="action-buttons">
-                        <button
-                          className="edit-btn"
-                          onClick={() => handleUpdate(book)}
-                        >
-                          Sửa
-                        </button>
-                        <button
-                          className="delete-btn"
-                          onClick={() => deleteBookHandle(book.id)}
-                        >
-                          Xoá
-                        </button>
-                      </div>
-                    </td>
+                    {isAdmin && (
+                      <td>
+                        <div className="action-buttons">
+                          <button
+                            className="edit-btn"
+                            onClick={() => handleUpdate(book)}
+                          >
+                            Sửa
+                          </button>
+                          <button
+                            className="delete-btn"
+                            onClick={() => deleteBookHandle(book.id)}
+                          >
+                            Xoá
+                          </button>
+                        </div>
+                      </td>
+                    )}
                   </tr>
                 ))}
                 {Array.from({ length: 10 - books.length }).map((_, idx) => (
                   <tr key={`empty-${idx}`} className="empty-row">
-                    <td colSpan="5"></td>
+                    <td colSpan={isAdmin ? 5 : 4}></td>
                   </tr>
                 ))}
               </>

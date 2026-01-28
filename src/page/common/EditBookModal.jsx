@@ -39,6 +39,7 @@ const EditBookModal = ({ book, onClose, onSubmit }) => {
     onSubmit({
       ...book,
       ...form,
+      price: Number(form.price),
     });
   };
 
